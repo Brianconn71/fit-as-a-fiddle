@@ -17,7 +17,7 @@
         <!-- bootstrap css -->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% endblock %}
 
         {% block extra_css %}
@@ -36,9 +36,13 @@
     </head>
     <body>
         <header class="container-fluid fixed-top">
-            <div class="row">
+            <div id="mainnav" class="row nav-bg pt-lg-2 d-none d-lg-flex ">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                    <a href="{% url 'home' %}"><img src="" alt="Fit as a fiddle logo"></a>
+                    <a href="{% url 'home' %}">
+                        <div>
+                            <img src="{% static 'images/Fit as a Fiddle.svg' %}" alt="Fit as a fiddle logo" class="fit-logo">
+                        </div>
+                    </a>
                 </div>
 
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
