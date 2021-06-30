@@ -62,3 +62,30 @@ a>p:hover{
     height: 120px;
     object-fit: cover;
 }
+
+/* overriding bootstrap */
+ul{
+    margin: 0;
+}
+
+
+/* Media queries */
+@media (min-width: 1100px){
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 992px){
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1112;
+    }
+
+    .hdr-container{
+        padding-top: 164px;
+    }
+}
