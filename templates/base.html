@@ -32,14 +32,21 @@
         {% block extra_js %}
         {% endblock %}
 
+        {% block favicon %}
+            <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+            <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+            <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+            <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+        {% endblock %}
+
         <title>Fit As A Fiddle {% block extra_title %}{% endblock %}</title>
     </head>
     <body>
         <header class="container-fluid fixed-top">
             <div id="mainnav" class="row nav-bg pt-lg-2 d-none d-lg-flex ">
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <div class="col-12 col-lg-4 text-center text-lg-left">
                     <a href="{% url 'home' %}">
-                        <div>
+                        <div class="logo-container">
                             <img src="{% static 'images/Fit as a Fiddle.svg' %}" alt="Fit as a fiddle logo" class="fit-logo">
                         </div>
                     </a>
@@ -53,15 +60,15 @@
                                     <i class="fas fa-search"></i>
                                 </span>
                             </button>
-                            <input type="text" name="search" class="form-control" placeholder="Search our site" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" name="search" class="form-control" placeholder="Search our site" aria-label="Search our site" aria-describedby="basic-addon1">
                         </div>
                     </form>
                 </div>
 
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right">
-                        <li class="list-inline-item dropdown">
-                            <a href="" id="user-options" class="text-black nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="list-inline-item dropdown logo-color">
+                            <a href="" id="user-options" class="nav-link logo-color" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div><i class="fas fa-user fa-lg"></i></div>
                                     <p class="my-0">My Account</p>
@@ -80,8 +87,8 @@
                                 {% endif %}
                             </div>
                         </li>
-                        <li class="list-inline-item">
-                            <a href="" class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link">
+                        <li class="list-inline-item logo-color">
+                            <a href="" class="{% if grand_total %}text-info font-weight-bold{% else %}logo-color{% endif %} nav-link logo-color">
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">

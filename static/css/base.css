@@ -39,3 +39,26 @@ p{
     height: 1.7rem;
     width: 1.7rem;
 }
+
+/* Colors */
+.bg-color{
+    background-color: #493843;
+}
+.logo-color{
+    color: #61988E;
+}
+.icon-color{
+    color: #61988E;
+}
+a>p{
+    color: #61988E;
+}
+a>p:hover{
+    color: #61988E;;
+}
+
+/* logo */
+.fit-logo{
+    height: 120px;
+    object-fit: cover;
+}
