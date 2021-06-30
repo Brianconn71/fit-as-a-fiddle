@@ -36,7 +36,31 @@
     </head>
     <body>
         <header class="container-fluid fixed-top">
+            <div class="row">
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                    <a href="{% url 'home' %}"><img src="" alt="Fit as a fiddle logo"></a>
+                </div>
 
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                    <form method="GET" action="">
+                        <div class="input-group w-100">
+                            <button class="btn btn-black" type="submit">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                            <input type="text" name="search" class="form-control" placeholder="Search our site" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                    <ul class="list-inline list-unstyled text-center text-lg-right">
+                        <li class="list-inline-item dropdown"></li>
+                        <li class="list-inline-item"></li>
+                    </ul>
+                </div>
+            </div>
         </header>
 
         {% if messages %}
