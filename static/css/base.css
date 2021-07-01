@@ -8,7 +8,7 @@ html{
 }
 body{
     background: url('/static/images/homepage-background.jpg');
-    min-height: calc(100vh -164px);
+    height: calc(100vh - 164px);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,6 +51,15 @@ a>p{
 }
 a>p:hover{
     color: #61988E;;
+}
+.text-dark{
+    color: #2b2428;
+}
+.text-bright{
+    color: #b3d8d1;
+}
+.btn-bg-col{
+    background-color: #61988E;
 }
 
 /* logo */
