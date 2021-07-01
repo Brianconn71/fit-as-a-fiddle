@@ -68,13 +68,20 @@ a>p{
     object-fit: cover;
 }
 
+/* navbar */
+.navbar-toggler-icon{
+    font-size: 2rem;
+    padding-top: 0.2rem;
+    color: #61988E;
+}
+
 /* overriding bootstrap */
 ul{
     margin: 0;
 }
 .nav-link:hover{
-    transition: 0.4s ease;
-    border-bottom: 2px solid #61988E;
+    transition: all 0.4s ease;
+    border-bottom: 1px solid #61988E;
 }
 .nav-link:hover,
 .nav-link:active,
