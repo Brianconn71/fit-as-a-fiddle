@@ -49,17 +49,17 @@ p{
 a>p{
     color: #61988E;
 }
-a>p:hover{
-    color: #61988E;;
-}
-.text-dark{
+.text-darker{
     color: #2b2428;
 }
 .text-bright{
-    color: #b3d8d1;
+    color: #61988E;
 }
 .btn-bg-col{
     background-color: #61988E;
+}
+.text-shadow{
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* logo */
@@ -71,6 +71,16 @@ a>p:hover{
 /* overriding bootstrap */
 ul{
     margin: 0;
+}
+.nav-link:hover{
+    transition: 0.4s ease;
+    border-bottom: 2px solid #61988E;
+}
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus{
+    color: #61988E !important;
+
 }
 
 
