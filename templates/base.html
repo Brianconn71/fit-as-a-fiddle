@@ -127,6 +127,33 @@
         {% block content %}
         {% endblock %}
 
+        {% block footer %}
+        <footer class="page-footer bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="recipedia-text center-align footer-title">Connect with us on Social media</h5>
+                        <ul class="center-align social-icons">
+                            <li><a href="https://www.facebook.com" target="_blank"><i
+                                        class="fab fa-facebook-f recipedia-text" id="facebook" title="Facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com" target="_blank"><i
+                                        class="fab fa-instagram recipedia-text" id="instagram" title="Instagram"></i></a>
+                            </li>
+                            <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter recipedia-text"
+                                        id="twitter" title="Twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container recipedia-text center-align copyright-text">
+                    Copyright &copy; 2021 by Brian Connolly
+                </div>
+            </div>
+        </footer>
+        {% endblock %}
+
         {% block postloadjs %}
         {% endblock %}
 
