@@ -121,3 +121,12 @@ ul{
         padding-top: 164px;
     }
 }
+
+@media (max-width: 991px){
+    .hdr-container{
+        padding-top: 150px;
+    }
+    body{
+        height: calc(100vh - 150px);
+    }
+}
