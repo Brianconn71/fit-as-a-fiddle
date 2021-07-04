@@ -7,6 +7,9 @@ def all_products(request):
 
     products = Product.objects.all()
 
+    if request.GET:
+        if 'search' in request.GET:
+
     context = {
         'products': products,
     }
