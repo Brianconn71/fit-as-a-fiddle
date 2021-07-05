@@ -103,6 +103,18 @@ ul{
     z-index: -1;
 }
 
+/* Back to top button */
+.back-to-top-button {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.back-to-top-link{
+    cursor: pointer
+}
+
 /* Media queries */
 @media (min-width: 1100px){
     .container {
