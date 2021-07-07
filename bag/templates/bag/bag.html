@@ -26,7 +26,28 @@
             <div class="col">
                 {% if bag_items %}
                     <div class="table-responsive">
-                        {{ bag_items }}
+                        <table class="table table-sm table-borderless">
+                            <thead class="text-darker">
+                                <tr>
+                                    <th scope="col">Product Information</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                            </thead>
+
+                            {% for item in bag_items %}
+                                <tr>
+                                    <td class="p-2 w-25">
+                                        <img src="{{ item.product.image.url }}" alt="item.product.name" class="img-fluid">
+                                    </td>
+                                    <td class="py-3">
+                                        
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
                     </div>
                 {% else %}
                     <p class="lead mb-5">You have no items in your bag.</p>
