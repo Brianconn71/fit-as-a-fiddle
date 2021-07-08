@@ -136,6 +136,21 @@ ul{
     cursor: pointer
 }
 
+/* Message container and toasts */
+.message-container{
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 9999;
+    background-color: white;
+}
+.custom-toast{
+    overflow: visible;
+}
+.toast-capper{
+    height: 2px;
+}
+
 /* Media queries */
 @media (min-width: 1100px){
     .container {
