@@ -122,7 +122,9 @@
 
         {% if messages %}
             <div class="message-container">
-
+                {% for message in messages %}
+                    {% include 'includes/toasts/success_message.html' %}
+                {% endfor %}
             </div>
         {% endif %}
 
