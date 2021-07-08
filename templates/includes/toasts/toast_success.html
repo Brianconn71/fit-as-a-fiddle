@@ -8,6 +8,47 @@
         </button>
     </div>
     <div class="toast-body btn-bg-col">
-        {{ message }}
+        <div class="row">
+            <div class="col">
+                {{ message }}
+                <hr class="mt-2 mb-2">
+            </div>
+        </div>
+        {% if grand_total %}
+            <p class="btn-bg-col text-darker py-2">Your Bag ({{ product_count }})</p>
+            <div class="bag-notification-wrapper">
+                {% for item in bag_items %}
+                    <div class="row">
+                        <div class="col-3 my-2">
+                            <img src="{{ item.product.image.url }}" alt=" an image of {{ item.product.name }}" class="w-100">
+                        </div>
+                        <div class="col-9">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col">
+                    <strong><p class="mt-2 mb-2 text-darker">
+                        Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}:
+                        <span class="float-right">€{{ total|floatformat:2 }}</span>
+                    </p></strong>
+                    {% if free_delivery_delta > 0 %}
+                        <p class="mb-0 p-2 bg-warning shadow-sm text-darker text-center">
+                            Spend <strong>€{{ free_delivery_delta }}</strong> more to get free delivery!
+                        </p>
+                    {% endif %}
+                    <a href="{% url 'view_bag' %}" class="btn btn-black btn-block rounded-0">
+                        <span class="text-uppercase">Go to secure Checkout</span>
+                        <span class="icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        {% endif %}
     </div>
 </div>
