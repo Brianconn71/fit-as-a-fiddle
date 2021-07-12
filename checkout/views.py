@@ -36,18 +36,18 @@ def checkout(request):
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
-                            order = order,
-                            product = product,
-                            quantity = item_data,
+                            order=order,
+                            product=product,
+                            quantity=item_data,
                         )
                         order_line_item.save()
                     else:
                         for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
-                                order = order,
-                                product = product,
-                                quantity = quantity,
-                                product_size = size,
+                                order=order,
+                                product=product,
+                                quantity=quantity,
+                                product_size=size,
                             )
                             order_line_item.save()
                 except Product.DoesNotExist:
@@ -71,8 +71,8 @@ def checkout(request):
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
-            amount= stripe_total,
-            currency = settings.STRIPE_CURRENCY,
+            amount=stripe_total,
+            currency=settings.STRIPE_CURRENCY,
         )
 
         order_form = OrderForm()
