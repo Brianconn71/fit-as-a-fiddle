@@ -25,7 +25,9 @@ h6{
     font-family: 'Ubuntu', sans-serif;
 }
 
-p{
+p,
+a,
+button{
     font-family: 'Roboto', sans-serif;
 }
 
