@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import ReviewForm
 from .models import Review
+from products.models import Product
 from django.contrib import messages
 
 
@@ -18,7 +19,7 @@ def add_review(request, product_id):
                 review.rating = int(request.POST['rating'])
                 review.product = product
                 review.save()
-                return redirect('product_details', product.id)
+                return redirect(reverse('product_details', product.id))
         else:
             form = ReviewForm()
         return render(request, 'reviews/reviews.html', {"form": form})
