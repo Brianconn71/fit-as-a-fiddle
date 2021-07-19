@@ -19,7 +19,7 @@ def add_review(request, product_id):
                 review.rating = int(request.POST['rating'])
                 review.product = product
                 review.save()
-                return redirect(reverse('product_details', product.id))
+                return redirect('product_details', product.id)
         else:
             form = ReviewForm()
         return render(request, 'reviews/reviews.html', {"form": form})

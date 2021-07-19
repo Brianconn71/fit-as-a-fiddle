@@ -106,15 +106,32 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <a href=""></a>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2">
-                <h3 class="text-center">Reviews</h3>
-                <ul>
-                    {% for review in reviews %}
-                        <li>{{ review.comment }} <small class="text-muted">{{ review.user }}</small></li>
-                    {% endfor %}
-                </ul>
+                <h3 class="text-center mb-3">Reviews</h3>
+                    {% if reviews %}
+                        {% for review in reviews %}
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h5><strong>{{ review.title }}</strong></h5>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ review.rating }} / 5</h5>
+                                    <p class="card-text">{{ review.comment }}</p>
+                                    <p class="small text-muted"><i>{{ review.user }}</i></p>
+                                    <p><span class="small text-muted">{{ review.created }}</span></p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <h3>No reviews for this product</h3>
+                    {% endif %}
             </div>
         </div>
     </div>
