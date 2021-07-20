@@ -14,7 +14,7 @@ class Review(models.Model):
         (5,'5'),
     )
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reviews')
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=254, null=False, blank=False)
     comment = models.TextField(max_length=1000, null=False, blank=False)
     rating = models.IntegerField(choices=RATING_CHOICES, null=False, blank=False)

@@ -8,14 +8,13 @@ from django.contrib import messages
 # Add review view
 # got a helping hand here https://www.youtube.com/watch?v=lSX8nzu9ozg
 def add_review(request, product_id):
+    product = Product.objects.get(id=product_id)
     if request.user.is_authenticated:
-        product = Product.objects.get(product_id=product.id)
         if request.method == "POST":
-            product = Product.objects.get(product_id=product.id)
             form = ReviewForm(request.POST)
             if form.is_valid():
                 review = form.save(commit=False)
-                review.reviewer = request.user
+                # review.reviewer = request.user
                 review.title = request.POST['title']
                 review.comment = request.POST['comment']
                 review.rating = int(request.POST['rating'])
