@@ -3,7 +3,7 @@
     $(document).ready(function() {
         $('#review').click(function () {
             $('#review-info').toggle()
-            $('#review').addClass('bottom-border')
+            $('#review').toggleClass('bottom-border')
             $('#add-review').removeClass('bottom-border')
             $('#add-review-form').hide()
         });
@@ -12,7 +12,7 @@
         $('#add-review').click(function () {
             $('#add-review-form').toggle()
             $('#review-info').hide()
-            $('#add-review').addClass('bottom-border')
+            $('#add-review').toggleClass('bottom-border')
             $('#review').removeClass('bottom-border')
         });
     });
