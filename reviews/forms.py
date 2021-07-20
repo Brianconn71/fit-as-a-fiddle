@@ -10,7 +10,7 @@ class ReviewForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         """
-        
+        Overriding default placeholders and styles
         """
         super().__init__(*args, **kwargs)
         placeholders = {

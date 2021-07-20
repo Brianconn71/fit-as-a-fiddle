@@ -6,10 +6,12 @@ from django.contrib import messages
 
 
 # Add review view
+# got a helping hand here https://www.youtube.com/watch?v=lSX8nzu9ozg
 def add_review(request, product_id):
     if request.user.is_authenticated:
         product = Product.objects.get(product_id=product.id)
         if request.method == "POST":
+            product = Product.objects.get(product_id=product.id)
             form = ReviewForm(request.POST)
             if form.is_valid():
                 review = form.save(commit=False)
@@ -24,6 +26,6 @@ def add_review(request, product_id):
             form = ReviewForm()
         return render(request, 'reviews/reviews.html', {"form": form})
     else:
-        messages.error('Please sign in to leave a review')
-        return redirect('login')
+        messages.error(request,'Please sign in to leave a review')
+        return redirect('account_login')
 

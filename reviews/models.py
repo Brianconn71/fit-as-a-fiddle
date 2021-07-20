@@ -5,6 +5,7 @@ from products.models import Product
 
 # Review system model
 class Review(models.Model):
+    # got help with rating choices and model in general from https://www.codementor.io/@jadianes/get-started-with-django-building-recommendation-review-app-du107yb1a and https://www.youtube.com/watch?v=lSX8nzu9ozg
     RATING_CHOICES = (
         (1,'1'),
         (2,'2'),
