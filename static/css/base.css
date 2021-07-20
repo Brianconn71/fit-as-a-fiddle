@@ -150,6 +150,26 @@ input[name='search']::placeholder{
 .remove-item {
     cursor: pointer
 }
+/* Inline div for review headings got help here: https://stackoverflow.com/questions/46230992/html-placing-headers-side-by-side */
+.inline-div {
+    display: block;
+    text-align: center;
+}
+.inline-div > h3{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.bottom-border{
+    border-bottom: 1px solid #61988E;
+}
+#review-info{
+    display: none;
+}
+#add-review-form{
+    display: none;
+}
+
 
 /* Message container and toasts */
 .message-container{

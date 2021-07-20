@@ -106,15 +106,20 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-12 col-md-8 offset-md-2">
+                <h3 class="text-center mb-3">Add a Review</h3>
                 <a href=""></a>
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2">
-                <h3 class="text-center mb-3">Reviews</h3>
+                <div class="inline-div">
+                    <h3 class="text-center mb-3" id="review">Reviews</h3>
+                    <h3 class="text-center mb-3 ms-3" id="add-review">Add a Review</h3>
+                </div>
+                <div id="review-info">
                     {% if reviews %}
                         {% for review in reviews %}
                             <div class="card mb-3">
@@ -132,6 +137,10 @@
                     {% else %}
                         <h3>No reviews for this product</h3>
                     {% endif %}
+                </div>
+                <div id="add-review-form">
+                    <h1>hi</h1>
+                </div>
             </div>
         </div>
     </div>
@@ -140,4 +149,5 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input.html' %}
+{% include 'products/includes/show_hide_reviews.html' %}
 {% endblock %}
