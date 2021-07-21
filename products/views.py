@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.db.models import Avg
 
 from .models import Product, Category
 from .forms import ProductForm
@@ -66,10 +67,12 @@ def product_details(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product_id)
+    avg_rating = Review.objects.filter(product=product_id).aggregate(avg=Avg('rating'))['avg']
 
     context = {
         'product': product,
         'reviews': reviews,
+        'avg_rating': avg_rating,
     }
 
     return render(request, 'products/product_details.html', context)
