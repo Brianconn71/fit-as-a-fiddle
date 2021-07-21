@@ -9,9 +9,10 @@ class ProductAdmin(admin.ModelAdmin):
         'name',
         'category',
         'price',
-        'rating',
         'image',
     )
+
+    read_only = ('rating',)
 
     ordering = ('name',)
 
