@@ -92,6 +92,17 @@ a>p{
     padding-top: 0.2rem;
     color: #61988E;
 }
+.dropdown-menu{
+    background-color: #f5f5f5 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+.dropdown-item{
+    color: #493843;
+}
+.dropdown-item:hover{
+    background-color: #61988E;
+    color: #f5f5f5;
+}
 
 /* content block */
 .content-block{
