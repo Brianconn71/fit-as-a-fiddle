@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 
-html > body{
+html,body{
     min-height: 100%
 }
 html{
@@ -98,6 +98,9 @@ a>p{
     height: 100%;
     width: 100%;
     position: relative;
+}
+.container-pad{
+    padding-bottom: 4.5rem;
 }
 
 /* align text right */
