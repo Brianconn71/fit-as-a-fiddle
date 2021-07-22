@@ -16,7 +16,6 @@ def all_products(request):
     """ This view returns all the products on the site with sorting and search queries too."""
 
     products = Product.objects.all()
-    avg_rating = Review.objects.all().aggregate(avg=Avg('rating'))['avg']
     search = None
     categories = None
     sort = None
@@ -59,7 +58,6 @@ def all_products(request):
         'search_term': search,
         'current_categories': categories,
         'sorting': sorting,
-        'avg_rating': avg_rating,
     }
 
     return render(request, 'products/products.html', context)
@@ -73,7 +71,7 @@ def product_details(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product_id).order_by("id")
     avg_rating = Review.objects.filter(product=product_id).aggregate(avg=Avg('rating'))['avg']
-    reviews_paginator = Paginator(reviews, 1)
+    reviews_paginator = Paginator(reviews, 6)
     page_num = request.GET.get('page')
     page = reviews_paginator.get_page(page_num)
 
