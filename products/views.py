@@ -14,8 +14,12 @@ from reviews.views import add_review
 
 def all_products(request):
     """ This view returns all the products on the site with sorting and search queries too."""
+    """ Got a hand with the pagination, here https://www.youtube.com/watch?v=wmYSKVWOOTM"""
 
     products = Product.objects.all()
+    products_paginator = Paginator(products, 2)
+    page_num = request.GET.get('page')
+    page = products_paginator.get_page(page_num)
     search = None
     categories = None
     sort = None
@@ -58,6 +62,7 @@ def all_products(request):
         'search_term': search,
         'current_categories': categories,
         'sorting': sorting,
+        'page': page,
     }
 
     return render(request, 'products/products.html', context)

@@ -138,6 +138,13 @@ input[name='search']::placeholder{
     color: #aab7c4;
 }
 
+/* Pagination */
+.current{
+    color:#493843;
+}
+.step-links > a{
+    color: #61988E;
+}
 
 /* Overlay */
 .overlay{
