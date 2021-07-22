@@ -158,6 +158,38 @@ input[name='search']::placeholder{
     margin-bottom: 10rem;
 }
 
+/* footer */
+.page-footer{
+    color:#61988E;
+}
+.social-style{
+    margin: 0 0.9rem;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+}
+.copyright-text{
+    font-size: 0.8rem;
+}
+.copyright-text > p{
+    margin-bottom: 0.3rem;
+}
+.footer-title{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* below colors found: https://usbrandcolors.com/ */
+#facebook:hover{
+    color: #4267B2;
+    transform: scale(1.5);
+}
+#twitter:hover{
+    color: #1DA1F2;
+    transform: scale(1.5);
+}
+#instagram:hover{
+    color: #C13584;
+    transform: scale(1.5);
+}
 
 
 /* Back to top button */
