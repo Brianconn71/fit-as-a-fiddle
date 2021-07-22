@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.db.models import Avg
+from django.core.paginator import Paginator
 
 from .models import Product, Category
 from .forms import ProductForm
@@ -67,14 +68,19 @@ def all_products(request):
 def product_details(request, product_id):
     """ This view returns all the details of each individual item on the site from the product_id"""
     """ Got a hand with the aggregation, here https://stackoverflow.com/questions/19138609/django-aggregation-sum-return-value-only"""
+    """ Got a hand with the pagination, here https://www.youtube.com/watch?v=wmYSKVWOOTM"""
 
     product = get_object_or_404(Product, pk=product_id)
-    reviews = Review.objects.filter(product=product_id)
+    reviews = Review.objects.filter(product=product_id).order_by("id")
     avg_rating = Review.objects.filter(product=product_id).aggregate(avg=Avg('rating'))['avg']
+    reviews_paginator = Paginator(reviews, 1)
+    page_num = request.GET.get('page')
+    page = reviews_paginator.get_page(page_num)
 
     context = {
         'product': product,
         'reviews': reviews,
+        'page': page,
         'avg_rating': avg_rating,
     }
 
