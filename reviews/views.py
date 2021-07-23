@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
+from django.contrib.auth.decorators import login_required
 from .forms import ReviewForm
 from .models import Review
 from django.contrib.auth.models import User
@@ -8,8 +9,13 @@ from django.contrib import messages
 
 # Add review view
 # got a helping hand here https://www.youtube.com/watch?v=lSX8nzu9ozg
+@login_required
 def add_review(request, product_id):
     product = Product.objects.get(id=product_id)
+    # if not request.user.is_authenticated:
+    #     messages.error(request, 'Sorry, only logged in members may leave a review')
+    #     return redirect(reverse('home'))
+
     if request.user.is_authenticated:
         if request.method == "POST":
             form = ReviewForm(request.POST)
