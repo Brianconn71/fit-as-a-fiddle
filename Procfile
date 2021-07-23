@@ -1,0 +1,1 @@
+web: gunicorn fit_as_a_fiddle.wsgi:application
