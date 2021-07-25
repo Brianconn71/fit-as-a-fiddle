@@ -37,8 +37,9 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?category=weights" class="dropdown-item">Weights</a>
-                <a href="{% url 'products' %}?category=cardio_machines" class="dropdown-item">Cardio Machines</a>
-                <a href="{% url 'products' %}?category=weights,cardio_machines" class="dropdown-item">All Fitness Equipment</a>
+                <a href="{% url 'products' %}?category=cardio" class="dropdown-item">Cardio</a>
+                <a href="{% url 'products' %}?category=training_plans" class="dropdown-item">Training Plans</a>
+                <a href="{% url 'products' %}?category=weights,cardio,training_plans" class="dropdown-item">All Fitness Equipment</a>
             </div>
         </li>
 
