@@ -214,6 +214,9 @@ input[name='search']::placeholder{
     bottom: 20px;
     right: 20px;
 }
+.update-link{
+    color: #61988E;
+}
 .back-to-top-link,
 .update-link,
 .remove-item {
