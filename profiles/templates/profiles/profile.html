@@ -17,7 +17,7 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mt-4 mb-3 h-100">
+    <div class="container container-pad mt-4 mb-3 h-100">
         <div class="row">
             <div class="col">
                 <h2 class="fw-bold mb-4 display-6">My Profile</h2>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 py-3">
                 <p class="small text-muted">Default Delivery Information</p>
                 <form action="{% url 'profile' %}" class="mt-4" method="POST" id="profile-update-form">
                     {% csrf_token %}
