@@ -17,7 +17,7 @@ def all_products(request):
     """ Got a hand with the pagination, here https://www.youtube.com/watch?v=wmYSKVWOOTM"""
 
     products = Product.objects.all()
-    products_paginator = Paginator(products, 2)
+    products_paginator = Paginator(products, 10)
     page_num = request.GET.get('page')
     page = products_paginator.get_page(page_num)
     search = None
@@ -76,7 +76,7 @@ def product_details(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product_id).order_by("id")
     avg_rating = Review.objects.filter(product=product_id).aggregate(avg=Avg('rating'))['avg']
-    reviews_paginator = Paginator(reviews, 6)
+    reviews_paginator = Paginator(reviews, 5)
     page_num = request.GET.get('page')
     page = reviews_paginator.get_page(page_num)
 
