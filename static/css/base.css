@@ -85,6 +85,11 @@ a>p{
     height: 100px;
     object-fit: cover;
 }
+.fit-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #493843;
+}
 
 /* navbar */
 .navbar-toggler-icon{
@@ -191,6 +196,12 @@ input[name='search']::placeholder{
     transform: scale(1.5);
 }
 
+/* Images */
+.img-custom{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
 
 /* Back to top button */
 .back-to-top-button {
