@@ -11,6 +11,9 @@ class Post(models.Model):
     body = models.TextField(max_length=1000, null=False, blank=False)
     date_added = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.user.username
+
     class Meta: 
         ordering = ['-date_added']
 
