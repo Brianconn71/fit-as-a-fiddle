@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import CommentForm
 from .models import Post
 from django.contrib.auth.decorators import login_required
 
@@ -18,9 +19,21 @@ def blog(request):
 def blog_post(request, slug):
     post = Post.objects.get(slug=slug)
 
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.post = post
+            comment.user = request.user
+            comment.save()
+            return redirect('blog_post', slug=post.slug)
+    else:
+        form = CommentForm()
+
     template = 'blog/blog_post.html'
     context = {
-        'post': post
+        'post': post,
+        'form': form,
     }
 
     return render(request, template, context)
