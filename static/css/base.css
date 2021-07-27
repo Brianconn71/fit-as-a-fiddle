@@ -97,7 +97,7 @@ a>p{
 /* icons */
 .gold-star{
     color: #f9a602;
-    
+
 }
 
 /* navbar */
@@ -236,7 +236,7 @@ input[name='search']::placeholder{
     display: block;
     text-align: center;
 }
-.inline-div > h3{
+.inline-div > h4{
     display: inline-block;
     text-align: center;
     cursor: pointer;
