@@ -94,6 +94,12 @@ a>p{
     color: #493843;
 }
 
+/* icons */
+.gold-star{
+    color: #f9a602;
+    
+}
+
 /* navbar */
 .navbar-toggler-icon{
     font-size: 2rem;

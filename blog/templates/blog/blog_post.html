@@ -20,7 +20,7 @@
                 <small>{{ post.user }}</small>
                 <h2>Comments</h2>
                 {% for comment in post.comments.all %}
-                    <p>{{ comment.body }}</p>
+                    <p>{{ comment.body }}</p>{{ comment.user }}
                 {% empty %}
                     <h4>No Comments</h4>
                 {% endfor %}
