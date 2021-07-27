@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Post, Comment
 
 # admin for blogs.
-class BlogAdmin(admin.ModelAdmin):
+class PostAdmin(admin.ModelAdmin):
     list_display = (
         'user',
         'title',
@@ -12,5 +12,5 @@ class BlogAdmin(admin.ModelAdmin):
 
     read_only = ('slug',)
 
-
+admin.site.register(Post, PostAdmin)
 admin.site.register(Comment)
