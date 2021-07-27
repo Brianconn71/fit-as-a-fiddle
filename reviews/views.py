@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .forms import ReviewForm
 from .models import Review
@@ -37,29 +37,23 @@ def add_review(request, product_id):
 
 
 @login_required
-def edit_review(request, review_id):
-    """ edits a product on the site """
-    if review.user != request,user:
-        messages.error(request, 'Sorry, you do not have the required permissions to do this')
-        return redirect(reverse('product_details', product.id))
+def edit_review(request, product_id, review_id):
+    """ edits a review on the site """
+    if request.user.is_authenticated:
+        product = Product.objects.get(id=product_id)
+        review = Review.objects.get(product=product, id=review_id)
 
-    product = get_object_or_404(Product, pk=product_id)
-    if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES, instance=product)
-        if form.is_valid():
-            form.save()
-            messages.success(request, f'Successfully updated {product.name}!')
-            return redirect(reverse('product_details', args=[product.id]))
+        if request.user == review.user:
+            if request.method == "POST":
+                form = ReviewForm(request.POST, instance=review)
+                if form.is_valid():
+                    data = form.save(commit=False)
+                    data.save()
+                    return redirect('product_details', product_id)
+            else:
+                form = ReviewForm(instance=review)
+            return render(request, 'reviews/edit_review.html', {'form': form})
         else:
-            messages.error(request, f'Failed to update {product.name}. Please ensure form is valid!')
+            return redirect('product_details', product_id)
     else:
-        form = ProductForm(instance=product)
-        messages.info(request, f'You are editing {product.name}')
-
-    template = 'products/edit_product.html'
-    context = {
-        'form': form,
-        'product': product,
-    }
-
-    return render(request, template, context)
+        return redirect('account_login')

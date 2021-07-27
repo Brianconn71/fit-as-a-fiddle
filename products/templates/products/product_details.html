@@ -121,6 +121,7 @@
                             <div class="card mb-3">
                                 <div class="card-header">
                                     <h5><strong>{{ review.title }}</strong></h5>
+                                    <a href="{% url 'edit_review' product.id review.id %}">edit</a>
                                 </div>
                                 <div class="card-body">
                                     {% if review.rating == 1 %}
