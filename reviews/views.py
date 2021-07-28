@@ -36,6 +36,7 @@ def add_review(request, product_id):
         return redirect('account_login')
 
 
+# got a hand with the review function here: https://www.youtube.com/watch?v=2av1F3BJHUc&t=295s
 @login_required
 def edit_review(request, product_id, review_id):
     """ edits a review on the site """
@@ -53,6 +54,24 @@ def edit_review(request, product_id, review_id):
             else:
                 form = ReviewForm(instance=review)
             return render(request, 'reviews/edit_review.html', {'form': form})
+        else:
+            messages.error(request,'You do not have permission to edit this review')
+            return redirect('product_details', product_id)
+    else:
+        return redirect('account_login')
+
+
+# got a hand with the review function here: https://www.youtube.com/watch?v=d4Pa6E2d2GA
+@login_required
+def delete_review(request, product_id, review_id):
+    """ edits a review on the site """
+    if request.user.is_authenticated:
+        product = Product.objects.get(id=product_id)
+        review = get_object_or_404(Review, product=product ,pk=review_id)
+
+        if request.user == review.user:
+            # permission to delete
+            review.delete()
         else:
             messages.error(request,'You do not have permission to edit this review')
             return redirect('product_details', product_id)
