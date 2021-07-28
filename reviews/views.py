@@ -41,7 +41,7 @@ def edit_review(request, product_id, review_id):
     """ edits a review on the site """
     if request.user.is_authenticated:
         product = Product.objects.get(id=product_id)
-        review = Review.objects.get(product=product, id=review_id)
+        review = get_object_or_404(Review, product=product ,pk=review_id)
 
         if request.user == review.user:
             if request.method == "POST":
@@ -54,6 +54,7 @@ def edit_review(request, product_id, review_id):
                 form = ReviewForm(instance=review)
             return render(request, 'reviews/edit_review.html', {'form': form})
         else:
+            messages.error(request,'You do not have permission to edit this review')
             return redirect('product_details', product_id)
     else:
         return redirect('account_login')
