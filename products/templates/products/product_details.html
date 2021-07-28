@@ -117,6 +117,7 @@
                 <div id="review-info">
                     <!-- Got help with pagination in django here: https://www.youtube.com/watch?v=wmYSKVWOOTM -->
                     {% if reviews %}
+                    <!--  Got help with below here https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs#dictsort -->
                         {% for review in page.object_list|dictsortreversed:"created" %}
                             <div class="card mb-3">
                                 <div class="card-header">
