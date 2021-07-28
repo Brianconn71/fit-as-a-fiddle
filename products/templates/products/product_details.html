@@ -117,13 +117,13 @@
                 <div id="review-info">
                     <!-- Got help with pagination in django here: https://www.youtube.com/watch?v=wmYSKVWOOTM -->
                     {% if reviews %}
-                        {% for review in page.object_list %}
+                        {% for review in page.object_list|dictsortreversed:"created" %}
                             <div class="card mb-3">
                                 <div class="card-header">
                                     <h5><strong>{{ review.title }}</strong></h5>
                                     {% if request.user == review.user or request.user.is_superuser %}
-                                        <a href="{% url 'edit_review' product.id review.id %}">Edit Review</a>
-                                        <a href="{% url 'delete_review' product.id review.id %}">Delete Review</a>
+                                        <a href="{% url 'edit_review' product.id review.id %}" class="text-decoration-none text-bright">Edit</a> |
+                                        <a href="{% url 'delete_review' product.id review.id %}" class="text-danger text-decoration-none">Delete</a>
                                     {% endif %}
                                 </div>
                                 <div class="card-body">
