@@ -72,8 +72,6 @@ def delete_review(request, product_id, review_id):
         if request.user == review.user:
             # permission to delete
             review.delete()
-        else:
-            messages.error(request,'You do not have permission to edit this review')
-            return redirect('product_details', product_id)
+        return redirect('product_details', product_id)
     else:
         return redirect('account_login')

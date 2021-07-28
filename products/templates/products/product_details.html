@@ -40,7 +40,7 @@
                         </p>
                     {% endif %}
                     {% if avg_rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-2"></i> {{ avg_rating }} / 5</small>
+                        <small class="text-muted"><i class="fas fa-star mr-2"></i> {{ avg_rating|floatformat:2 }} / 5</small>
                     {% else %}
                         <small class="text-muted">No Rating for this Product</small>
                     {% endif %}
@@ -122,7 +122,8 @@
                                 <div class="card-header">
                                     <h5><strong>{{ review.title }}</strong></h5>
                                     {% if request.user == review.user or request.user.is_superuser %}
-                                        <a href="{% url 'edit_review' product.id review.id %}">edit</a>
+                                        <a href="{% url 'edit_review' product.id review.id %}">Edit Review</a>
+                                        <a href="{% url 'delete_review' product.id review.id %}">Delete Review</a>
                                     {% endif %}
                                 </div>
                                 <div class="card-body">
