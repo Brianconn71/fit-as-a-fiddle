@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container hdr-container">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container mt-5 mb-5 container-pad h-100">
+        <div class="row">
+            <div class="col-12 col-md-6 h-100">
+                <h2 class="fw-bold mb-4 display-6">Post</h2>
+                <h6 class="text-muted">Add a Blog Post</h6>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <form method="POST" action="{% url 'add_blog_post' %}" class=" form mb-3" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                    {% endfor %}
+                    <div class="align-right">
+                        <a class="btn btn-outline-dark py-2" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn text-capitalize py-2 btn-bg-col" type="submit">Add Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
