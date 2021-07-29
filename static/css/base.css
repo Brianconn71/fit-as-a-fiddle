@@ -20,6 +20,10 @@ body{
     background-size: cover;
 }
 
+.hidden{
+    display: none;
+}
+
 h1,
 h2,
 h3,
@@ -409,18 +413,18 @@ input[name='search']::placeholder{
 
 /* Modal */
 #modal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
     margin: 0 auto;
     position: absolute;
-    top: 40%;
-    left: 25%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: #493843;
     color: #61988E;
     z-index: 11111;
     width: 60%;
     padding: 1.2rem;
+    z-index: 99999;
     border: 1px solid #493843;
     box-shadow: 0px 0px 10px #493843;
 }
@@ -430,16 +434,17 @@ input[name='search']::placeholder{
     right: 0;
     cursor: pointer;
 }
-#loading-overlay{
-    display: none;
-    position: fixed;
+#modal-overlay{
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin-bottom: 10rem;
+    display: none;
     background-color: #61988E;
     opacity: 0.9;
-    z-index: 9999;
 }
 .control-btns{
     text-align: end;
