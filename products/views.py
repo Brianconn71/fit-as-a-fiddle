@@ -16,7 +16,7 @@ def all_products(request):
     """ This view returns all the products on the site with sorting and search queries too."""
     """ Got a hand with the pagination, here https://www.youtube.com/watch?v=wmYSKVWOOTM"""
 
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('id')
     products_paginator = Paginator(products, 10)
     page_num = request.GET.get('page')
     page = products_paginator.get_page(page_num)
@@ -43,7 +43,8 @@ def all_products(request):
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            products = page.filter(category__name__in=categories)
+            print(products)
+            products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
         if 'search' in request.GET:
