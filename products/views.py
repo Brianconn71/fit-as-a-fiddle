@@ -17,9 +17,6 @@ def all_products(request):
     """ Got a hand with the pagination, here https://www.youtube.com/watch?v=wmYSKVWOOTM"""
 
     products = Product.objects.all().order_by('id')
-    products_paginator = Paginator(products, 10)
-    page_num = request.GET.get('page')
-    page = products_paginator.get_page(page_num)
     search = None
     categories = None
     sort = None
@@ -56,14 +53,18 @@ def all_products(request):
             queries = Q(name__icontains=search) | Q(description__icontains=search)
             products = products.filter(queries)
 
+    
+    products_paginator = Paginator(products, 10)
+    page_num = request.GET.get('page')
+    page = products_paginator.get_page(page_num)
     sorting = f'{sort}_{direction}'
 
     context = {
+        'page': page,
         'products': products,
         'search_term': search,
         'current_categories': categories,
         'sorting': sorting,
-        'page': page,
     }
 
     return render(request, 'products/products.html', context)
