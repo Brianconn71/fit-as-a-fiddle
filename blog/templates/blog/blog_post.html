@@ -31,10 +31,10 @@
                 {% for comment in post.comments.all %}
                     <p>{{ comment.body }}</p>{{ comment.user }}
                 {% empty %}
-                    <h4>No Comments</h4>
+                    <h4 class="text-start mb-3 ms-3">No Comments</h4>
                 {% endfor %}
                 <hr>
-                <h3>Add Comment</h3>
+                <h4 class="text-start mb-3 ms-3">Add a Comment</h4>
                 <form method="post" action=".">
                     {% csrf_token %}
                     {{ form | crispy}}

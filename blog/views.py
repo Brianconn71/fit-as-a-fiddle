@@ -75,24 +75,25 @@ def edit_blog_post(request, post_id):
         messages.error(request, 'Sorry, only store admin can do update a blog post')
         return redirect(reverse('home'))
 
-    blog_post = get_object_or_404(Post, pk=post_id)
+    post = get_object_or_404(Post, pk=post_id)
     if request.method == 'POST':
-        form = PostForm(request.POST, instance=blog_post)
+        form = PostForm(request.POST, instance=post)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.user = request.user
+            data = form.save(commit=False)
+            data.user = request.user
             form.save()
             messages.success(request, 'Successfully Updated Blog Post!')
-            return redirect(reverse('blog_post', args=[post.id]))
+            return redirect(reverse('blog_post', args=[post.slug]))
         else:
             messages.error(request, 'Could not add post to site. Please ensure form is valid!')
     else:
-        form = PostForm(instance=blog_post)
-        messages.info(request, f'You are editing {blog_post.title}')
+        form = PostForm(instance=post)
+        messages.info(request, f'You are editing {post.title}')
 
     template = 'blog/edit_blog_post.html'
     context = {
         'form': form,
+        'post': post,
     }
 
     return render(request, template, context)
