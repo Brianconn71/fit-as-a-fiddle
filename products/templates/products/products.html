@@ -19,7 +19,7 @@
                 <h2>Products</h2>
                 {% for c in current_categories %}
                     <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
-                        <span class="badge p-2 mt-3 bg-color rounded-0 border border-1">{{ c.friendly_name }}</span>
+                        <span class="btn rounded-2 p-1 btn-outline-dark text-decoration-none text-bright">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
             </div>
