@@ -22,10 +22,12 @@
             <div class="col mb-3">
                 <h2 class="fw-bold mb-4 display-6">Blog</h2>
                 <hr>
-                {% if request.user.is_superuser %}
-                    <div class="text-center">
-                        <a href="{% url 'add_blog_post' %}" class="btn rounded-2 btn-outline-dark text-decoration-none text-bright">Add a Blog Post</a>
-                    </div>
+                {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <div class="text-center">
+                            <a href="{% url 'add_blog_post' %}" class="btn rounded-2 btn-outline-dark text-decoration-none text-bright">Add a Blog Post</a>
+                        </div>
+                    {% endif %}
                 {% endif %}
             </div>
         </div>
@@ -36,8 +38,7 @@
                     <div class="posts">
                         <div class="post-block">
                             <h2 class="subtitle">{{ post.title }}</h2>
-                            <!-- truncate help here: https://stackoverflow.com/questions/5235994/django-template-tag-to-truncate-text -->
-                            <p>{{ post.intro|truncatechars:50  }}</p>
+                            <p>{{ post.intro  }}</p>
                         </div>
                         <a href="{% url 'blog_post' post.slug %}" class="text-bright">Read more</a>
                         {% if request.user.is_superuser %}

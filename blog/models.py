@@ -9,7 +9,7 @@ class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=250, null=False, blank=False)
     slug = models.SlugField(default='', null=True, blank=True)
-    intro = models.TextField(max_length=250, null=False, blank=False)
+    intro = models.CharField(max_length=250, null=False, blank=False)
     body = RichTextField(blank=True, null=True)
     date_added = models.DateTimeField(auto_now_add=True)
 

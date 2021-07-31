@@ -26,7 +26,6 @@
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'add_blog_post' %}" class=" form mb-3" enctype="multipart/form-data">
                     {% csrf_token %}
-                    <input type="hidden" name="user" value="{{ request.user }}">
                     {{ form.media }}
                     {{ form | crispy }}
                     <div class="align-right mt-3">
