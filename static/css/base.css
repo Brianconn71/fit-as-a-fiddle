@@ -47,6 +47,10 @@ button{
     width: 1.7rem;
 }
 
+.btn-text{
+    font-weight: 500;
+}
+
 
 /* Colors */
 .bg-color{
@@ -255,12 +259,6 @@ input[name='search']::placeholder{
     display: none;
 }
 #add-review-form{
-    display: none;
-}
-#comment-info{
-    display: none;
-}
-#add-comment-info{
     display: none;
 }
 
