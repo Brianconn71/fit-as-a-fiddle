@@ -16,5 +16,9 @@
 }
 .post-body{
     font-weight: 300;
-    
+}
+
+/* Styling rich text editor */
+.cke_inner{
+    width: auto;
 }
