@@ -257,6 +257,12 @@ input[name='search']::placeholder{
 #add-review-form{
     display: none;
 }
+#comment-info{
+    display: none;
+}
+#add-comment-info{
+    display: none;
+}
 
 
 /* Message container and toasts */
