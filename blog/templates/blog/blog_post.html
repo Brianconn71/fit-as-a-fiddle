@@ -40,6 +40,7 @@
                 <div class="inline-div">
                     <h4 class="text-center mb-3" id="comments"><span>({{ post.comments.count }})</span> Comments</h3>
                     <h4 class="text-center mb-3 ms-3" id="add-comment">Add a Comment</h3>
+                    <hr>
                 </div>
                 <div id="comment-info">
                     {% for comment in post.comments.all %}
@@ -52,12 +53,16 @@
                     {% endfor %}
                 </div>
                 <div id="add-comment-info">
-                    <h4 class="text-start mb-3">Add a Comment</h4>
-                    <form method="post" action="." class="form">
-                        {% csrf_token %}
-                        {{ form | crispy }}
-                        <input type="submit" class="btn rounded-2 py-2 btn-text text-capitalize mt-4 btn-bg-col" value="Add a Comment">
-                    </form>
+                    {% if user.is_authenticated %}
+                        <h4 class="text-start mb-3">Add a Comment</h4>
+                        <form method="post" action="." class="form">
+                            {% csrf_token %}
+                            {{ form | crispy }}
+                            <input type="submit" class="btn rounded-2 py-2 btn-text text-capitalize mt-4 btn-bg-col" value="Add a Comment">
+                        </form>
+                    {% else %}
+                        <p class="text-start mb-3">Please <a href="{% url 'account_login' %}" class="text-decoration-none text-bright">Login</a> or <a href="{% url 'account_signup' %}" class="text-decoration-none text-bright">Register</a> an account to leave a comment</p>
+                    {% endif %}
                 </div>
             </div>
         </div>
