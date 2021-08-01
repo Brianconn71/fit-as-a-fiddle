@@ -5,7 +5,7 @@ from .models import Discount
 from .forms import DiscountForm
 
 # Discount apply form
-@require.POST
+@require_POST
 def discount_apply(request):
     now = timezone.now()
     form = DiscountForm(request.POST)
