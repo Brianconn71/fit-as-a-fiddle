@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from .forms import CommentForm, PostForm
-from .models import Post
+from .models import Post, Comment
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 
@@ -117,3 +117,58 @@ def delete_blog_post(request, post_id):
     messages.success(request, 'Blog Post deleted!')
     
     return redirect(reverse('blog'))
+
+
+@login_required
+def edit_comment(request, post_id, comment_id):
+     """ Adds a blog post to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store admin can do update a blog post')
+        return redirect(reverse('home'))
+
+    product = Product.objects.get(id=product_id)
+    review = get_object_or_404(Review, product=product ,pk=review_id)
+    if request.method == 'POST':
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            data = form.save(commit=False)
+            data.user = request.user
+            form.save()
+            messages.success(request, 'Successfully Updated Blog Post!')
+            return redirect(reverse('blog_post', args=[post.slug]))
+        else:
+            messages.error(request, 'Could not add post to site. Please ensure form is valid!')
+    else:
+        form = PostForm(instance=post)
+        messages.info(request, f'You are editing {post.title}')
+
+    template = 'blog/edit_blog_post.html'
+    context = {
+        'form': form,
+        'post': post,
+    }
+
+    return render(request, template, context)
+
+    @login_required
+def edit_review(request, product_id, review_id):
+    """ edits a review on the site """
+    if request.user.is_authenticated:
+        product = Product.objects.get(id=product_id)
+        review = get_object_or_404(Review, product=product ,pk=review_id)
+
+        if request.user == review.user:
+            if request.method == "POST":
+                form = ReviewForm(request.POST, instance=review)
+                if form.is_valid():
+                    data = form.save(commit=False)
+                    data.save()
+                    return redirect('product_details', product_id)
+            else:
+                form = ReviewForm(instance=review)
+            return render(request, 'reviews/edit_review.html', {'form': form})
+        else:
+            messages.error(request,'You do not have permission to edit this review')
+            return redirect('product_details', product_id)
+    else:
+        return redirect('account_login')
