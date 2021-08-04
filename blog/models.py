@@ -32,7 +32,7 @@ class Comment(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.user, self.post.title
+        return self.post.title
 
     class Meta: 
         ordering = ['date_added']
