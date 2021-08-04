@@ -76,11 +76,9 @@
                                                     </a>
                                                 </p>
                                             {% endif %}
-                                            {% if reviews %}
-                                                {% for review in reviews %}
-                                                <small class="text-muted"><i class="fas fa-star mr-2"></i> {{ review.rating }} / 5</small>
+                                            {% if product.avg_rating %}
+                                                <small class="text-muted"><i class="fas fa-star mr-2"></i> {{ product.avg_rating }} / 5</small>
                                                 <br/>
-                                                {% endfor %}
                                             {% else %}
                                                 <small class="text-muted">No Rating for this Product</small>
                                                 <br/>
