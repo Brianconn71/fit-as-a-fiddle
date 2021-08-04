@@ -130,11 +130,11 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                               <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to delete this review?</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <h4 class="modal-title text-capitalize" id="exampleModalLabel">Are you sure you want to delete this review?</h4>
+                                                <span class="float-end"><a href="{% url 'product_details' product.id %}" class="close-btn text-decoration-none text-bright"><i class="far fa-window-close icon"></i></a></span>
                                               </div>
                                               <div class="modal-footer">
-                                                <a href="{% url 'product_details' product.id %}" class="btn rounded-2 mt-4 btn-outline-dark close-btn"> Cancel</a>
+                                                <a href="{% url 'product_details' product.id %}" class="btn rounded-2 mt-4 btn-outline-dark"> Cancel</a>
                                                 <a href="{% url 'delete_review' product.id review.id %}" class="btn rounded-2 text-capitalize mt-4 btn-bg-col" aria-hidden="true">Confirm</a>
                                               </div>
                                             </div>
@@ -218,17 +218,4 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input.html' %}
 {% include 'products/includes/show_hide_reviews.html' %}
-<script>
-    $(document).ready(function(){
-        $('#delete-review').click(function(){
-            $('#modal').show();
-            $('#modal-overlay').show();
-        });
-
-        $('.close-btn').click(function(){
-            $('#modal').hide();
-            $('#modal-overlay').hide();
-        });
-    })
-</script>
 {% endblock %}
