@@ -48,8 +48,9 @@
                         <p class="mt-3 mb-3 btn-text">{{ comment.body }}</p>
                         <small class="text-muted">by - {{ comment.user }}</small><br/>
                         <small class="text-muted">{{ comment.date_added }}</small>
-                        <a href="{ url 'edit_comment' comment.id }">edit</a>
-                        <a href="{% url 'delete_comment' comment.id %}" class="text-danger text-decoration-none">Delete</a>
+                        {% if request.user == comment.user or request.user.is_superuser %}
+                            <a href="{% url 'delete_comment' comment.id %}" class="text-danger text-decoration-none">Delete</a>
+                        {% endif %}
                         <hr>
                     {% empty %}
                         <h4 class="text-start mb-3 ms-3">No Comments to show</h4>
