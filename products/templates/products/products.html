@@ -77,18 +77,35 @@
                                                 </p>
                                             {% endif %}
                                             {% if reviews %}
-                                                {% for review in reviews%}
+                                                {% for review in reviews %}
                                                 <small class="text-muted"><i class="fas fa-star mr-2"></i> {{ review.rating }} / 5</small>
+                                                <br/>
                                                 {% endfor %}
                                             {% else %}
                                                 <small class="text-muted">No Rating for this Product</small>
+                                                <br/>
                                             {% endif %}
                                             {% if request.user.is_superuser %}
-                                                <small class="ms-2">
+                                                <small>
                                                     <a href="{% url 'edit_product' product.id %}" class="text-decoration-none text-bright">Edit</a> | 
-                                                    <a href="{% url 'delete_product' product.id %}" class="text-danger text-decoration-none">Delete</a>
+                                                    <a role="button" class="text-danger text-decoration-none" id="delete-review" data-toggle="modal" data-target="#modal-overlay{{ forloop.counter0 }}">Delete</a>
                                                 </small>
                                             {% endif %}
+                                            <!-- Modal -->
+                                            <div id="modal-overlay{{ forloop.counter0 }}" class="modal" tabindex="-1" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title text-capitalize" id="exampleModalLabel">Are you sure you want to delete this Product?</h4>
+                                                        <span class="float-end"><a href="{% url 'products' %}" class="close-btn text-decoration-none text-bright"><i class="far fa-window-close icon"></i></a></span>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="{% url 'products' %}" class="btn rounded-2 mt-4 btn-outline-dark"> Cancel</a>
+                                                        <a href="{% url 'delete_product' product.id %}" class="btn rounded-2 text-capitalize mt-4 btn-bg-col" aria-hidden="true">Confirm</a>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
