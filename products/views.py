@@ -53,7 +53,7 @@ def all_products(request):
             queries = Q(name__icontains=search) | Q(description__icontains=search)
             products = products.filter(queries)
 
-    
+    review = Review.objects.all()
     products_paginator = Paginator(products, 10)
     page_num = request.GET.get('page')
     page = products_paginator.get_page(page_num)
@@ -65,6 +65,7 @@ def all_products(request):
         'search_term': search,
         'current_categories': categories,
         'sorting': sorting,
+        'review': review,
     }
 
     return render(request, 'products/products.html', context)
