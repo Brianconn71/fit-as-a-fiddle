@@ -15,13 +15,23 @@ class Test_urls(SimpleTestCase):
         print(resolve(url))
         self.assertEquals(resolve(url).func, blog_post)
     
-    # def test_adjust_bag_resolves(self):
-    #     url = reverse('adjust_bag', args=[2])
-    #     print(resolve(url))
-    #     self.assertEquals(resolve(url).func, adjust_bag)
+    def test_add_blog_post_resolves(self):
+        url = reverse('add_blog_post')
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, add_blog_post)
     
-    # def test_remove_from_bag_resolves(self):
-    #     url = reverse('remove_from_bag', args=[2])
-    #     print(resolve(url))
-    #     self.assertEquals(resolve(url).func, remove_from_bag
+    def test_edit_blog_post_resolves(self):
+        url = reverse('edit_blog_post', args=[2])
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, edit_blog_post)
+    
+    def test_delete_blog_post_resolves(self):
+        url = reverse('delete_blog_post', args=[2])
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, delete_blog_post)
+    
+    def test_delete_comment_resolves(self):
+        url = reverse('delete_comment', args=[2])
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, delete_comment)
 
