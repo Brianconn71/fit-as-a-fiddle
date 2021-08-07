@@ -19,6 +19,7 @@ class TestViews(TestCase):
 
     def test_checkout_GET(self):
         response = self.client.get(self.checkout_url)
+        
         self.assertEqual(response.status_code, 302)
         messages = list(get_messages(response.wsgi_request))
         self.assertEqual(len(messages), 1)
