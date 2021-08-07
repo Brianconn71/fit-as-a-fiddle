@@ -21,7 +21,7 @@ class Review(models.Model):
     created = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return self.user.username
+        return f"Review on {self.product.name} by {self.user}"
     
         
     class Meta:
