@@ -1,7 +1,6 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
-from blog.models import Post, Comment
 import json
 
 
@@ -14,11 +13,11 @@ class TestViews(TestCase):
             email='test@email.com',
             password='testpassword'
         )
-        self.blog_url = reverse('blog')
+        self.products_url = reverse('products')
 
 
-    def test_blog_GET(self):
-        response = self.client.get(self.blog_url)
+    def test_home_GET(self):
+        response = self.client.get(self.products_url)
 
         self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'blog/blog.html')
+        self.assertTemplateUsed(response, 'products/products.html')
