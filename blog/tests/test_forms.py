@@ -18,3 +18,16 @@ class TestForms(SimpleTestCase):
 
         self.assertFalse(form.is_valid())
         self.assertEquals(len(form.errors), 2)
+    
+    def test_Comment_Form_valid_data(self):
+        form = CommentForm(data={
+            'body': 'test',
+        })
+
+        self.assertTrue(form.is_valid())
+    
+    def test_Comment_form_invalid(self):
+        form = CommentForm(data={})
+
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 1)
