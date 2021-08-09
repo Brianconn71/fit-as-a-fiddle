@@ -457,4 +457,18 @@ input[name='search']::placeholder{
     body{
         height: calc(100vh - 150px);
     }
+    a.nav-link{
+        padding: 0.1rem;
+    }
+    .nav-link i.fa-lg{
+        font-size: 1rem;
+    }
+    .navbar-toggler-icon{
+        padding: .5rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    #delivery-information h4{
+        font-size: 1rem;
+    }
 }
