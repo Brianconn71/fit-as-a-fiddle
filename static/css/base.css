@@ -271,7 +271,7 @@ input[name='search']::placeholder{
 .message-container{
     position: fixed;
     top: 80px;
-    right: 20px;
+    right: 10px;
     z-index: 9999;
     background-color: white;
 }
@@ -335,6 +335,11 @@ input[name='search']::placeholder{
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* getting rid of padding on ol and ul */
+.ol, ul{
+    padding-left: 0;
 }
 
 /* allauth forms */
@@ -470,5 +475,20 @@ input[name='search']::placeholder{
 
     #delivery-information h4{
         font-size: 1rem;
+    }
+    .btn.btn-lg.text-uppercase.btn-.bg-col,
+    .btn.btn-outline-dark,
+    .btn.text-uppercase.btn-bg-col{
+        padding: .3rem .3rem;
+        font-size: .7rem;
+    }
+    .decrement-qty .increment-qty{
+        padding: 0.25rem 0.5rem !important;
+    }
+    ul{
+        font-size: 0.8rem;
+    }
+    .btn-text{
+        font-size: 0.8rem;;
     }
 }
