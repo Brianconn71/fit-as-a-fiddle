@@ -234,6 +234,7 @@ input[name='search']::placeholder{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 9999;
 }
 .update-link{
     color: #61988E;
