@@ -271,6 +271,7 @@ input[name='search']::placeholder{
 /* Message container and toasts */
 .message-container{
     position: fixed;
+    width: 18rem;
     top: 80px;
     right: 10px;
     z-index: 9999;
