@@ -1,6 +1,7 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
+from reviews.models import Review
 import json
 
 
@@ -13,7 +14,7 @@ class TestViews(TestCase):
             email='test@email.com',
             password='testpassword'
         )
-        self.home_url = reverse('home')
+        self.review_url = reverse('home')
 
 
     def test_home_GET(self):

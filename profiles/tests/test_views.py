@@ -16,7 +16,7 @@ class TestViews(TestCase):
         self.profile_url = reverse('profile')
 
 
-    def test_home_GET(self):
+    def test_profile_GET(self):
         response = self.client.get(self.profile_url)
 
         self.assertNotEquals(response.status_code, 200)
