@@ -15,10 +15,3 @@ class TestViews(TestCase):
             password='testpassword'
         )
         self.review_url = reverse('home')
-
-
-    def test_home_GET(self):
-        response = self.client.get(self.home_url)
-
-        self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'home/index.html')

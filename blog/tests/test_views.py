@@ -1,6 +1,7 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
+from django.contrib.messages import get_messages
 from blog.models import Post, Comment
 import json
 
@@ -52,7 +53,6 @@ class TestViews(TestCase):
         self.assertEquals(self.test1.title, 'test1')
     
     def test_add_blog_post_POST_no_data(self):
-        response = self.client.post(self.blog_post_url)
+        response = self.client.post(self.add_blog_post)
 
-        self.assertEquals(response.status_code, 200)
-        self.assertEquals(self.test1.count().title, 0)
+        self.assertEquals(response.status_code, 302)
