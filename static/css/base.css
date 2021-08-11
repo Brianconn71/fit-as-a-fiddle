@@ -283,6 +283,9 @@ input[name='search']::placeholder{
 .toast-capper{
     height: 2px;
 }
+#cke_description {
+    width: auto !important;
+}
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
