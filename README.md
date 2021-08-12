@@ -1,59 +1,54 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Brianconn71,
+# Fit as a Fiddle E-commerce Store
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+![Live Project]()
 
-## Gitpod Reminders
+## Milestone Project 4
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* This project was built to showcase my abilites in designing and developing a full-stack web application using the django web framework, HTML, CSS, Javascript and Python.
 
-`python3 -m http.server`
+* The website I have built is a full stack ecommerce web application for a fictional fitness and weight company which I have called Fit as a Fiddle. I took inspiration from a multitude of places for this project from various fitness supplies companies, weights distributors and even other e-commerce stores like MandMdirect.
 
-A blue button should appear to click: _Make Public_,
+* The application I have developed uses E-commerce functionality, payments are made using Stripe, a blog section for store owners to use to create SEO friendly blog posts to increase  organic traffic to the site and a comments section for users to add comments for interactivity with the store and leave comments on blog posts, Only registered users can leave comments and leave reviews, review section so that users can voice their own opinion on specific products, Confirmation emails, CRUD functionality for admin users to add, update and delete products reviews and blog posts, comments, CRUD functionality for users to create read update and delete their own reviews in the reviews section and the ability to delete comments they have left on blog posts, admin have authorisation to do anything on the site.
 
-Another blue button should appear to click: _Open Browser_.
+* For the assessor, the admin login details have been included in the comments section when submitting the project.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Please note that this website is solely for educational purposes so Please don't attempt to enter real credit card details when using the stripe functionality. use the below details for testing purposes.
 
-A blue button should appear to click: _Make Public_,
+    * stripe card number: 4242 4242 4242 4242
+    * Any card end date you wish
+    * Anyy CVV number you wish
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# Table of contents
 
-To log into the Heroku toolbelt CLI:
+# UX
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Strategy
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+## Scope
 
-## Updates Since The Instructional Video
+### Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Structure
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Skeleton
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Surface
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+# Technologies Used
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+# Testing
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+# Deployment
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Credits
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Content
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Media
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Code Snippets
 
----
+### Acknowledgements
 
-Happy coding!
