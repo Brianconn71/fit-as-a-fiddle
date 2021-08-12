@@ -64,6 +64,98 @@ Admin users get the power to create update and delete everything on the site whi
 
     * Python was used to build the backend functionality of the web app.
 
+* [Django](https://www.djangoproject.com/)
+
+    * Django was used to create my project.
+
+* [Django AllAuth](https://django-allauth.readthedocs.io/en/latest/)
+
+    * Django AllAuth  was used to create the sign-in and register account functionality of the project.
+
+* [Django Countries](https://pypi.org/project/django-countries/)
+
+    * Django Countries was used to select countries in the order form.
+
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+
+    * Django Crispy Forms was used to style form elements
+
+* [Stripe](https://stripe.com/ie)
+
+    * stripe was useed as the payment section of the site.
+
+* [Heroku](https://signup.heroku.com/)
+
+    * Heroku was used to deploy the site and host it.
+
+* [AWS](https://aws.amazon.com/)
+
+    * Amazon Aws was used to store the images on the site and the static files.
+
+* [Gunicorn](https://gunicorn.org/)
+
+    * Gunicorn was used to deploy the site to Heroku
+
+* [Github](https://github.com/)
+
+    * Github was used to host and store the source code of the project.
+
+* [Gitpod](https://gitpod.io/)
+
+    * Gitpod was the IDE that was used to create this project.
+
+* [Git](https://git-scm.com/)
+
+    * Git is the version control software used on the site. it was used to add, commit and push the code changes to github.
+
+* [Figma](https://www.figma.com/)
+
+    * Figma was used to create the wireframes of the site.
+
+* [Font Awesome](https://fontawesome.com/)
+
+    * Font Awesome was used to source and find the icons used on the site.
+
+* [Favicon](https://favicon.io/)
+
+    * Favicon was used to create and add a favicon to the site.
+
+* [Google Fonts](https://fonts.google.com/)
+
+    * Fonts used on the site were found. fonts used on site were, Roboto and Ubuntu
+
+* [Canva](https://canva.com/)
+
+    * Canva was used to create the favicon design for the site.
+
+* [Paletton](https://paletton.com/)
+
+    * Paletton was used to source the colors that were used on the site.
+
+* [Techsini](https://techsini.com/multi-mockup/)
+
+    * Techsini is a mockup generator and It was used to get the mock up image of the site in the Readme.
+
+* [W3](https://www.weschools.com/)
+
+    * W3 Schools was used to troubleshoot issues regarding html css and python throughout the course of thye project.
+
+* [Autoprefixer](https://autoprefixer.github.io)
+
+    * Autoprefixer was used to parse my css file and add the vendor prefixes.
+
+* [Chrome dev tools](https://www.google.com/chrome/dev/)
+
+    * Google chrome tools were used for debugging purposes and to test different css styles and layouts of features.
+
+* [Bootstrap 5](https://getbootstrap.com/)
+
+    * Bootstrap was used to add html/css components to the site and to make the site more visually appealing to the user.
+
+* [Quick Database Diagrams](https://www.quickdatabasediagrams.com/)
+
+    * Quick Database Diagrams was used to make diagram of database schems
+
 # Testing
 
 # Deployment
