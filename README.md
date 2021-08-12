@@ -166,7 +166,45 @@ Admin users get the power to create update and delete everything on the site whi
 
 ### Media
 
+* Product images
+
+    * Running shorts [Image](https://www.pexels.com/photo/running-man-1578384/) by [pexels user](https://www.pexels.com/@runffwpu)
+    * swimming shorts [Image](https://www.pexels.com/photo/topless-man-near-beach-1574898/) by [pexels user](https://www.pexels.com/@thfotodesign)
+    * womens gym shorts [Image](https://www.pexels.com/photo/sportive-woman-with-fitness-ball-6453572/) by [pexels user](https://www.pexels.com/@marta-wave)
+    * mens gym shorts [Image](https://www.pexels.com/photo/young-man-sitting-on-fitness-equipment-3764010/) by [pexels user](https://www.pexels.com/@olly)
+    * mens grey shirt [Image](https://www.pexels.com/photo/man-in-grey-shirt-and-black-bottom-lifting-barbell-812746/) by [pexels user](https://www.pexels.com/@frame-kings-255818)
+    * mens navy shirt [Image](https://www.pexels.com/photo/man-carrying-barbel-on-his-back-looking-down-812733/) by [pexels user](https://www.pexels.com/@frame-kings-255818)
+    * mens white shirt [Image](https://www.pexels.com/photo/man-wearing-white-crew-neck-t-shirt-806626/) by [pexels user](https://www.pexels.com/@frame-kings-255818)
+    * female crop top [Image](https://www.pexels.com/photo/woman-in-pink-crop-top-and-jogging-pants-practicing-yoga-7346634/) by [pexels user](https://www.pexels.com/@kool-shooters)
+    * superman stringer [Image](https://www.pexels.com/photo/blue-and-red-superman-print-tank-top-shirt-38630/) by [pexels user](https://www.pexels.com/@pixabay)
+    * white tank top [Image](https://www.pexels.com/photo/strong-asian-man-training-biceps-in-gym-6550866/) by [pexels user](https://www.pexels.com/@pixabay)
+    * 5kg dumbbells [Image](https://www.pexels.com/photo/crop-man-exercising-with-dumbbell-in-gym-6550838/) by [pexels user](https://www.pexels.com/@pixabay)
+    * 50kg Barbell [Image](https://www.pexels.com/photo/photo-of-man-lifting-barbell-1552106/) by [pexels user](https://www.pexels.com/@leonardho)
+    * 100kg Barbell [Image](https://www.pexels.com/photo/person-holding-black-and-silver-steel-barbell-photography-949126/) by [pexels user](https://www.pexels.com/@victorfreitas)
+    * Spin Bike [Image](https://www.pexels.com/photo/modern-stationary-bicycles-in-gym-4254902/) by [pexels user](https://www.pexels.com/@mvdheuvel)
+    * treadmill [Image](https://www.pexels.com/photo/tired-man-walking-on-treadmill-in-gym-6455846/) by [pexels user](https://www.pexels.com/@julia-larson)
+    * rowing machine [Image](https://www.pexels.com/photo/man-using-a-rowing-machine-7690218/) by [pexels user](https://www.pexels.com/@cottonbro)
+    * 6 week fat burn [Image](https://www.pexels.com/photo/black-sneakers-and-gym-tools-on-gray-floor-6740822/) by [pexels user](https://www.pexels.com/@mikhail-nilov)
+    * fighting fit [Image](https://www.pexels.com/photo/determined-black-boxer-hitting-heavy-bag-during-training-in-gymnasium-6998875/) by [pexels user](https://www.pexels.com/@gabby-k)
+    * Yoga [Image](https://www.pexels.com/photo/woman-doing-yoga-exercise-in-the-morning-7592740/) by [pexels user](https://www.pexels.com/@miriam-alonso)
+    * Weight Bench [Image](https://www.pexels.com/photo/photo-of-woman-raising-dumbbells-2475878/) by [pexels user](https://www.pexels.com/@823sl)
+    * 9kg [Image](https://www.pexels.com/photo/person-holding-black-dumbbells-1032117/) by [pexels user](https://www.pexels.com/@micah-boerma-327482)
+    * Home Gym [Image](https://www.pexels.com/photo/woman-kneeling-with-barbel-on-shoulders-3076514/) by [pexels user](https://www.pexels.com/@jonathanborba)
+    * Weight Belt [Image](https://www.pexels.com/photo/barbell-near-belt-949132/) by [pexels user](https://www.pexels.com/@victorfreitas)
+    * Weight plates [Image](https://www.pexels.com/@victorfreita) by [pexels user](https://www.pexels.com/@victorfreitas)
+    * Baseball cap [Image](https://www.pexels.com/photo/man-wearing-blue-and-black-crew-neck-shirt-1103831/) by [pexels user](https://www.pexels.com/@ollivves)
+
+* Homepage background image
+
+    * Baseball cap [Image](https://www.pexels.com/photo/man-wearing-blue-and-black-crew-neck-shirt-1103831/) by [pexels user](https://www.pexels.com/@ollivves)
+
 ### Code Snippets
 
 ### Acknowledgements
+
+* Various Slack users, too many to mention, for the help along my journey and helping me to get this project set up.
+
+* Brian - Slack user for help structuring my project and organising my database schema
+
+* My mentor Adegbenga Adeye for his help and guidance throughout the project.
 
