@@ -196,9 +196,16 @@ Admin users get the power to create update and delete everything on the site whi
 
 * Homepage background image
 
-    * Baseball cap [Image](https://www.pexels.com/photo/man-wearing-blue-and-black-crew-neck-shirt-1103831/) by [pexels user](https://www.pexels.com/@ollivves)
+    * Homepage background image [Image](https://unsplash.com/photos/0Wra5YYVQJE) by [unsplash user](https://unsplash.com/@karsten116)
 
 ### Code Snippets
+
+* Got a hand with unittesting in django using this [Youtube series](https://www.youtube.com/watch?v=hA_VxnxCHbo&list=PLbpAWbHbi5rMF2j5n6imm0enrSD9eQUaM&index=7) and some other [resources](https://tech.people-doc.com/django-unit-test-your-views.html) [here](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
+
+* got help with my comment model from this youtube series [here](https://www.youtube.com/watch?v=OuOB9ADT_bo&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=46)
+
+* Got a hand with calculating average reviews from users ratings [here](https://stackoverflow.com/questions/28607727/how-to-calculate-average-with-django)
+
 
 ### Acknowledgements
 
