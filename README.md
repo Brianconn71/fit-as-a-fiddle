@@ -1,9 +1,9 @@
 
 # Fit as a Fiddle E-commerce Store
 
-![Live Project]()
+![Live Project](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/Responsive-view-of-site.JPG)
 
-![Live Project]()
+[Live Project](https://ms4-fit-as-a-fiddle.herokuapp.com/)
 
 ## Milestone Project 4
 
@@ -159,6 +159,72 @@ Admin users get the power to create update and delete everything on the site whi
 # Testing
 
 # Deployment
+
+* This project was setup on GitHub using the Code Institute Gitpod Template.
+
+* I sourced the code institute github page and then clicked on the green use this as templsate button in the repository.
+
+* Then, i named my repository and created it. upon, creattion, I then clicked on the green gitpod button at the top of the repository to open the template in Gitpod.
+
+* I then used the terminal window in gitpod to create files and folders and to add changes to the version contreol in Github.
+
+* to commit I added the files to the staging area using the following commands:
+> git add .
+> git commit -m "commit message"
+> git push
+
+#### Deployment to Heroku
+
+Once app was setup and ready to go I deployed to Heroku by following the steps below:
+
+* I created an app on the heroku website which i called ms4-fit-as-a-fiddle
+
+    * I clicked on the new button.
+    * I then clicked on the create a new app link.
+    * I then gave my app the name of ms4-fit-as-a-fiddle and chose europe as my closest region.
+    * Finally, I selected to create my app.
+
+* Next, I set up the postgres database.
+
+    * in Heroku,
+        * Go to app resources section, search for postgres
+        * then I chose to add to project and chose the free plan for my project.
+        * In order to use Postgres, I had to install two dependecies in gitpod, dj_database_url and psycopg2
+    
+    * in Gitpod
+        * I installed both dj_database_url and psycopg2 using the command:
+        > pip install
+        * then, using the command: pip3 freeze > requirements.txt, I added the dependencies to the requirements file which is needed by Heroku.
+        * Then in settings.py I imported dj_database_url:
+        > import dj_database_url
+        * then, I commented out the current database settings and replaced it with the settings of the postgres database:
+        > DATABASES = {
+            'default': dj_database_url.parse('DATABASE_URL')
+        }
+        * DATABASE_URL above is an environmental variable and as such should not be shown  in version control. The database url can be found from your app config settings in heroku.
+        * Once the above method is set up, models need to be migrated to the new database using the command below:
+        > python3 manage.py migrate
+        * I then created a new superuser for my site on heroku using the command below:
+        > python3 manage.py createsuperuser
+        * When that was done I then commited my changes and made sure not to include environmnet variables in the version control.
+        * Then, I created an if-else statement in the settings.py to use Postgres if the DATABASE_URL variable is available and otherwise use the default database in gitpod.
+        > if "DATABASE_URL" in os.environ:
+                DATABASES = {
+                    "default": dj_database_url.parse(os.environ.get('DATABASE_URL'))
+                }
+          else:
+                DATABASES = {
+                    'default': {
+                        'ENGINE': 'django.db.backends.sqlite3',
+                        'NAME': BASE_DIR / 'db.sqlite3',
+                    }
+                }
+        * The postgres database should now be ready for use.
+
+    * Gunicorn
+        * For the app to work on heroku we need a way for heroku to tell that the app is a web application, which is where Gunicorn comes in.
+        * Installing Gunicorn
+        * pip3 install Gunicorn
 
 # Credits
 
