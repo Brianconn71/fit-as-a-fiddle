@@ -169,9 +169,9 @@ Admin users get the power to create update and delete everything on the site whi
 * I then used the terminal window in gitpod to create files and folders and to add changes to the version contreol in Github.
 
 * to commit I added the files to the staging area using the following commands:
-> git add .
-> git commit -m "commit message"
-> git push
+    * `git add .`
+    * `git commit -m "commit message"`
+    * `git push`
 
 #### Deployment to Heroku
 
@@ -193,19 +193,21 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
     
     * in Gitpod
         * I installed both dj_database_url and psycopg2 using the command:
-        > pip install
+            * `pip install`
         * then, using the command: pip3 freeze > requirements.txt, I added the dependencies to the requirements file which is needed by Heroku.
         * Then in settings.py I imported dj_database_url:
-        > import dj_database_url
+            * `import dj_database_url`
         * then, I commented out the current database settings and replaced it with the settings of the postgres database:
-        > DATABASES = {
+        ```
+        DATABASES = {
             'default': dj_database_url.parse('DATABASE_URL')
         }
+        ```
         * DATABASE_URL above is an environmental variable and as such should not be shown  in version control. The database url can be found from your app config settings in heroku.
         * Once the above method is set up, models need to be migrated to the new database using the command below:
-        > python3 manage.py migrate
+            * `python3 manage.py migrate`
         * I then created a new superuser for my site on heroku using the command below:
-        > python3 manage.py createsuperuser
+            * `python3 manage.py createsuperuser`
         * When that was done I then commited my changes and made sure not to include environmnet variables in the version control.
         * Then, I created an if-else statement in the settings.py to use Postgres if the DATABASE_URL variable is available and otherwise use the default database in gitpod.
         ```
@@ -227,6 +229,123 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
         * For the app to work on heroku we need a way for heroku to tell that the app is a web application, which is where Gunicorn comes in.
         * Installing Gunicorn
             * `pip3 install Gunicorn`
+        * A Procfile then needs to be created to tell heroku how to run our app. this is acheieved below:
+            * `touch Procfile`
+        * In the Procfile we need to tell it to use a webserver, this is achieved by placing the below code in the procfile:
+            * `web: gunicorn <appname>.wsgi:application`
+    
+    * We now need to connect to Heroku in the terminal on gitpod
+        * use the following command
+            * `heroku login -i`
+        * Login using your email and password that you used to create an account with on heroku website.
+        * then, I disabled the collection of static files temporarily until AWS has been set up.
+            * `heroku config:set DISABLE_COLLECTSTATIC=1 --app <appname>`
+            * the --app command is used when you have more than one app in your heroku account
+        * Now, in settings I added heroku into my list of allowed hosts, and localhost so the project can still b run locally using the following settings.
+            * `ALLOWED_HOSTS = ["<heroku appname>.herokuapp.com", "localhost"]`
+        * changes were then pushed to Github
+        * Then I needed to set up pushing to heroku achieved below
+            * `heroku git:remote -a <heroku appname>`
+        * then the project gets pushed to github using:
+            * `git push heroku master`
+        * Heroku now builds the app.
+    
+    * On the Heroku Website
+        * Go to the deploy section of the app.
+        * I searched for the app being used in github
+        * When it was found I connected and then clicked on enable Automatic deploys
+        * Now any changes pushed to Github will automatically be pushed to Heroku too.
+    
+    * Amazon AWS
+        * Amazon AWS was used to store both static and media files of my project
+        * I created an AWS account and worked through the process of signing-in. Once my account was setup I was able to set my project up on aws.
+        * first, I needed to create a bucket.
+            * search for aws s3 service.
+            * click on the Create Bucket button.
+            * Give the bucket a unique name and then select the region.
+            * uncheck the block public access and acknowledge that the bucket will now be public.
+            * click create bucket.
+        * Bucket settings
+            * Properties
+                * Go to the bucket Properties section
+                * Turn on static website hosting
+                * in the index and error text inputs, add index.html and error.html.
+                * then, click save.
+        * Permissions
+            * Go to the bucket Permissions section.
+            * In the cors config paste in the below code:
+                * ```
+                    [
+                        {
+                            "AllowedHeaders": [
+                                "Authorization"
+                            ],
+                            "AllowedMethods": [
+                                "GET"
+                            ],
+                            "AllowedOrigins": [
+                                "*"
+                            ],
+                            "ExposedHeaders": [
+
+                            ]
+                        }
+                    ]
+                  ```
+            * In the bucket policy, click on the generate policy
+        * Policy
+            * Select S3 bucket policy
+            * Add * to the principal field to select all principals
+            * select action to get object
+            * Paste in your ARN which can be found on the bucket policy page.
+            * click add statement
+            * then, click on the generate policy button
+            * then, copy and paste the new policy into your bucket policy
+            * also, add /* onto the end of the resources key
+            * and, click save.
+        * Access Control List
+            * Go to the Access Control List section.
+            * set list objects permission to everyone.
+    
+    * Create a new user
+
+        * On the admin page for aws search for IAM to add a new user
+        * Create a group
+            * We need to create a group to put our user in
+            * Click create a new group and name it.
+            * click through to the end and save the group.
+            * create a group policy
+                * click policy and the click create policy
+                * select the JSON tab and then import managed policies.
+                * search s3 and select on Amazons3fullaccess and import.
+                * in the resources section, paste in the ARN that was used above.
+                * click through to review policy.
+                * fill in the name and description and then click generate policy.
+            * back into the group, click on permission and attach the policy.
+            * find the policy you have just created and attach it.
+
+        * Create the user
+            * select users from the sidebar and then click on add user
+            * create a username and then select programmatic access then click on next.
+            * select the group to add your user too
+            * click through to the end and then click create user.
+            * Download the CSV file containing the user keys needed to access the app
+    
+    * Connect bucket to Django
+        * first install two packages in the IDE, boto 3 and django storages, seen below:
+            * ```
+                pip3 install boto3
+                pip3 install django-storages
+              ```
+        * Now we need to add this to our requirements.
+            * `pip3 freeze > requirements.txt`
+        * storages then needs to be added to installed apps in settings.py
+        * an environment variable called USE_AWS needs to be set up to run the code on heroku.
+        * The settings needed for the project in the settings.py file are below:
+            * ```
+                
+              ```
+
 
 # Credits
 
