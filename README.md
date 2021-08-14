@@ -224,7 +224,7 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
     * Gunicorn
         * For the app to work on heroku we need a way for heroku to tell that the app is a web application, which is where Gunicorn comes in.
         * Installing Gunicorn
-        * pip3 install Gunicorn
+        `pip3 install Gunicorn`
 
 # Credits
 
