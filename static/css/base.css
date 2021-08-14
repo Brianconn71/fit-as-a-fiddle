@@ -429,6 +429,18 @@ input[name='search']::placeholder{
     border-color: #dc3545;
 }
 
+
+.inline-flex-pos{
+    display: inline-flex;
+    gap: .3rem;
+}
+.allauth-form-inner-content button, .allauth-form-inner-content input[type='submit']{
+    background-color: #61988E;
+    font-weight: 500;
+    border-radius: .25rem;
+    border: 1px solid #61988e;
+}
+
 /* Modal */
 .modal-content{
     background-color: #f5f5f5;
@@ -495,5 +507,8 @@ input[name='search']::placeholder{
     }
     .btn-text{
         font-size: 0.8rem;;
+    }
+    .allauth-form-inner-content button, .allauth-form-inner-content input[type='submit']{
+        font-size: 0.8rem;
     }
 }
