@@ -13,7 +13,6 @@ class Post(models.Model):
     body = RichTextField(blank=True, null=True)
     date_added = models.DateTimeField(auto_now_add=True)
 
-
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         super(Post, self).save(*args, **kwargs)
@@ -21,12 +20,14 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    class Meta: 
+    class Meta:
         ordering = ['-date_added']
 
 
 class Comment(models.Model):
-    post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
+    post = models.ForeignKey(Post,
+                             related_name='comments',
+                             on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField(max_length=1000, null=False, blank=False)
     date_added = models.DateTimeField(auto_now_add=True)
@@ -34,6 +35,5 @@ class Comment(models.Model):
     def __str__(self):
         return f"Comment on {self.post.title} by {self.user}"
 
-    class Meta: 
+    class Meta:
         ordering = ['date_added']
-

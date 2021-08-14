@@ -12,13 +12,13 @@ class TestModels(TestCase):
             password='testpassword'
         )
         self.post1 = Post.objects.create(
-            title = 'Post 1',
-            user = self.user
+            title='Post 1',
+            user=self.user,
         )
-    
+
     def test_post_assigned_slug_on_creation(self):
         self.assertEquals(self.post1.slug, 'post-1')
-    
+
     def test_post_model(self):
         post = Post.objects.create(
             title="Test Post",

@@ -29,29 +29,28 @@ class TestViews(TestCase):
             body="Test Comment",
         )
 
-
     def test_blog_GET(self):
         response = self.client.get(self.blog_url)
 
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'blog/blog.html')
-    
+
     def test_blog_post_GET(self):
         response = self.client.get(self.blog_post_url)
 
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'blog/blog_post.html')
-    
+
     def test_add_blog_post_POST(self):
-        response = self.client.post(self.blog_post_url,{
-            'title':'test1',
-            'user':self.user,
-            'intro':"test1",
+        response = self.client.post(self.blog_post_url, {
+            'title': 'test1',
+            'user': self.user,
+            'intro': "test1",
         })
 
         self.assertEquals(response.status_code, 200)
         self.assertEquals(self.test1.title, 'test1')
-    
+
     def test_add_blog_post_POST_no_data(self):
         response = self.client.post(self.add_blog_post)
 

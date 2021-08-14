@@ -50,7 +50,8 @@ def blog_post(request, slug):
 def add_blog_post(request):
     """ Adds a blog post to the store """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store admin can do add a blog post')
+        messages.error(request,
+                       'Sorry, only store admin can do add a blog post')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -62,7 +63,9 @@ def add_blog_post(request):
             messages.success(request, 'Successfully added Blog Post!')
             return redirect(reverse('blog_post', args=[post.slug]))
         else:
-            messages.error(request, 'Could not add post to site. Please ensure form is valid!')
+            messages.error(request,
+                           'Could not add post to site. \
+                           Please ensure form is valid!')
     else:
         form = PostForm()
 
@@ -78,7 +81,8 @@ def add_blog_post(request):
 def edit_blog_post(request, post_id):
     """ Adds a blog post to the store """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store admin can do update a blog post')
+        messages.error(request,
+                       'Sorry, only store admin can do update a blog post')
         return redirect(reverse('home'))
 
     post = get_object_or_404(Post, pk=post_id)
@@ -91,7 +95,9 @@ def edit_blog_post(request, post_id):
             messages.success(request, 'Successfully Updated Blog Post!')
             return redirect(reverse('blog_post', args=[post.slug]))
         else:
-            messages.error(request, 'Could not add post to site. Please ensure form is valid!')
+            messages.error(request,
+                           'Could not add post to site. \
+                           Please ensure form is valid!')
     else:
         form = PostForm(instance=post)
         messages.info(request, f'You are editing {post.title}')
@@ -115,7 +121,7 @@ def delete_blog_post(request, post_id):
     blog_post = get_object_or_404(Post, pk=post_id)
     blog_post.delete()
     messages.success(request, 'Blog Post deleted!')
-    
+
     return redirect(reverse('blog'))
 
 
@@ -129,5 +135,5 @@ def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id)
     comment.delete()
     messages.success(request, 'Comment deleted!')
-    
+
     return redirect(reverse('blog'))
