@@ -208,7 +208,8 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
         > python3 manage.py createsuperuser
         * When that was done I then commited my changes and made sure not to include environmnet variables in the version control.
         * Then, I created an if-else statement in the settings.py to use Postgres if the DATABASE_URL variable is available and otherwise use the default database in gitpod.
-        > if "DATABASE_URL" in os.environ:
+        ```
+        if "DATABASE_URL" in os.environ:
                 DATABASES = {
                     "default": dj_database_url.parse(os.environ.get('DATABASE_URL'))
                 }
@@ -219,12 +220,13 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
                         'NAME': BASE_DIR / 'db.sqlite3',
                     }
                 }
+        ```
         * The postgres database should now be ready for use.
 
     * Gunicorn
         * For the app to work on heroku we need a way for heroku to tell that the app is a web application, which is where Gunicorn comes in.
         * Installing Gunicorn
-        `pip3 install Gunicorn`
+            * `pip3 install Gunicorn`
 
 # Credits
 
