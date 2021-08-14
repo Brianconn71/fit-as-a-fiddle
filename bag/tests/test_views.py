@@ -15,7 +15,6 @@ class TestViews(TestCase):
         )
         self.view_bag_url = reverse('view_bag')
 
-
     def test_view_bag_GET(self):
         response = self.client.get(self.view_bag_url)
 

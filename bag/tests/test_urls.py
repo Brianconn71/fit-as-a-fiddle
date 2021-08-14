@@ -14,12 +14,12 @@ class Test_urls(SimpleTestCase):
         url = reverse('add_to_bag', args=[2])
         print(resolve(url))
         self.assertEquals(resolve(url).func, add_to_bag)
-    
+
     def test_adjust_bag_resolves(self):
         url = reverse('adjust_bag', args=[2])
         print(resolve(url))
         self.assertEquals(resolve(url).func, adjust_bag)
-    
+
     def test_remove_from_bag_resolves(self):
         url = reverse('remove_from_bag', args=[2])
         print(resolve(url))
