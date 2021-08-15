@@ -40,6 +40,19 @@ Admin users get the power to create update and delete everything on the site whi
 
 ## Skeleton
 
+#### Wireframes
+
+[Click here]() to see the Wireframes I used for this project.
+
+![wireframes]()
+
+#### Database Schema
+
+![db schema](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/database%20schema.JPG)
+
+##### Models
+
+
 ## Surface
 
 # Technologies Used
