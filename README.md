@@ -343,8 +343,78 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
         * an environment variable called USE_AWS needs to be set up to run the code on heroku.
         * The settings needed for the project in the settings.py file are below:
             * ```
-                
+                if "USE_AWS" in os.environ:
+                    # Bucket configurations
+                    AWS_STORAGE_BUCKET_NAME = "<bucket name>"
+                    AWS_S3_REGION_NAME = "<bucket region>"
+                    AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID") # taken from downloaded csv file
+                    AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY") # taken from downloaded csv file
+                    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+                    # static and media files
+                    STATICFILES_STORAGE = "custom_storages.StaticStorage"
+                    STATICFILES_LOCATION = "static"
+                    DEFAULT_FILE_STORAGE = "custom_storages.MediaStorage"
+                    MEDIAFILES_LOCATION = "media"
+
+                    # now need to override static and media Urls for production
+                    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+                    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
               ```
+        * Back in heroku click on settings tab and then click reveal config vars.
+        * Then set up the environmental variables as required.
+        * Back in the IDE, we need to create a custom storages.py to tell django that in production we want to use Amazon S3 to store our static and media files
+        * import S3Boto3Storage at the top of the custom_storages.py file.
+        * Set up classes to tell django where to store the files as shown below:
+            * ```
+                class StaticStorage(S3Boto3Storage):
+                    location = settings.STATICFILES_LOCATION
+                
+                class MediaStorage(S3Boto3Storage):
+                    location = settings.MEDIAFILES_LOCATION
+              ```
+        * push all the changes to Github from the IDE
+    
+    * Add Media files to AWS
+        * in your AWS bucket, create a new folder called media
+        * select upload and then upload all your image files
+        * select to grant public access
+        * finally, click to upload your files.
+    
+    * Setting the project up locally
+
+        * Find your github repo, on the code dropdown click on Download Zip as seen below.
+            * ![download Zip]()
+        * then choose to extract files to your respository.
+        * open the IDE of your choice and open the folder contaoining the code using your IDE.
+        * Once this is done, you can now download the requirements needed to run the project using the below command in your IDE terminal:
+            * ` pip3 install -r requirements.txt `
+        * You can also choose to clone your files from github to your repository in the IDE by again, choosing the code dropdown in tour github repo and copying the HTTPS url that is provided in the dropdown as seen below:
+            * ![https code]()
+        * then when the url has been copied return to your terminal and use the code below:
+            * ` git clone https://github.com/Brianconn71/fit-as-a-fiddle.git`
+        * once this is done, you then need to set up the below environment variables to use full functionality of the site:
+            * DJANGO_SECRET_KEY = your secret key
+            * STRIPE_PUBLIC_KEY = your stripe public key
+            * STRIPE_SECRET_KEY = your stripe secret key
+            * STRIPE_WH_SECRET = your stripe webhook secret
+            * IN_DEVELOPMENT = True
+            * Your stripe variables which can be found on your stripe dashboard
+            * You need a Django secret key which can be found [here](https://miniwebtool.com/django-secret-key-generator/)
+        * Then you need to migrate the database models to set up your own database.
+            * first check for migrations:
+                `python3 manage.py makemigrations --dry-run`
+            * then make migrations:
+                * `python3 manage.py makemigrations`
+            * check to see how migrations will work out:
+                * `python3 manage.py migrate --plan `
+            * lastly, if all looks good, migrate:
+                * `python3 manage.py migrate`
+        * Now, a superuser account needs to be created to access the admin section, so follow the step below to create a superuser
+            * ` python3 manage.py createsuperuser `
+        * enter your own username and password
+        * finally, we need to run the project to ensure working order and we are good to go.
+            * ` python3 manage.py runserver`
 
 
 # Credits
