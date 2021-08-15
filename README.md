@@ -42,9 +42,9 @@ Admin users get the power to create update and delete everything on the site whi
 
 #### Wireframes
 
-[Click here]() to see the Wireframes I used for this project.
+[Click here](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/wireframes.pdf) to see the Wireframes I used for this project.
 
-![wireframes]()
+![wireframes](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/wireframes.pdf)
 
 #### Database Schema
 
@@ -397,13 +397,13 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
     * Setting the project up locally
 
         * Find your github repo, on the code dropdown click on Download Zip as seen below.
-            * ![download Zip]()
+            * ![download Zip](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/download_zip.JPG)
         * then choose to extract files to your respository.
         * open the IDE of your choice and open the folder contaoining the code using your IDE.
         * Once this is done, you can now download the requirements needed to run the project using the below command in your IDE terminal:
             * ` pip3 install -r requirements.txt `
         * You can also choose to clone your files from github to your repository in the IDE by again, choosing the code dropdown in tour github repo and copying the HTTPS url that is provided in the dropdown as seen below:
-            * ![https code]()
+            * ![https code](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/download_zip.JPG)
         * then when the url has been copied return to your terminal and use the code below:
             * ` git clone https://github.com/Brianconn71/fit-as-a-fiddle.git`
         * once this is done, you then need to set up the below environment variables to use full functionality of the site:
@@ -475,6 +475,14 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
 * got help with my comment model from this youtube series [here](https://www.youtube.com/watch?v=OuOB9ADT_bo&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=46)
 
 * Got a hand with calculating average reviews from users ratings [here](https://stackoverflow.com/questions/28607727/how-to-calculate-average-with-django)
+
+* Used code from this [codepen](https://codepen.io/AdamCCFC/pen/WvzBKq) to help style the social media icons in my footer.
+
+* [stack Overflow](https://stackoverflow.com/questions/40457680/how-do-you-slugify-a-url) helped me to automatically set up the slug for a new blog post.
+
+* When testing out my project, I ran into one particular bug that I needed helping figuring out, I got an answer to my query [here](https://stackoverflow.com/questions/37525075/what-does-tests-module-incorrectly-imported-mean)
+
+* When working on the checkout process with Stripe I ran into another bug which I solved with help from [stack overflow](https://stackoverflow.com/questions/59542045/getting-attributeerror-in-django)
 
 
 ### Acknowledgements
