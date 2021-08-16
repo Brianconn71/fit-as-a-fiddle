@@ -9,13 +9,13 @@ class Test_urls(SimpleTestCase):
         url = reverse('add_review', args=[2])
         print(resolve(url))
         self.assertEquals(resolve(url).func, add_review)
-    
+
     def test_edit_review_resolves(self):
-        url = reverse('edit_review', args=[2,4])
+        url = reverse('edit_review', args=[2, 4])
         print(resolve(url))
         self.assertEquals(resolve(url).func, edit_review)
-    
+
     def test_delete_review_resolves(self):
-        url = reverse('delete_review', args=[2,4])
+        url = reverse('delete_review', args=[2, 4])
         print(resolve(url))
         self.assertEquals(resolve(url).func, delete_review)

@@ -12,7 +12,7 @@ class TestForms(SimpleTestCase):
         })
 
         self.assertTrue(form.is_valid())
-    
+
     def test_review_form_invalid(self):
         form = ReviewForm(data={})
 

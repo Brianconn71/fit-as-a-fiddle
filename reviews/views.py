@@ -13,7 +13,8 @@ from django.contrib import messages
 def add_review(request, product_id):
     product = Product.objects.get(id=product_id)
     if not request.user.is_authenticated:
-        messages.error(request, 'Sorry, only logged in members may leave a review')
+        messages.error(request,
+                       'Sorry, only logged in members may leave a review')
         return redirect(reverse('home'))
 
     if request.user.is_authenticated:
@@ -32,17 +33,20 @@ def add_review(request, product_id):
             form = ReviewForm()
         return render(request, 'reviews/reviews.html', {"form": form})
     else:
-        messages.error(request,'Please sign in to leave a review')
+        messages.error(request, 'Please sign in to leave a review')
         return redirect('account_login')
 
 
-# got a hand with the review function here: https://www.youtube.com/watch?v=2av1F3BJHUc&t=295s
 @login_required
 def edit_review(request, product_id, review_id):
+    '''
+    got a hand with the review function here:
+    https://www.youtube.com/watch?v=2av1F3BJHUc&t=295s
+    '''
     """ edits a review on the site """
     if request.user.is_authenticated:
         product = Product.objects.get(id=product_id)
-        review = get_object_or_404(Review, product=product ,pk=review_id)
+        review = get_object_or_404(Review, product=product, pk=review_id)
 
         if request.user == review.user:
             if request.method == "POST":
@@ -55,19 +59,23 @@ def edit_review(request, product_id, review_id):
                 form = ReviewForm(instance=review)
             return render(request, 'reviews/edit_review.html', {'form': form})
         else:
-            messages.error(request,'You do not have permission to edit this review')
+            messages.error(request,
+                           'You do not have permission to edit this review')
             return redirect('product_details', product_id)
     else:
         return redirect('account_login')
 
 
-# got a hand with the review function here: https://www.youtube.com/watch?v=d4Pa6E2d2GA
 @login_required
 def delete_review(request, product_id, review_id):
+    '''
+        got a hand with the review function here:
+        https://www.youtube.com/watch?v=d4Pa6E2d2GA
+    '''
     """ edits a review on the site """
     if request.user.is_authenticated:
         product = Product.objects.get(id=product_id)
-        review = get_object_or_404(Review, product=product ,pk=review_id)
+        review = get_object_or_404(Review, product=product, pk=review_id)
 
         if request.user == review.user:
             # permission to delete

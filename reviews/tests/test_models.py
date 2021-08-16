@@ -31,7 +31,7 @@ class TestModels(TestCase):
             comment="Test Review",
             rating=3,
         )
-    
+
     def test_review_model(self):
         """ test reviews model"""
         self.assertEqual(str(self.review), "Review on tests item by testuser")
