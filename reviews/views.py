@@ -11,6 +11,7 @@ from django.contrib import messages
 # got a helping hand here https://www.youtube.com/watch?v=lSX8nzu9ozg
 @login_required
 def add_review(request, product_id):
+    # adds a review to the site
     product = Product.objects.get(id=product_id)
     if not request.user.is_authenticated:
         messages.error(request,
@@ -72,7 +73,7 @@ def delete_review(request, product_id, review_id):
         got a hand with the review function here:
         https://www.youtube.com/watch?v=d4Pa6E2d2GA
     '''
-    """ edits a review on the site """
+    """ deletes a review on the site """
     if request.user.is_authenticated:
         product = Product.objects.get(id=product_id)
         review = get_object_or_404(Review, product=product, pk=review_id)
