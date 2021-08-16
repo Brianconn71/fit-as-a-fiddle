@@ -3,7 +3,7 @@
 
 ![Live Project](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/Responsive-view-of-site.JPG)
 
-[Live Project](https://ms4-fit-as-a-fiddle.herokuapp.com/)
+[Live Site](https://ms4-fit-as-a-fiddle.herokuapp.com/)
 
 ## Milestone Project 4
 
@@ -38,6 +38,10 @@ Admin users get the power to create update and delete everything on the site whi
 
 ## Structure
 
+* The overall structure of the site will remain consistent throughout the project. A backgroung image with CTA will appear on the homepage which will provide the user with a clear intent on what it is That I want them to do on the site. This background image will then be covered with an overlay for the remainder of the site and content and data will be displayed on the overlay.
+
+* Forms will be displayed using bootstrap styling in a similar manner throughout the site, Reviews form will be designed manually instead of using crispy forms which uses bootstrap styling. Only logged in users will be allowed to leave a review of a product of a comment on a blog post.
+
 ## Skeleton
 
 #### Wireframes
@@ -54,6 +58,43 @@ Admin users get the power to create update and delete everything on the site whi
 
 
 ## Surface
+
+* Ultimately, There are differences in my wireframes look to the overall project. I created the homepage wireframes and I just lacked inspiration to create the other wireframes. I wanted the site to look similar to the Boutique Ado walkthrough project and I just lacked inspiratioon to create the Wireframes for the other pages. Initially, I had planned a different background image and a different style of button on the homepage header but once it was set up I didn't like it so I changed it to the way that it is currently set up.
+
+* Once I had the homepage set up in the wireframes I wanted it to be consistent coloring, fonts etc throughout the project so I started to make the project based on the homepage wireframes.
+
+#### Colors
+
+* The colors that I used in this project were sourced using [paletton](https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF). I sepnt a lot of time trying to find the best color scheme for the site, I wanted a custom scheme so I spent a lot of time chopping and changing the colors on paletton.
+
+* There are two main colors used throughout the project and they are listed below.
+    * #61988E - this is the turquise color used on buttons, text in the header setc
+    * #493843 - this is the dark purple/brown color used in the header and footer as well as border colors fonts etc.
+    * #f5f5f5 - this is the off-white color used in the modal, forms, all auth etc. I wanted to have a nice easy to read white color and this was my preferred choice.
+    * The below are the arrow colors, taken from the walkthrough project as I liked them.
+        * #007bff
+        * #6c757d
+        * #28a745
+        * #dc3545
+        * #ffc107
+        * #17a2b8
+        * #f8f9fa
+        * #343a40
+    * The colors used for the hover over the social media links in my footer are below.
+        * instagram - #C13584
+        * twitter - #1DA1F2
+        * facebook - #4267B2
+    * #f9a602 - this is the gold color of the stars in the reviews section.
+
+#### Images
+
+* Images are credited below in the media section.
+
+#### Fonts
+
+* The two fonts used mainly throughout this project are Roboto and Ubuntu. The were sourced using [Google fonts](https://fonts.google.com/). Ubuntu was used mainly as heading text wehereas Roboto was used mainly for paragraph text. The default font was sans-serif.
+
+* I chose these fonts together as it was recommended by google to use these two together and from what I saw they looked very visually appealing together so I chose to uise them together on my site.
 
 # Technologies Used
 
@@ -167,7 +208,11 @@ Admin users get the power to create update and delete everything on the site whi
 
 * [Quick Database Diagrams](https://www.quickdatabasediagrams.com/)
 
-    * Quick Database Diagrams was used to make diagram of database schems
+    * Quick Database Diagrams was used to make diagram of database schema
+
+* [Box shadow generator](https://cssgenerator.org/box-shadow-css-generator.html)
+
+    * Box shadow generator was used to apply a box shadow to blog posts in the blog page.
 
 # Testing
 
@@ -434,6 +479,16 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
 
 ### Content
 
+* The idea for my project was taken from my own inspiration on how I would personally like a fitness website to be setup. It is a simple application but it does the job That is asked of it and I am happy with the outcome. I wanted the site to appear minimaslist so as to appeal to every generation and make it a one stop shop for all fitness needs.
+
+* [bootstrap 5](https://getbootstrap.com/) was used to style the site and to make it more visually appealing for the reader and user.
+
+* Some of the backend code was taken from the walkthrough project of Boutique Ado and some frontend bootstrap classes are similar to what was used in the walthrough project as I wanted a similar feel for my site.
+
+* All Images on the site were taken from either [unspalsh](https://unsplash.com/) or [pexels](https://www.pexels.com/).
+
+* all written content on the site including products and their descriptions are my own words. some of the blog posts uses Lorem Ipsum text which I sourced from [here](https://loremipsum.io/)
+
 ### Media
 
 * Product images
@@ -483,6 +538,14 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
 * When testing out my project, I ran into one particular bug that I needed helping figuring out, I got an answer to my query [here](https://stackoverflow.com/questions/37525075/what-does-tests-module-incorrectly-imported-mean)
 
 * When working on the checkout process with Stripe I ran into another bug which I solved with help from [stack overflow](https://stackoverflow.com/questions/59542045/getting-attributeerror-in-django)
+
+* when creating the reviews app I got help from this series of youtube [videos](https://www.youtube.com/watch?v=lSX8nzu9ozg)
+
+* I also used this article from [medium](https://medium.com/django-rest/lets-build-a-basic-product-review-backend-with-drf-part-1-652dd9b95485) to help in the development of the reviews model and this [webpage](https://www.codementor.io/@jadianes/get-started-with-django-building-recommendation-review-app-du107yb1a) to help in my understanding.
+
+* When working on the delete products, reviews and blog posts I used a bootstrap modal to confirm deletion. I used this [website](https://www.codegrepper.com/code-examples/python/django+loop+index) to help with for loop counters in django.
+
+* In making my site more responsive, I ran into an issue with button height, this was resolved using and inline-flex display which I found [here](https://stackoverflow.com/questions/51256154/how-to-make-button-same-height)
 
 
 ### Acknowledgements

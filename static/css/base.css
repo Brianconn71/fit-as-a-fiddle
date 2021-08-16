@@ -275,7 +275,7 @@ input[name='search']::placeholder{
     top: 80px;
     right: 10px;
     z-index: 9999;
-    background-color: white;
+    background-color: #f5f5f5;
 }
 .custom-toast{
     overflow: visible;
@@ -293,7 +293,7 @@ input[name='search']::placeholder{
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #000;
     position: absolute;
     top: -10px;
     right: 36px;
