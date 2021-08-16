@@ -15,7 +15,6 @@ class TestViews(TestCase):
         )
         self.products_url = reverse('products')
 
-
     def test_home_GET(self):
         response = self.client.get(self.products_url)
 

@@ -30,5 +30,7 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border rounded-2 profile-form-input'
+            self.fields[field].widget.attrs['class'] = f'border \
+                                                         rounded-2 \
+                                                         profile-form-input'
             self.fields[field].label = False

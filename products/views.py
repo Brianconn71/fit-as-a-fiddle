@@ -13,9 +13,12 @@ from reviews.views import add_review
 
 
 def all_products(request):
-    """ This view returns all the products on the site with sorting and search queries too."""
-    """ Got a hand with the pagination, here https://www.youtube.com/watch?v=wmYSKVWOOTM"""
-
+    """
+    This view returns all the products on the site with
+    sorting and search queries too.
+    Got a hand with the pagination,
+    here https://www.youtube.com/watch?v=wmYSKVWOOTM
+    """
     products = Product.objects.all().order_by('id')
     search = None
     categories = None
@@ -47,10 +50,14 @@ def all_products(request):
         if 'search' in request.GET:
             search = request.GET['search']
             if not search:
-                messages.error(request, "Please enter a search Criteria to search our products!")
+                messages.error(request,
+                               "Please enter a search Criteria \
+                               to search our products!")
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=search) | Q(description__icontains=search)
+
+            queries = Q(
+                        name__icontains=search) | Q(
+                        description__icontains=search)
             products = products.filter(queries)
 
     products_paginator = Paginator(products, 10)
@@ -70,13 +77,20 @@ def all_products(request):
 
 
 def product_details(request, product_id):
-    """ This view returns all the details of each individual item on the site from the product_id"""
-    """ Got a hand with the aggregation, here https://stackoverflow.com/questions/19138609/django-aggregation-sum-return-value-only"""
-    """ Got a hand with the pagination, here https://www.youtube.com/watch?v=wmYSKVWOOTM"""
+    """
+    view returns all the details of each individual
+    item on the site from the product_id
+    Got a hand with the aggregation, here
+    https://stackoverflow.com/questions/19138609/django-aggregation-sum-return-value-only
+    Got a hand with the pagination,
+    here https://www.youtube.com/watch?v=wmYSKVWOOTM
+    """
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product_id).order_by("id")
-    avg_rating = Review.objects.filter(product=product_id).aggregate(avg=Avg('rating'))['avg']
+    avg_rating = Review.objects.filter(
+                                        product=product_id).aggregate(
+                                        avg=Avg('rating'))['avg']
     reviews_paginator = Paginator(reviews, 5)
     page_num = request.GET.get('page')
     page = reviews_paginator.get_page(page_num)
@@ -105,7 +119,9 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_details', args=[product.id]))
         else:
-            messages.error(request, 'Could not add product to site. Please ensure form is valid!')
+            messages.error(request,
+                           'Could not add product to site. \
+                           Please ensure form is valid!')
     else:
         form = ProductForm()
 
@@ -132,7 +148,9 @@ def edit_product(request, product_id):
             messages.success(request, f'Successfully updated {product.name}!')
             return redirect(reverse('product_details', args=[product.id]))
         else:
-            messages.error(request, f'Failed to update {product.name}. Please ensure form is valid!')
+            messages.error(request,
+                           f'Failed to update {product.name}. \
+                           Please ensure form is valid!')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -156,5 +174,5 @@ def delete_product(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
-    
+
     return redirect(reverse('products'))

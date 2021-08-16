@@ -23,7 +23,7 @@ class TestModels(TestCase):
             image="testimg.jpg",
             category=self.category,
         )
-    
+
     def test_category_model(self):
         """ tests category model"""
         self.assertEqual(str(self.category), "test_category")

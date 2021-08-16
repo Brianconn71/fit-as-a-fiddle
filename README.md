@@ -604,6 +604,10 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
 
 * all written content on the site including products and their descriptions are my own words. some of the blog posts uses Lorem Ipsum text which I sourced from [here](https://loremipsum.io/)
 
+* Got help with testing using StringIo for adding products [here](https://gist.github.com/drillbits/5432699)
+
+* used pagination in my project, got help [here](https://www.youtube.com/watch?v=wmYSKVWOOTM)
+
 ### Media
 
 * Product images
