@@ -9,7 +9,7 @@ class Test_urls(SimpleTestCase):
         url = reverse('profile')
         print(resolve(url))
         self.assertEquals(resolve(url).func, profile)
-    
+
     def test_order_history_resolves(self):
         url = reverse('order_history', args=[2])
         print(resolve(url))

@@ -13,8 +13,8 @@ class TestModels(TestCase):
         self.profile = UserProfile.objects.get(
             user=self.user,
         )
-    
+
     def test_userprofile_model(self):
         self.client.login(username='testuser', password='testpassword')
-        
+
         self.assertEquals(str(self.profile), 'testuser')

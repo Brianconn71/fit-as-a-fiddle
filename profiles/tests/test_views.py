@@ -15,7 +15,6 @@ class TestViews(TestCase):
         )
         self.profile_url = reverse('profile')
 
-
     def test_profile_GET(self):
         response = self.client.get(self.profile_url)
 
