@@ -32,15 +32,101 @@
 I set up a blog page for the site so that selected admin users can contribute articles to the site that are SEO friendly and lead to more organic traffic to the site and lead to increased revenue.
 Admin users get the power to create update and delete everything on the site while users of the site get the power to add edit and delete the reviews they have left for various products and to delete their own comments on blog posts.
 
+### User Stories
+
+* I want to be able to quickly view the products that the site is selling.
+
+* I want to be able to easily navigate throughout the site.
+
+* I want to be able to find out more information about the company and see if they have a social media presence.
+
+* I want to be able to contact the company.
+
+* I would like to be able to search for a specific item using the search bar.
+
+* I want to be able to search the site based on the different categories.
+
+* I want to be able to see all product details before I choose to buy the item
+
+* I want to be able to sort the items based on their price.
+
+* I want to be able to see products price and sizes if they have any.
+
+* I want to be able to add items to my shopping bag
+
+* I would like to be notified when I add items to bag or interact with the site functionality.
+
+* I want to be able to edit my shopping bag.
+
+* I want the checkout process to be quick and painless.
+
+* I want to be able to leave a review of certain products.
+
+* I want to receive confirmation of my order.
+
+* I want to be able to see previous order details.
+
+* I want my details tto be saved to my account for faster purchases in future.
+
+### Site Goals
+
+* I want to be able to add, edit and delete products, blog posts and the ability to delete comments from blog posts easily.
+
+* I want to be able to increase organic visitors to the site using SEO friendly blog posts.
+
+* I want an admin section of the site and to have access to such.
+
+* I want customers to have a relaxed and trouble free time on the site.
+
+* I want the site to be fully mobile responsive.
+
+
 ## Scope
 
 ### Features
+
+##### Navbar
+
+![navbar]()
+
+* The navbar contains the main links and navigation throughout the site. it remains consistent at the top of each page.
+
+* The navbar is fully mobile responsive and reacts to changes in screen size. It also allows for collapsible menu on mobile screens.
+
+* The navbar also contains all the categories of products on the site through the various drop downs.
+
+* The search bar disappears on mobile view but still works when the search icon is clicked, my account and bag also work on mobile view.
+
+![navbar mobile]()
+
+##### Delivery Information Banner
+
+![delivery]()
+
+* The delivery information banner appears just below the navbar on each page, it is fully mobile responsive and reacts to the changes in screen size.
+
+* The delivery banner provides a clear and concise message to the user about needing to spend 60 euro to get free delivery.
+
+##### Footer
+
+![footer]()
+
+* The footer contains links to the social media channels of the company aswell the copyright. These links all open in a new tab on the relevant social media platform.
+
+* The social media icons will have a hover transition in place. This transition changes the social media icon to the main color of that social media platforms site.
+
+* The Footer is mobile responsive and reacts to changes in screen size.
+
 
 ## Structure
 
 * The overall structure of the site will remain consistent throughout the project. A backgroung image with CTA will appear on the homepage which will provide the user with a clear intent on what it is That I want them to do on the site. This background image will then be covered with an overlay for the remainder of the site and content and data will be displayed on the overlay.
 
-* Forms will be displayed using bootstrap styling in a similar manner throughout the site, Reviews form will be designed manually instead of using crispy forms which uses bootstrap styling. Only logged in users will be allowed to leave a review of a product of a comment on a blog post.
+* Forms will be displayed using bootstrap styling in a similar manner throughout the site, Reviews form will be designed manually instead of using crispy forms which uses bootstrap styling. Only logged in users will be allowed to leave a review of a product of a comment on a blog post. Logged in admin will have full CRUD functionality over all aspects of the site.
+
+* Navigation, navbars on mobile and desktop views will remain consistent throughout the site.
+
+* Links and buttons will be used throughout the site to allow for easier navigation between pages and the functionality of the site.
 
 ## Skeleton
 
@@ -55,6 +141,35 @@ Admin users get the power to create update and delete everything on the site whi
 ![db schema](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/database%20schema.JPG)
 
 ##### Models
+
+* blog
+    * Post
+        * This model contains information relating to the blog posts on the site.
+    
+    * Comment
+        * This model contains information about comments on any of the blog posts on the site.
+
+* Checkout
+    * Order
+        * This model contains information relating customers orders, their order details and any items they have ordered.
+    
+    * OrderLineItem
+        * This model contains information the products in the customers order, quantity and total with or without a deliery charge
+
+* Products
+    * Product
+        * This model contains information relating to all the products for sale on the site.
+    
+    * Categories
+        * This model contains information about the various different categories of products on the site.
+
+* Profiles
+    * UserProfile
+        * This model contains the default order details saved from customers previous orders which they can use for future orders.
+
+* Reviews
+    * Review
+        * This model contains information relating to reviews that users have left for certain products.
 
 
 ## Surface
