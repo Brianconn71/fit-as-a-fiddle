@@ -11,6 +11,22 @@
     margin: .5rem 0;
 }
 
+#profile-update-form input::-webkit-input-placeholder{
+    color: #aab7c4;
+}
+
+#profile-update-form input::-moz-placeholder{
+    color: #aab7c4;
+}
+
+#profile-update-form input:-ms-input-placeholder{
+    color: #aab7c4;
+}
+
+#profile-update-form input::-ms-input-placeholder{
+    color: #aab7c4;
+}
+
 #profile-update-form input::placeholder{
     color: #aab7c4;
 }

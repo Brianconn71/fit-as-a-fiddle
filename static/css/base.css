@@ -40,9 +40,15 @@ button{
 }
 
 .icon{
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 1.7rem;
     width: 1.7rem;
 }
@@ -97,7 +103,8 @@ a>p{
 /* logo */
 .fit-logo{
     height: 100px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .fit-text{
     font-family: 'Roboto', sans-serif;
@@ -153,6 +160,8 @@ ul{
     margin: 0;
 }
 .nav-link:hover{
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
     border-bottom: 1px solid #61988E;
 }
@@ -161,6 +170,22 @@ ul{
 .nav-link:focus{
     color: #61988E !important;
 
+}
+
+input[name='search']::-webkit-input-placeholder{
+    color: #aab7c4;
+}
+
+input[name='search']::-moz-placeholder{
+    color: #aab7c4;
+}
+
+input[name='search']:-ms-input-placeholder{
+    color: #aab7c4;
+}
+
+input[name='search']::-ms-input-placeholder{
+    color: #aab7c4;
 }
 
 input[name='search']::placeholder{
@@ -194,6 +219,8 @@ input[name='search']::placeholder{
 .social-style{
     margin: 0 0.9rem;
     font-size: 1.2rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 .copyright-text{
@@ -209,22 +236,29 @@ input[name='search']::placeholder{
 /* below colors found: https://usbrandcolors.com/ */
 #facebook:hover{
     color: #4267B2;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 }
 #twitter:hover{
     color: #1DA1F2;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 }
 #instagram:hover{
     color: #C13584;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 }
 
 /* Images */
 .img-custom{
     height: 200px;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /* Back to top button */
@@ -361,6 +395,18 @@ input[name='search']::placeholder{
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
 }
+.allauth-form-inner-content input::-webkit-input-placeholder {
+    color: #aab7c4;
+}
+.allauth-form-inner-content input::-moz-placeholder {
+    color: #aab7c4;
+}
+.allauth-form-inner-content input:-ms-input-placeholder {
+    color: #aab7c4;
+}
+.allauth-form-inner-content input::-ms-input-placeholder {
+    color: #aab7c4;
+}
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
 }
@@ -384,13 +430,18 @@ input[name='search']::placeholder{
     border-radius: .2rem;
 
     /* standard bootstrap btn transitions */
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #f5f5f5;
-    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+            filter: brightness(90%);
 }
 
 .allauth-form-inner-content a {
@@ -431,6 +482,8 @@ input[name='search']::placeholder{
 
 
 .inline-flex-pos{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     gap: .3rem;
 }
