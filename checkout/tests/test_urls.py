@@ -9,12 +9,12 @@ class Test_urls(SimpleTestCase):
         url = reverse('cache_checkout_data')
         print(resolve(url))
         self.assertEquals(resolve(url).func, cache_checkout_data)
-    
+
     def test_checkout_resolves(self):
         url = reverse('checkout')
         print(resolve(url))
         self.assertEquals(resolve(url).func, checkout)
-    
+
     def test_checkout_success_resolves(self):
         url = reverse('checkout_success', args=[3])
         print(resolve(url))

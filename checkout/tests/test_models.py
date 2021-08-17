@@ -15,7 +15,7 @@ class TestModels(TestCase):
         self.order = Order.objects.create(
             full_name="Test User"
         )
-    
+
     def test_order_model(self):
         """ tests the order model """
         self.assertEqual(str(self.order), self.order.order_number)
