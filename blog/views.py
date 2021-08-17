@@ -55,7 +55,7 @@ def add_blog_post(request):
         return redirect(reverse('home'))
 
     if request.method == 'POST':
-        form = PostForm(request.POST)
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.user = request.user
