@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.template.defaultfilters import slugify
-from ckeditor.fields import RichTextField
 
 
 # blog model
@@ -10,7 +9,8 @@ class Post(models.Model):
     title = models.CharField(max_length=250, null=False, blank=False)
     slug = models.SlugField(default='', null=True, blank=True)
     intro = models.CharField(max_length=250, null=False, blank=False)
-    body = RichTextField(blank=True, null=True)
+    body = models.TextField(default="", null=False, blank=False)
+    image = models.ImageField(null=True, blank=True)
     date_added = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):

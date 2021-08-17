@@ -26,7 +26,6 @@
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'add_blog_post' %}" class=" form mb-3" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ form.media }}
                     {{ form | crispy }}
                     <div class="align-right mt-3">
                         <a class="btn btn-outline-dark py-2" href="{% url 'blog' %}">Cancel</a>
