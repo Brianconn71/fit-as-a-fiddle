@@ -13,8 +13,8 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container container-pad">
-        <div class="row mt-5">
+    <div class="container container-pad mt-2 mb-5">
+        <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="img-container my-5">
                     {% if product.image %}
@@ -88,7 +88,7 @@
                                 <div class="form-group w-75">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-bg-col" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                            <button class="decrement-qty btn btn-bg-col p-2" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
                                                 </span>
@@ -96,7 +96,7 @@
                                         </div>
                                         <input type="number" class="form-control qty_input" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                         <div class="input-group-append">
-                                            <button class="increment-qty btn btn-bg-col" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                            <button class="increment-qty btn btn-bg-col p-2" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
                                                 </span>
@@ -108,13 +108,13 @@
 
                             <div class="col{% if s %}-12 mt-3{% endif %}">
                                 <div class="inline-flex-pos">
-                                    <a href="{% url 'products' %}" class="btn rounded-2 mt-4 btn-outline-dark">
+                                    <a href="{% url 'products' %}" class="btn p-1 rounded-2 mt-4 btn-outline-dark">
                                         <span class="icon">
                                             <i class="far fa-hand-point-left"></i>
                                         </span>
-                                        <span class="text-capitalize">Keep Shopping</span>
+                                        <span class="text-capitalize btn-text-size">Keep Shopping</span>
                                     </a>
-                                    <input type="submit" class="btn rounded-2 py-2 text-capitalize mt-4 btn-bg-col btn-text" value="Add to Bag">
+                                    <input type="submit" class="btn rounded-2 py-2 text-uppercase mt-4 btn-bg-col btn-text" value="Add to Bag">
                                 </div>
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -128,8 +128,8 @@
         <div class="row  mt-3 mb-5">
             <div class="col-12 col-md-8 offset-md-2">
                 <div class="inline-div">
-                    <h4 class="text-center mb-3" id="review"><span>({{ reviews.count }})</span> Reviews</h3>
-                    <h4 class="text-center mb-3 ms-3" id="add-review">Add a Review</h3>
+                    <h4 class="text-center mb-3" id="review"><span>({{ reviews.count }})</span> Reviews</h4>
+                    <h4 class="text-center mb-3 ms-3" id="add-review">Add a Review</h4>
                 </div>
                 <div id="review-info">
                     <!-- Got help with pagination in django here: https://www.youtube.com/watch?v=wmYSKVWOOTM -->
@@ -141,13 +141,13 @@
                                     <h5><strong>{{ review.title }}</strong></h5>
                                     {% if request.user == review.user or request.user.is_superuser %}
                                         <a href="{% url 'edit_review' product.id review.id %}" class="text-decoration-none text-bright">Edit</a> |
-                                        <a role="button" class="text-danger text-decoration-none" id="delete-review" data-toggle="modal" data-target="#modal-overlay{{ forloop.counter0 }}">Delete</a>
+                                        <a role="button" class="text-danger text-decoration-none" data-toggle="modal" data-target="#modal-overlay{{ forloop.counter0 }}">Delete</a>
                                     {% endif %}
                                     <div id="modal-overlay{{ forloop.counter0 }}" class="modal" tabindex="-1" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                               <div class="modal-header">
-                                                <h4 class="modal-title text-capitalize" id="exampleModalLabel">Are you sure you want to delete this review?</h4>
+                                                <h4 class="modal-title text-capitalize">Are you sure you want to delete this review?</h4>
                                                 <span class="float-end"><a href="{% url 'product_details' product.id %}" class="close-btn text-decoration-none text-bright"><i class="far fa-window-close icon"></i></a></span>
                                               </div>
                                               <div class="modal-footer">
@@ -160,19 +160,19 @@
                                 </div>
                                 <div class="card-body">
                                     {% if review.rating == 1 %}
-                                        <h5 class="card-title"><i class="fas fa-star gold-star"></i></h5>
+                                        <span class="card-title"><i class="fas fa-star gold-star"></i></span>
                                     {% endif %}
                                     {% if review.rating == 2 %}
-                                        <h5 class="card-title"><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i></h5>
+                                        <span class="card-title"><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i></span>
                                     {% endif %}
                                     {% if review.rating == 3 %}
-                                        <h5 class="card-title"><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i></h5>
+                                        <span class="card-title"><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i></span>
                                     {% endif %}
                                     {% if review.rating == 4 %}
-                                        <h5 class="card-title"><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i></h5>
+                                        <span class="card-title"><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i></span>
                                     {% endif %}
                                     {% if review.rating == 5 %}
-                                        <h5 class="card-title"><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i></h5>
+                                        <span class="card-title"><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i><i class="fas fa-star gold-star"></i></span>
                                     {% endif %}
                                     <p class="card-text">{{ review.comment }}</p>
                                     <p class="small text-muted"><i>{{ review.user }}</i></p>

@@ -266,8 +266,8 @@ input[name='search']::placeholder{
     height: 50px;
     width: 50px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 80px;
+    right: 5px;
     z-index: 9999;
 }
 .update-link{
@@ -520,6 +520,9 @@ input[name='search']::placeholder{
     .hdr-container{
         padding-top: 220px;
     }
+    .btn-text-size{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 991px){
@@ -560,5 +563,8 @@ input[name='search']::placeholder{
     }
     .allauth-form-inner-content button, .allauth-form-inner-content input[type='submit']{
         font-size: 0.8rem;
+    }
+    .btn-text-size{
+        font-size: 0.8rem;;
     }
 }
