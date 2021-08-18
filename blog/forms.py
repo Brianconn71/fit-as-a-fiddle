@@ -1,6 +1,7 @@
 from django import forms
 
 from .models import Post, Comment
+from products.widgets import CustomClearableFileInput
 
 
 class PostForm(forms.ModelForm):
@@ -11,6 +12,7 @@ class PostForm(forms.ModelForm):
     image = forms.ImageField(
         label="Image",
         required=False,
+        widget=CustomClearableFileInput,
         )
 
 

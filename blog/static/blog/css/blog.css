@@ -8,6 +8,10 @@
     -moz-box-shadow: 1px 4px 29px 0px rgba(0,0,0,0.75);
 }
 
+.post-intro{
+    width: 100%;
+}
+
 #comment-info{
     display: none;
 }
