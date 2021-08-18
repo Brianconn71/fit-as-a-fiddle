@@ -49,7 +49,7 @@ def edit_review(request, product_id, review_id):
         product = Product.objects.get(id=product_id)
         review = get_object_or_404(Review, product=product, pk=review_id)
 
-        if request.user == review.user:
+        if request.user == review.user or request.user.is_superuser:
             if request.method == "POST":
                 form = ReviewForm(request.POST, instance=review)
                 if form.is_valid():

@@ -13,17 +13,17 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container container-pad">
-            <div class="row  mt-3 mb-5">
-                <div class="mb-5">
-                    <form action="" method="POST">
-                        {% csrf_token %}
-                        {{ form | crispy }}
+        <div class="container container-pad mt-3 mb-5">
+            <div class="row">
+                <form action="." method="POST">
+                    {% csrf_token %}
+                    {{ form | crispy }}
 
-                        <input type="submit" class="btn rounded-2 py-2 text-capitalize mt-4 btn-bg-col" value="Edit Review">
-                    </form>
-                </div>
+                    <div class="inline-flex-pos float-end">
+                        <a class="btn rounded-2 btn-outline-dark btn-text-size mt-4 py-2" href="{% url 'products' %}">Cancel</a>
+                        <input type="submit" class="btn rounded-2 py-2 text-capitalize mt-4 btn-text btn-bg-col" value="Edit Review">
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
 {% endblock %}
