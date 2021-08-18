@@ -305,9 +305,9 @@ input[name='search']::placeholder{
 /* Message container and toasts */
 .message-container{
     position: fixed;
-    width: 18rem;
+    width: 15rem;
     top: 80px;
-    right: 10px;
+    right: 20px;
     z-index: 9999;
     background-color: #f5f5f5;
 }
@@ -316,9 +316,6 @@ input[name='search']::placeholder{
 }
 .toast-capper{
     height: 2px;
-}
-#cke_description {
-    width: auto !important;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -546,12 +543,12 @@ input[name='search']::placeholder{
     #delivery-information h4{
         font-size: 1rem;
     }
-    .btn.btn-lg.text-uppercase.btn-.bg-col,
+    /* .btn.btn-lg.text-uppercase.btn-.bg-col,
     .btn.btn-outline-dark,
     .btn.text-uppercase.btn-bg-col{
         padding: .3rem .3rem;
         font-size: .7rem;
-    }
+    } */
     .decrement-qty .increment-qty{
         padding: 0.25rem 0.5rem !important;
     }
