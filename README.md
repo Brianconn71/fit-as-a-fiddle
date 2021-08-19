@@ -701,6 +701,8 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
 
 * used pagination in my project, got help [here](https://www.youtube.com/watch?v=wmYSKVWOOTM)
 
+* got help creating an animated back to top button [here](https://paulund.co.uk/how-to-create-an-animated-scroll-to-top-button-with-jquery)
+
 ### Media
 
 * Product images
