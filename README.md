@@ -87,7 +87,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 ##### Navbar
 
-![navbar]()
+![navbar](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/navbar.JPG)
 
 * The navbar contains the main links and navigation throughout the site. it remains consistent at the top of each page.
 
@@ -97,11 +97,11 @@ Admin users get the power to create update and delete everything on the site whi
 
 * The search bar disappears on mobile view but still works when the search icon is clicked, my account and bag also work on mobile view.
 
-![navbar mobile]()
+![navbar mobile](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/navbar-mobile.JPG)
 
 ##### Delivery Information Banner
 
-![delivery]()
+![delivery](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delivery-information-banner.JPG)
 
 * The delivery information banner appears just below the navbar on each page, it is fully mobile responsive and reacts to the changes in screen size.
 
@@ -109,13 +109,106 @@ Admin users get the power to create update and delete everything on the site whi
 
 ##### Footer
 
-![footer]()
+![footer](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/footer.JPG)
 
 * The footer contains links to the social media channels of the company aswell the copyright. These links all open in a new tab on the relevant social media platform.
 
 * The social media icons will have a hover transition in place. This transition changes the social media icon to the main color of that social media platforms site.
 
 * The Footer is mobile responsive and reacts to changes in screen size.
+
+##### Home page
+
+![homepage]()
+
+* Display text makes it clear to the user where they are and what is it I want them to do on the site.
+
+* CTA displaying Shop Now in capital letters provides a clear action for the users of the site to follow.
+
+* Background image used shows a man exercising which is the purpose of the site so again makes it easier for a user to figure out the purpose of the site.
+
+* Navigation bar at the top of the page provides for easy and intuitive navigation throughout the site. 
+
+* Search bar at the top ot the page provides for a way for a user to search ther site for a specific item that they are looking for.
+
+##### Blog page
+
+![blog page]()
+
+* The blog page stores a short summarised version of all of the blog posts on the site.
+
+* The Blog page shows the blog posts in paginated format with 5 blog posts per page. The post title and post intro are shown as cards with a shadow background to make them stand out on the page.
+
+* For admin users, An Add blog post button is displayed at the top of the page for an easy way for admin users to add a blog post to the site. 
+
+* There is a read more link displayed on each blog post so that a user can click on it and read the entire blog post on its own page.
+
+##### BlogPost page
+
+![blogpost page]()
+
+* Blog post page is a single page showing all of the details from a relevant blog post. It includes the body text and any images that may or may not be attached with the blog post.
+
+![comments]()
+
+* The blog post also shows any comments that have been made on the post. any user can read comments but only authenticated users can leave a comment
+
+![add-a-comment]()
+
+* Users who are logged in will see a text area which will allow them to leave a comment on a blog  post. if a user is not logged in then a message will be displayed unter the add a comment heading asking the user to register or login to leave a comment.
+
+![login-comment]()
+
+##### Add BlogPost page
+
+![addblogpost]()
+
+* Only admin/superusers will be able to access this page.
+
+* This page can be accessed by clicking on add blog post button at the top of the blog page for admin users only can see this button.
+
+* they will be brought to a page displaying a form to add a new blog post, A title, intro and body are mandatory requirements but an image is optional. This form is displayed as a crispy form.
+
+##### Edit BlogPost page
+
+![edit-blogpost]()
+
+* Only admin users will be able to edit previously created blog posts
+
+* There will be edit and delete buttons displaying on the blog page and in the full blog posts page which will only show to admin users, these buttons will allow admin users to edit the blog post or delete the blog post.
+
+* If the user chooses to delete the blog post a modal will displaying asking them to confirm the deleteion. 
+
+![delete blog modal]()
+
+* If the user chooses the edit button then they will be taken to the edit blog post page which will display a form instantiated with the information of the blog post they have chosen to edit.
+
+* When the changes are made and the edit blog post button is selected then the user will be brought to the blog post page of the newly edited blog post.
+
+##### Products app
+
+###### All Products
+
+![all products]()
+
+* In the all products view, each item available for sale on the site is displayed. The results are in paginated format displaying 10 items per page. the number of pages is displayed at the bottom of the page
+
+* The navigation bar at the top of the page displasys all the categories of products on the site for ease of use for the user.
+
+* A user can sort the products throughout the site based on name and price by choosing from the select dropdown at the top of the page.
+
+![select dropdown]()
+
+* When a user searches from the search bar at the top of the page the results are shown on this products page again in paginated format.
+
+![search results]()
+
+###### Product details page
+
+![product details page]()
+
+* The product details page contains all information relating to the product and quantity selectors and add to bag buttons.
+
 
 
 ## Structure
