@@ -12,15 +12,16 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container mt-5 d-flex align-items-center">
-        <div class="row py-5">
-            <div class="col-8 col-md-6 offset-md-1 header-text align-self-center">
-                <h1 class="text-shadow">Join the Fit As A Fiddle revolution and start shopping with us today!</h1>
-            </div>
-            <div class="col-8 col-md-6 offset-md-1 align-self-center my-3">
-                <h4 class="text-darker">
-                    <a href="{% url 'products' %}" class="btn btn-lg text-uppercase py-3 btn-bg-col">Shop Now</a>
-                </h4>
+    <div class="container h-100">
+        <div class="row h-100 p-5 d-flex align-items-center">
+            <div class="col-10 col-md-6 offset-md-2 header-text">
+                <h1 class="text-shadow text-justify header-msg">Join the Fit As A Fiddle revolution and start shopping with us today!</h1>
+            
+                <div class="my-5">
+                    <h4 class="text-darker">
+                        <a href="{% url 'products' %}" class="btn btn-lg text-uppercase py-3 btn-bg-col header-cta">Shop Now</a>
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
