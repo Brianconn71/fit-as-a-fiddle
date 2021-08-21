@@ -12,12 +12,12 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="overlay"></div>
+    <div class="container container-pad mt-2 mb-5">
         <div class="row">
-            <div class="col-12 recipe-text">
-                <h2 class="recipe-header">403 - Not autorized </h2>
-                <h4 class="recipe-header">Sorry, you don’t have the necessary permissions to access the wanted page.</h4>
-                <h4 class="recipe-header"><a href="{% url 'products' %}">Go to products page</a></h4>
+            <div class="col-8 offset-">
+                <h2 class="fw-bold mb-4 display-6">403 - Not Authorized </h2>
+                <h4 class="text-muted">Sorry, you don’t have the necessary permissions to access this page.<br/><br/> <a href="{% url 'home' %}" class="btn btn-lg text-uppercase py-3 btn-bg-col header-cta">Return Home</a></h4>
             </div>
         </div>
     </div>
