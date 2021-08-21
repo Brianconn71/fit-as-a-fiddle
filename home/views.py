@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from .forms import ContactForm
-from django.core.mail import send_mail
 from django.contrib import messages
 
 
@@ -19,14 +18,15 @@ def contact(request):
             form.message = request.POST['message'],
             form.email = request.POST['email'],
             form.save()
+            user_email = ''.join(form.email)
             messages.success(request,
-                                    "Your message has been sent.\
-                                    We will be in touch shortly.")
+                             f"Thanks { user_email }, Your message has been sent.\
+                             We will be in touch shortly.")
             return redirect("home")
         else:
             messages.error(request,
-                                   'Error: something has gone wrong \
-                                    please try again later.')
+                           'Error: something has gone wrong \
+                            please try again later.')
             return redirect('home')
     else:
         form = ContactForm()
