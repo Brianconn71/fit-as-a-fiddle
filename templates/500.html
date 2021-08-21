@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container hdr-container">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 recipe-text">
+                <h2 class="recipe-header">500 - Server problem </h2>
+                <h4 class="recipe-header">Sorry, server encountered a problem, and couldn’t complete your request.</h4>
+                <h4 class="recipe-header"><a href="{% url 'products' %}">Go to products page</a></h4>
+            </div>
+        </div>
+    </div>
+{% endblock %}
