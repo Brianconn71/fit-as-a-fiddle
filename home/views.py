@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail
+from django.contrib import messages
 
 
 def home(request):
@@ -17,16 +18,24 @@ def contact(request):
             form.subject = request.POST['subject'],
             form.message = request.POST['message'],
             form.email = request.POST['email'],
+            form.save()
+            messages.success(request,
+                                    "Your message has been sent.\
+                                    We will be in touch shortly.")
+            return redirect("home")
+        else:
+            messages.error(request,
+                                   'Error: something has gone wrong \
+                                    please try again later.')
+            return redirect('home')
+    else:
+        form = ContactForm()
 
-        send_mail(
-            form.subject,
-            form.message,
-            form.email,
-            ['brian.connolly71@gmail.com']
-        )
-        messages.success(request,
-                            "Your message has been sent.\
-                            A member of our customer service team will be in contact soon.")
-        return redirect("home_")
+    template = 'home/contact_us.html'
+    context = {
+        'form': form,
+    }
 
-
+    return render(request,
+                  template,
+                  context)
