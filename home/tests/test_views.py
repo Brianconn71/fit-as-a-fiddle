@@ -1,11 +1,10 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
-import json
 
 
 class TestViews(TestCase):
-
+    '''test home views are configured correctly'''
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(
@@ -14,7 +13,6 @@ class TestViews(TestCase):
             password='testpassword'
         )
         self.home_url = reverse('home')
-
 
     def test_home_GET(self):
         response = self.client.get(self.home_url)

@@ -4,7 +4,7 @@ from home.views import home
 
 
 class Test_urls(SimpleTestCase):
-
+    '''test urls are configured correctly'''
     def test_home_resolves(self):
         url = reverse('home')
         print(resolve(url))

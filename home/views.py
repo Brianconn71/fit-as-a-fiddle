@@ -10,7 +10,9 @@ def home(request):
 
 
 def contact(request):
-
+    '''This view returns contact page and
+       posts the contact form information to the db
+    '''
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid:
