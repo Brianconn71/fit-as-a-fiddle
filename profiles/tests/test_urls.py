@@ -4,7 +4,7 @@ from profiles.views import profile, order_history
 
 
 class Test_urls(SimpleTestCase):
-
+    """ test profiles urls configured correctly"""
     def test_profile_resolves(self):
         url = reverse('profile')
         print(resolve(url))

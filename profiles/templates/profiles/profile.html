@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
+<!-- link for extra css style sheet -->
     <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
@@ -17,22 +18,27 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container container-pad mt-4 mb-3 h-100">
+    <!-- Profile container -->
+    <div class="container container-pad mt-4 mb-3">
         <div class="row">
             <div class="col">
+                <!-- profile header -->
                 <h2 class="fw-bold mb-4 display-6">My Profile</h2>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-6 py-3">
+                <!-- defaulty delivery info for user -->
                 <p class="small text-muted">Default Delivery Information</p>
+                <!-- delivery info form. -->
                 <form action="{% url 'profile' %}" class="mt-4" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <button class="btn text-capitalize mt-3 py-3 btn-bg-col float-end">Update Information</button>
                 </form>
             </div>
+            <!-- orders made by user -->
             <div class="col-12 col-lg-6">
                 <p class="small text-muted">Order History</p>
                 <div class="order-history table-responsive">
@@ -57,6 +63,7 @@
                                     <td>{{ order.date }}</td>
                                     <td>
                                         <ul class="list-unstyled">
+                                            <!-- items in the order made -->
                                             {% for item in order.lineitems.all %}
                                                 <li class="small">
                                                     {% if item.product.has_sizes %}

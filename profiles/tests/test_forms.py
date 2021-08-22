@@ -4,7 +4,7 @@ from profiles.forms import UserProfileForm
 
 
 class TestForms(TestCase):
-
+    """ test profiles forms configured correctly"""
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(

@@ -1,11 +1,10 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
-import json
 
 
 class TestViews(TestCase):
-
+    """ test profiles views configured correctly"""
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(

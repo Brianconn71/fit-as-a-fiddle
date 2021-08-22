@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 
 class TestModels(TestCase):
-
+    """ test profiles model configured correctly"""
     def setUp(self):
         self.user = User.objects.create_user(
             username='testuser',
