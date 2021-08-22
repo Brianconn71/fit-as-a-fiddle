@@ -846,6 +846,8 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
 
 * got a hand with sorting my reviews [here](https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs#dictsort)
 
+* got help wiith testing products form [here](https://gist.github.com/drillbits/5432699)
+
 
 ### Acknowledgements
 

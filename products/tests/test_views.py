@@ -5,7 +5,7 @@ import json
 
 
 class TestViews(TestCase):
-
+    '''tests views in product app'''
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(

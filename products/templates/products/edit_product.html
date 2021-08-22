@@ -16,6 +16,7 @@
     <div class="container mt-5 mb-5 container-pad h-100">
         <div class="row">
             <div class="col-12 col-md-6">
+                <!-- edit a product header and message -->
                 <h2 class="fw-bold mb-4 display-6">Product Management</h2>
                 <h6 class="text-muted">Edit a Product</h6>
                 <hr>
@@ -24,6 +25,7 @@
 
         <div class="row">
             <div class="col-12 col-md-6">
+                <!-- edit a product form -->
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-3" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -33,6 +35,7 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
+                    <!-- edit a product buttons and cancel btns -->
                     <div class="align-right">
                         <a class="btn rounded-2 btn-outline-dark py-2" href="{% url 'products' %}">Cancel</a>
                         <button class="btn text-capitalize py-2 btn-text btn-bg-col" type="submit">Update Product</button>

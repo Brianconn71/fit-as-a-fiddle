@@ -3,7 +3,7 @@ from django.db import models
 
 # model for the categories available on the site
 class Category(models.Model):
-
+    '''Category model'''
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -18,6 +18,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    '''Product model'''
     category = models.ForeignKey('Category',
                                  null=True,
                                  blank=True,

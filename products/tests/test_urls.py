@@ -6,7 +6,7 @@ from products.views import (all_products, product_details,
 
 
 class Test_urls(SimpleTestCase):
-
+    '''tests urls in product app'''
     def test_all_products_resolves(self):
         url = reverse('products')
         print(resolve(url))

@@ -3,6 +3,9 @@ from django.utils.translation import gettext_lazy as _
 
 
 class CustomClearableFileInput(ClearableFileInput):
+    ''' clearable file input for use with adding
+        and removing images
+    '''
     clear_checkbox_label = _('Remove')
     initial_text = ('Current Image')
     input_text = _('')

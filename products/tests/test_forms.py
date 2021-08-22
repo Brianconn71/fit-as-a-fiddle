@@ -9,7 +9,7 @@ from products.models import Category
 
 # Got help from here: https://gist.github.com/drillbits/5432699
 class TestForms(TestCase):
-
+    '''test correct form functionality in app'''
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(

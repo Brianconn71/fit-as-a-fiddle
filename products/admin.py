@@ -3,6 +3,7 @@ from .models import Product, Category
 
 
 class ProductAdmin(admin.ModelAdmin):
+    '''adds a product and category to backend admin'''
     list_display = (
         'sku',
         'name',

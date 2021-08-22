@@ -15,6 +15,7 @@
     <div class="overlay"></div>
     <div class="container mt-2 mb-5 container-pad">
         <div class="row">
+            <!-- product management header and message -->
             <div class="col-12 col-md-6 h-100">
                 <h2 class="fw-bold mb-4 display-6">Product Management</h2>
                 <h6 class="text-muted">Add a Product</h6>
@@ -24,6 +25,7 @@
 
         <div class="row">
             <div class="col-12 col-md-6">
+                <!-- add product form -->
                 <form method="POST" action="{% url 'add_product' %}" class=" form mb-3" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -33,9 +35,10 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
+                    <!-- add product and cancel buttons -->
                     <div class="align-right">
                         <a class="btn btn-outline-dark py-2" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn text-capitalize py-2 btn-bg-col" type="submit">Add Product</button>
+                        <button class="btn text-capitalize py-2 btn-text btn-bg-col" type="submit">Add Product</button>
                     </div>
                 </form>
             </div>
