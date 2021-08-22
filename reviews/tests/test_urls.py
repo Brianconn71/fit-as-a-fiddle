@@ -4,7 +4,7 @@ from reviews.views import add_review, edit_review, delete_review
 
 
 class Test_urls(SimpleTestCase):
-
+    """ test reviews urls configured correctly"""
     def test_add_review_resolves(self):
         url = reverse('add_review', args=[2])
         print(resolve(url))

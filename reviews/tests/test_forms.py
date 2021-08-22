@@ -3,7 +3,7 @@ from reviews.forms import ReviewForm
 
 
 class TestForms(SimpleTestCase):
-
+    """ test reviews forms configured correctly"""
     def test_Review_Form_valid_data(self):
         form = ReviewForm(data={
             'rating': 3,

@@ -848,6 +848,12 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
 
 * got help wiith testing products form [here](https://gist.github.com/drillbits/5432699)
 
+* Got a ahnd with editing reviews [here](https://www.youtube.com/watch?v=2av1F3BJHUc&t=295s)
+
+* Got a hand with deleting reviews [here](https://www.youtube.com/watch?v=d4Pa6E2d2GA)
+
+* Got a hand with adding reviews [here](https://www.youtube.com/watch?v=lSX8nzu9ozg)
+
 
 ### Acknowledgements
 
