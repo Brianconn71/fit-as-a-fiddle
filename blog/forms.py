@@ -5,6 +5,7 @@ from products.widgets import CustomClearableFileInput
 
 
 class PostForm(forms.ModelForm):
+    # Post Form
     class Meta:
         model = Post
         fields = ['title', 'intro', 'image', 'body']
@@ -17,6 +18,7 @@ class PostForm(forms.ModelForm):
 
 
 class CommentForm(forms.ModelForm):
+    # Comment Form
     class Meta:
         model = Comment
         fields = ['body']

@@ -19,9 +19,11 @@
     <div class="overlay"></div>
     <div class="container container-pad mt-2 mb-5">
         <div class="row">
+            <!-- blog page with list of all posts -->
             <div class="col-12 mb-3">
                 <h2 class="fw-bold mb-4 display-6">Blog</h2>
                 <hr>
+                <!-- add blog post authentication button -->
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
                         <div class="text-center">
@@ -33,6 +35,7 @@
         </div>
 
         <div class="row mb-3">
+            <!-- paginated list of posts -->
             {% for post in page.object_list %}
                 <div class="col-12 col-lg-8 offset-lg-2 mt-2 mb-5">
                     <div class="posts">
@@ -67,6 +70,7 @@
                     </div>
                 </div>
             {% endfor %}
+            <!-- pagination control buttons -->
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="paginate-items text-center">

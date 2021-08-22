@@ -3,7 +3,7 @@ from blog.forms import PostForm, CommentForm
 
 
 class TestForms(SimpleTestCase):
-
+    ''' Test the forms in blog'''
     def test_Post_Form_valid_data(self):
         form = PostForm(data={
             'title': 'test title',
@@ -17,7 +17,7 @@ class TestForms(SimpleTestCase):
         form = PostForm(data={})
 
         self.assertFalse(form.is_valid())
-        self.assertEquals(len(form.errors), 2)
+        self.assertEquals(len(form.errors), 3)
 
     def test_Comment_Form_valid_data(self):
         form = CommentForm(data={

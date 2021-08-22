@@ -7,7 +7,7 @@ from blog.views import (
 
 
 class Test_urls(SimpleTestCase):
-
+    ''' test urls are correct'''
     def test_blog_resolves(self):
         url = reverse('blog')
         print(resolve(url))

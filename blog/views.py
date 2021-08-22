@@ -24,6 +24,7 @@ def blog(request):
 
 
 def blog_post(request, slug):
+    """ This view returns individual blog posts"""
     post = Post.objects.get(slug=slug)
 
     if request.method == 'POST':
@@ -79,7 +80,7 @@ def add_blog_post(request):
 
 @login_required
 def edit_blog_post(request, post_id):
-    """ Adds a blog post to the store """
+    """ edits a blog post on the store """
     if not request.user.is_superuser:
         messages.error(request,
                        'Sorry, only store admin can do update a blog post')
@@ -127,7 +128,7 @@ def delete_blog_post(request, post_id):
 
 @login_required
 def delete_comment(request, comment_id):
-    """ deletes a blog post on the site """
+    """ deletes a users comment on the site """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))

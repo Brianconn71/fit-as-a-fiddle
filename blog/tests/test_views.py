@@ -1,13 +1,11 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
-from django.contrib.messages import get_messages
 from blog.models import Post, Comment
-import json
 
 
 class TestViews(TestCase):
-
+    ''' test views are correct'''
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(
