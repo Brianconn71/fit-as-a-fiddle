@@ -191,7 +191,11 @@ Admin users get the power to create update and delete everything on the site whi
 
 ![all products]()
 
-* In the all products view, each item available for sale on the site is displayed. The results are in paginated format displaying 10 items per page. the number of pages is displayed at the bottom of the page
+* In the all products view, each item available for sale on the site is displayed. The results are in paginated format displaying 10 items per page. the number of pages is displayed at the bottom of the page.
+
+* edit and delete buttons will appear to admin users to allow them to edit a product or delete a product, a delete confirmation modal will pop up before item is successfully deleted
+
+![delete product modal]()
 
 * The navigation bar at the top of the page displasys all the categories of products on the site for ease of use for the user.
 
@@ -209,6 +213,81 @@ Admin users get the power to create update and delete everything on the site whi
 
 * The product details page contains all information relating to the product and quantity selectors and add to bag buttons.
 
+* edit and delete buttons will appear to admin users to allow them to edit a product or delete a product, a delete confirmation modal will pop up before item is successfully deleted
+
+![delete product modal]()
+
+* there is a keep shopping button which allows a user to return to view all the products page and continue to shop on the site.
+
+* Underneath the product informtaion, there is a reviews section
+
+![reviews section]()
+
+* In this section, only logged in and authenticated users can leave reviews of products. When a non logged in user clicks on the "add a review" heading a message appears asking them to login or register to leave a review, if they are logged in then a form appears to allow the user to submit there review of the product.
+
+![not logged in user]()
+
+![leave a review]()
+
+* Anynone can view the reviews of the products. When a user clicks on reviews, all the reviews for that product becomes available on the page underneath the reviews heading.
+
+![no reviews]()
+
+![reviews]()
+
+* The reviews are then paginated to show 5 reviews per page.
+
+* On the product details page, there is a rating system in place that aggregates and averages the user ratings from the reviews below and shows the rating underneath the product name and beside the product image
+
+![user rating]()
+
+###### add products page
+
+* This page is only available to superusers and can be found by clicking on my account at the top of the page and then selecting product management.
+
+![product management]()
+
+![add a product]()
+
+* This page contains a form which a superuser can use to add products to the database and have the products appear on the site when done and form submitted the user gets taken to the products page of the product thehave added and a message appears showing them they have successfully addedthe product to the database.
+
+![product added]()
+
+###### edit products page
+
+![edit product]()
+
+* This page is only available to superusers and can be found by clicking on my edit link on either the products page or the product details page.
+
+* The edit product page will be a form which is instantiated with the details of the product that a user is editing.
+
+* Any product information vcan be edited and when done a user clicks on the update product. They will be brought to the product details page oof that particular product and a message will inform them they have updated the product.
+
+![successfully updated product]()
+
+###### Reviews
+
+![reviews section]()
+
+* Reviews appear on the product details page underneath all of the relevant product information.
+
+* The reviews section is contolled using custom javascript and when the reviews heading is clicked all of the reviews for that product appear in a div under the heading. Reviews can be seen by anyone who comes to the site.
+
+![reviews]()
+
+* If a product has no review then the following is shown to the user 
+
+![no reviews]()
+
+* Only logged in and authenticated users can leave a review of a produtc. If a user is not logged in then when they click on the leave a review heading they are greeted with this message.
+
+![not logged in user]()
+
+* If a user is logged in and authenticated they may leave a review of a product which is shown below.
+
+![leave a review]()
+
+* When the user submits the form the review is then added to the product and is available under the reviews heading.
 
 
 ## Structure
@@ -234,6 +313,10 @@ Admin users get the power to create update and delete everything on the site whi
 ![db schema](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/database%20schema.JPG)
 
 ##### Models
+
+* Home
+    * Contact
+        * This model contains information relating to messages sent by users to the store.
 
 * blog
     * Post
@@ -760,6 +843,8 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
 * When working on the delete products, reviews and blog posts I used a bootstrap modal to confirm deletion. I used this [website](https://www.codegrepper.com/code-examples/python/django+loop+index) to help with for loop counters in django.
 
 * In making my site more responsive, I ran into an issue with button height, this was resolved using and inline-flex display which I found [here](https://stackoverflow.com/questions/51256154/how-to-make-button-same-height)
+
+* got a hand with sorting my reviews [here](https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs#dictsort)
 
 
 ### Acknowledgements
