@@ -17,6 +17,7 @@
 {% endblock %}
 
 {% block content %}
+<!-- checkout page -->
     <div class="overlay"></div>
     <div class="container container-pad mt-5 mb-3 h-100">
         <div class="row">
@@ -26,6 +27,7 @@
             </div>
         </div>
 
+        <!-- right hand side column displaying order items -->
         <div class="row">
             <div class="col-12 col-lg-6 order-lg-last mb-5">
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
@@ -72,6 +74,7 @@
                     </div>
                 </div>
             </div>
+            <!-- left hand side column with order form for customers to fill out to complete payment & delivery -->
             <div class="col-12 col-lg-6">
                 <p class="text-muted small">Please fill out the form below to complete your order.</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -111,6 +114,7 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
+                    <!-- action buttons to complete order, adjust bag and total for the order -->
                     <div class="submit-button align-right mt-5 mb-3">
                         <a href="{% url 'view_bag' %}" class="btn rounded-2 mt-4 btn-outline-dark">
                             <span class="icon">
@@ -135,6 +139,7 @@
             </div>
         </div>
     </div>
+    <!-- loading overlay which appears after user submits form -->
     <div id="loading-overlay">
         <h1 class="text-darker logo-font loading-spinner">
             <span class="icon">

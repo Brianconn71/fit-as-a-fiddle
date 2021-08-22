@@ -3,11 +3,10 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from checkout.models import Order, OrderLineItem
 from django.contrib.messages import get_messages
-import json
 
 
 class TestViews(TestCase):
-
+    ''' test views in checkout are configured'''
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(

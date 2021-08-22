@@ -5,6 +5,7 @@ from checkout.forms import OrderForm
 class TestForms(SimpleTestCase):
 
     def setUp(self):
+        # set up for tests
         self.form = OrderForm({
             "full_name": "",
             "email": "",
@@ -17,6 +18,7 @@ class TestForms(SimpleTestCase):
             "county": "",
         })
 
+    ''' test forms in checkout are configured'''
     def test_fullname_is_required(self):
         form = self.form
         self.assertFalse(form.is_valid())

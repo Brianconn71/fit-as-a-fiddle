@@ -3,6 +3,7 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    '''order form which displays on html page'''
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',

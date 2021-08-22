@@ -4,7 +4,7 @@ from checkout.views import cache_checkout_data, checkout, checkout_success
 
 
 class Test_urls(SimpleTestCase):
-
+    ''' test urls in checkout are configured'''
     def test_cache_checkout_data_resolves(self):
         url = reverse('cache_checkout_data')
         print(resolve(url))
