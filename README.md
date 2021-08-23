@@ -291,6 +291,35 @@ Admin users get the power to create update and delete everything on the site whi
 
 ![reviews]()
 
+###### Bag
+
+![bag in nav]()
+
+* In the navbar at the thop of the bad on all screen sizes a bag icon will appear, this bag will be turquise and display €0.00 by default. Once a user adds an item to the bag the bag icon will change to a gold color to signify an item in the bag. When a user clicks on the bag icon the will be taken to the bag page.
+
+* When a user clicks on the bag icon when they have no items in the bag the below will be displayed indictaing they have no items in their bag and a keep shopping button to encourage them to add items to their bag.
+
+![no item in bag]()
+
+* When a user clicks on the bag icon when they have items in the bag the below will be displayed the items in their bag and a secure checkout button to encourage customers to move forward to the checkout process and a keep shopping button which encourages them to add more items to their bag.
+
+![item in bag]()
+
+###### checkout
+
+![checkout page]()
+
+* When the user has items in their bag, a secure checkout button will appear, when they click on this secure checkout button on the bag page, they will get taken to the checkout page where they can complete their order and pay for their order via stripe.
+
+![pay with stripe]()
+
+* The users order that bthey are purchasing will appear in the right hand column to ensue correct order is being purchased.
+
+![order on right]()
+
+* When the user completes their order, a loading overlay will appear until order gets confirmed. when the order is confirmed a checkout success page will appear which will show the details of the order to the user as seen below.
+
+![checkout success page]()
 
 ## Structure
 

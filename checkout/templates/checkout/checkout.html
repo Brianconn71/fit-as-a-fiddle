@@ -19,7 +19,7 @@
 {% block content %}
 <!-- checkout page -->
     <div class="overlay"></div>
-    <div class="container container-pad mt-5 mb-3 h-100">
+    <div class="container container-pad mt-2 mb-5">
         <div class="row">
             <div class="col">
                 <h2 class="fw-bold mb-4 display-6">Checkout</h2>
@@ -93,10 +93,10 @@
                         {{ order_form.postcode | as_crispy_field }}
                         {{ order_form.county | as_crispy_field }}
                         {{ order_form.country | as_crispy_field }}
-                        <div class="form-check form-check-inline float-end mr-0">
+                        <div class="form-check form-check-inline float-end">
                             {% if user.is_authenticated %}
                                 <label for="id-save-info" class="form-check-label">Save this delivery information to my profile</label>
-                                <input type="checkbox" class="form-check-input ml-2 mr-0" id="id-save-info" name="save-info" checked>
+                                <input type="checkbox" class="form-check-input mr-0" id="id-save-info" name="save-info" checked>
                             {% else %}
                                 <label for="id-save-info" class="form-check-label">
                                     <a href="{% url 'account_signup' %}" class="text-bright">Create an account</a> or
@@ -120,7 +120,7 @@
                             <span class="icon">
                                 <i class="far fa-hand-point-left"></i>
                             </span>
-                            <span class="fw-bold">Adjust Bag</span>
+                            <span class="">Adjust Bag</span>
                         </a>
                         <button id="submit-button" class="btn rounded-2 text-capitalize mt-4 btn-bg-col">
                             <span class="fw-bold">Complete Order</span>
