@@ -538,7 +538,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 # Testing
 
-* The testing section can be found [here](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/testing.md)
+* The testing section can be found [here](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/TESTING.md)
 
 # Deployment
 
