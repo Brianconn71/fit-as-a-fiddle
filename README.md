@@ -119,7 +119,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 ##### Home page
 
-![homepage]()
+![homepage](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/homepage.JPG)
 
 * Display text makes it clear to the user where they are and what is it I want them to do on the site.
 
@@ -133,27 +133,27 @@ Admin users get the power to create update and delete everything on the site whi
 
 ##### Blog page
 
-![blog page]()
+![blog page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/blogpage.JPG)
 
 * The blog page stores a short summarised version of all of the blog posts on the site.
 
 * The Blog page shows the blog posts in paginated format with 5 blog posts per page. The post title and post intro are shown as cards with a shadow background to make them stand out on the page.
 
-* For admin users, An Add blog post button is displayed at the top of the page for an easy way for admin users to add a blog post to the site. 
+* For admin users, An Add blog post button is displayed at the top of the page for an easy way for admin users to add a blog post to the site. The button does not display for regular users
 
 * There is a read more link displayed on each blog post so that a user can click on it and read the entire blog post on its own page.
 
 ##### BlogPost page
 
-![blogpost page]()
+![blogpost page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/blogpost%20page.JPG)
 
 * Blog post page is a single page showing all of the details from a relevant blog post. It includes the body text and any images that may or may not be attached with the blog post.
 
-![comments]()
+![comments](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/comments.JPG)
 
 * The blog post also shows any comments that have been made on the post. any user can read comments but only authenticated users can leave a comment
 
-![add-a-comment]()
+![add-a-comment](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add-comment.JPG)
 
 * Users who are logged in will see a text area which will allow them to leave a comment on a blog  post. if a user is not logged in then a message will be displayed unter the add a comment heading asking the user to register or login to leave a comment.
 
@@ -161,7 +161,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 ##### Add BlogPost page
 
-![addblogpost]()
+![addblogpost](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add-blogpost.JPG)
 
 * Only admin/superusers will be able to access this page.
 
@@ -171,7 +171,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 ##### Edit BlogPost page
 
-![edit-blogpost]()
+![edit-blogpost](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/edit-blog-post.JPG)
 
 * Only admin users will be able to edit previously created blog posts
 
@@ -179,7 +179,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 * If the user chooses to delete the blog post a modal will displaying asking them to confirm the deleteion. 
 
-![delete blog modal]()
+![delete blog modal](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-blog-modal.JPG)
 
 * If the user chooses the edit button then they will be taken to the edit blog post page which will display a form instantiated with the information of the blog post they have chosen to edit.
 
@@ -189,73 +189,73 @@ Admin users get the power to create update and delete everything on the site whi
 
 ###### All Products
 
-![all products]()
+![all products](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/all-products-view.JPG)
 
 * In the all products view, each item available for sale on the site is displayed. The results are in paginated format displaying 10 items per page. the number of pages is displayed at the bottom of the page.
 
 * edit and delete buttons will appear to admin users to allow them to edit a product or delete a product, a delete confirmation modal will pop up before item is successfully deleted
 
-![delete product modal]()
+![delete product modal](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-product-modal.JPG)
 
 * The navigation bar at the top of the page displasys all the categories of products on the site for ease of use for the user.
 
 * A user can sort the products throughout the site based on name and price by choosing from the select dropdown at the top of the page.
 
-![select dropdown]()
+![select dropdown](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/select-dropdown.JPG)
 
 * When a user searches from the search bar at the top of the page the results are shown on this products page again in paginated format.
 
-![search results]()
+![search results](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/searchbar-results.JPG)
 
 ###### Product details page
 
-![product details page]()
+![product details page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/product-details-page.JPG)
 
 * The product details page contains all information relating to the product and quantity selectors and add to bag buttons.
 
 * edit and delete buttons will appear to admin users to allow them to edit a product or delete a product, a delete confirmation modal will pop up before item is successfully deleted
 
-![delete product modal]()
+![delete product modal](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-product-modal.JPG)
 
 * there is a keep shopping button which allows a user to return to view all the products page and continue to shop on the site.
 
 * Underneath the product informtaion, there is a reviews section
 
-![reviews section]()
+![reviews section](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/reviews_section.JPG)
 
 * In this section, only logged in and authenticated users can leave reviews of products. When a non logged in user clicks on the "add a review" heading a message appears asking them to login or register to leave a review, if they are logged in then a form appears to allow the user to submit there review of the product.
 
-![not logged in user]()
+![not logged in user](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/not-logged-in-user.JPG)
 
-![leave a review]()
+![leave a review](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/leave-a-review.JPG)
 
 * Anynone can view the reviews of the products. When a user clicks on reviews, all the reviews for that product becomes available on the page underneath the reviews heading.
 
-![no reviews]()
+![no reviews](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/no-reviews.JPG)
 
-![reviews]()
+![reviews](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/reviews.JPG)
 
 * The reviews are then paginated to show 5 reviews per page.
 
 * On the product details page, there is a rating system in place that aggregates and averages the user ratings from the reviews below and shows the rating underneath the product name and beside the product image
 
-![user rating]()
+![user rating](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-ratings.JPG)
 
 ###### add products page
 
 * This page is only available to superusers and can be found by clicking on my account at the top of the page and then selecting product management.
 
-![product management]()
+![product management](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/product%20management.JPG)
 
-![add a product]()
+![add a product](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add%20a%20product.JPG)
 
 * This page contains a form which a superuser can use to add products to the database and have the products appear on the site when done and form submitted the user gets taken to the products page of the product thehave added and a message appears showing them they have successfully addedthe product to the database.
 
-![product added]()
+![product added](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/added%20product.JPG)
 
 ###### edit products page
 
-![edit product]()
+![edit product](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/edit-product.JPG)
 
 * This page is only available to superusers and can be found by clicking on my edit link on either the products page or the product details page.
 
@@ -263,63 +263,63 @@ Admin users get the power to create update and delete everything on the site whi
 
 * Any product information vcan be edited and when done a user clicks on the update product. They will be brought to the product details page oof that particular product and a message will inform them they have updated the product.
 
-![successfully updated product]()
+![successfully updated product](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/successfully%20updated%20product.JPG)
 
 ###### Reviews
 
-![reviews section]()
+![reviews section](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/reviews_section.JPG)
 
 * Reviews appear on the product details page underneath all of the relevant product information.
 
 * The reviews section is contolled using custom javascript and when the reviews heading is clicked all of the reviews for that product appear in a div under the heading. Reviews can be seen by anyone who comes to the site.
 
-![reviews]()
+![reviews](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/reviews.JPG)
 
 * If a product has no review then the following is shown to the user 
 
-![no reviews]()
+![no reviews](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/no-reviews.JPG)
 
 * Only logged in and authenticated users can leave a review of a produtc. If a user is not logged in then when they click on the leave a review heading they are greeted with this message.
 
-![not logged in user]()
+![not logged in user](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/not-logged-in-user.JPG)
 
 * If a user is logged in and authenticated they may leave a review of a product which is shown below.
 
-![leave a review]()
+![leave a review](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/leave-a-review.JPG)
 
 * When the user submits the form the review is then added to the product and is available under the reviews heading.
 
-![reviews]()
+![reviews](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/reviews.JPG)
 
 ###### Bag
 
-![bag in nav]()
+![bag in nav](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/bag-in-nav.JPG)
 
 * In the navbar at the thop of the bad on all screen sizes a bag icon will appear, this bag will be turquise and display €0.00 by default. Once a user adds an item to the bag the bag icon will change to a gold color to signify an item in the bag. When a user clicks on the bag icon the will be taken to the bag page.
 
 * When a user clicks on the bag icon when they have no items in the bag the below will be displayed indictaing they have no items in their bag and a keep shopping button to encourage them to add items to their bag.
 
-![no item in bag]()
+![no item in bag](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/no-item-in-bag.JPG)
 
 * When a user clicks on the bag icon when they have items in the bag the below will be displayed the items in their bag and a secure checkout button to encourage customers to move forward to the checkout process and a keep shopping button which encourages them to add more items to their bag.
 
-![item in bag]()
+![item in bag](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/item%20in%20bag.JPG)
 
 ###### checkout
 
-![checkout page]()
+![checkout page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/checkout-page.JPG)
 
 * When the user has items in their bag, a secure checkout button will appear, when they click on this secure checkout button on the bag page, they will get taken to the checkout page where they can complete their order and pay for their order via stripe.
 
-![pay with stripe]()
+![pay with stripe](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/pay-with-stripe.JPG)
 
 * The users order that bthey are purchasing will appear in the right hand column to ensue correct order is being purchased.
 
-![order on right]()
+![order on right](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/order-on-right.JPG)
 
 * When the user completes their order, a loading overlay will appear until order gets confirmed. when the order is confirmed a checkout success page will appear which will show the details of the order to the user as seen below.
 
-![checkout success page]()
+![checkout success page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/checkout%20success.JPG)
 
 ## Structure
 
@@ -537,6 +537,8 @@ Admin users get the power to create update and delete everything on the site whi
     * Box shadow generator was used to apply a box shadow to blog posts in the blog page.
 
 # Testing
+
+* The testing section can be found [here](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/testing.md)
 
 # Deployment
 
