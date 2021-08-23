@@ -289,6 +289,8 @@ Admin users get the power to create update and delete everything on the site whi
 
 * When the user submits the form the review is then added to the product and is available under the reviews heading.
 
+![reviews]()
+
 
 ## Structure
 

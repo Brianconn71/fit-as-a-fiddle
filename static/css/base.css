@@ -314,6 +314,11 @@ input[name='search']::placeholder{
 .toast-capper{
     height: 2px;
 }
+.toast-close-btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
