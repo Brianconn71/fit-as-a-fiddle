@@ -137,8 +137,13 @@ a>p{
     color: #f5f5f5;
 }
 
+.nav-height{
+    height: auto;
+}
+
 /* overriding navbar toggler default setting */
 .navbar-toggler{
+    padding: 0 !important;
     box-shadow: none !important;
 }
 

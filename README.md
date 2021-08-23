@@ -337,7 +337,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 [Click here](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/wireframes.pdf) to see the Wireframes I used for this project.
 
-![wireframes](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/wireframes.pdf)
+![wireframes](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/wireframes.png)
 
 #### Database Schema
 

@@ -45,6 +45,7 @@
                             <p class="mb-0 text-break">{{ order.order_number }}</p>
                         </div>
                     </div>
+                    <hr>
 
                     <div class="row px-2">
                         <div class="col-12 col-md-4">
@@ -54,6 +55,7 @@
                             <p class="mb-0">{{ order.date }}</p>
                         </div>
                     </div>
+                    <hr>
 
                     <div class="row px-2">
                         <div class="col-12">
@@ -75,6 +77,7 @@
                                 </p>
                             </div>
                         </div>
+                        <hr>
                     {% endfor %}
 
                     <div class="row px-2">
@@ -160,6 +163,7 @@
                             <p class="mb-0">{{ order.phone_number }}</p>
                         </div>
                     </div>
+                    <hr>
 
                     <div class="row px-2">
                         <div class="col-12">
@@ -200,18 +204,18 @@
             <div class="col-12 col-lg-7 py-3 align-right">
                 <!-- buttons to return to profileor to keep shopping -->
                 {% if from_profile %}
-                    <a href="{% url 'profile' %}" class="btn text-capitalize py-2 btn-bg-col btn-text">
+                    <a href="{% url 'profile' %}" class="btn text-capitalize rounded-2 py-2 btn-bg-col btn-text">
                         <span class="icon mr-2">
                             <i class="fas fa-hand-point-left"></i>
-                        </span>
-                        <span class="text-capitalize">Back to Profile</span>
+                        </span><br/>
+                        <span class="text-capitalize btn-text-size">Back to Profile</span>
                     </a>
                 {% else %}
-                    <a href="{% url 'products' %}" class="btn text-capitalize py-2 btn-bg-col btn-text">
+                    <a href="{% url 'products' %}" class="btn text-capitalize rounded-2 py-2 btn-bg-col btn-text">
                         <span class="icon mr-2">
                             <i class="fas fa-gifts"></i>
-                        </span>
-                        <span class="text-capitalize">Now check out the latest deals!</span>
+                        </span><br/>
+                        <span class="text-capitalize btn-text-size">check out our latest deals!</span>
                     </a>
                 {% endif %}
             </div>
