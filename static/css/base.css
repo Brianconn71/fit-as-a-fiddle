@@ -137,6 +137,11 @@ a>p{
     color: #f5f5f5;
 }
 
+/* overriding navbar toggler default setting */
+.navbar-toggler{
+    box-shadow: none !important;
+}
+
 /* content block */
 .content-block{
     height: 100%;
@@ -542,7 +547,7 @@ input[name='search']::placeholder{
     }
     .navbar-toggler-icon{
         padding: .5rem 0.5rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #delivery-information h4{
