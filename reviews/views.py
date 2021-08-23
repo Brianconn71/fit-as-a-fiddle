@@ -32,7 +32,7 @@ def add_review(request, product_id):
                 return redirect('product_details', product.id)
         else:
             form = ReviewForm()
-        return render(request, 'reviews/reviews.html', {"form": form})
+        return render(request, 'products/product_details.html', {"form": form})
     else:
         messages.error(request, 'Please sign in to leave a review')
         return redirect('account_login')
