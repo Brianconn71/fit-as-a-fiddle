@@ -140,6 +140,9 @@ a>p{
 .nav-height{
     height: auto;
 }
+.menu-position-mobile{
+    left: 0;
+}
 
 /* overriding navbar toggler default setting */
 .navbar-toggler{
