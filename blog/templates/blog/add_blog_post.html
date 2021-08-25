@@ -5,7 +5,7 @@
     <div class="container hdr-container">
         <div class="row">
             <div class="col">
-                
+
             </div>
         </div>
     </div>
@@ -33,7 +33,8 @@
                     <!-- Add blog post and cancel buttons -->
                     <div class="inline-flex-pos float-end mt-3">
                         <a class="btn rounded-2 btn-outline-dark py-2" href="{% url 'blog' %}">Cancel</a>
-                        <button class="btn rounded-2 btn-text text-capitalize py-2 btn-bg-col" type="submit">Add Blog Post</button>
+                        <button class="btn rounded-2 btn-text text-capitalize py-2 btn-bg-col" type="submit">Add Blog
+                            Post</button>
                     </div>
                 </form>
             </div>
@@ -42,10 +43,10 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
+{{ block.super }}
     <script>
-        $('#new-image').change(function(){
-            var file = $('#new-image')[0].files[0];
+        $('.new-image').change(function () {
+            var file = $('.new-image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
     </script>

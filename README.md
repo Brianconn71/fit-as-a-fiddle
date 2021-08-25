@@ -887,6 +887,8 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
 
 * Got a hand with adding reviews [here](https://www.youtube.com/watch?v=lSX8nzu9ozg)
 
+* had an issue with mobile nav bar display in html validation, a solution was found [here](https://www.w3schools.com/CSSref/pr_class_display.asp)
+
 
 ### Acknowledgements
 

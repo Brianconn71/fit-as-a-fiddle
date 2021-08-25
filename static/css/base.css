@@ -530,6 +530,12 @@ input[name='search']::placeholder{
     right: 0;
 }
 
+
+/* had an issue in validation of html, solution found here: https://www.w3schools.com/CSSref/pr_class_display.asp */
+.nav-menu-items{
+    display:contents;
+}
+
 /* Media queries */
 @media (min-width: 1100px){
     .container {

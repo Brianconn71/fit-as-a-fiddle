@@ -15,6 +15,6 @@
 {% endif %}
 <span class="btn btn-bg-col rounded-2 btn-file">
     Select Image 
-    <input id="new-image"  type="file" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+    <input class="new-image"  type="file" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
 </span>
 <p class="text-danger text-break" id="filename"></p>
