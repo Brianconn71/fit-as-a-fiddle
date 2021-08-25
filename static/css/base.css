@@ -144,6 +144,19 @@ a>p{
     left: 0;
 }
 
+/* overriding the default background color of the dropdown menu */
+.dropdown-menu-search{
+    background-color: #493843 !important;
+}
+
+.bright-border{
+    border: 2px solid #61988e;
+}
+
+.btn:active{
+    background-color: #493843;
+}
+
 /* overriding navbar toggler default setting */
 .navbar-toggler{
     padding: 0 !important;
@@ -229,9 +242,9 @@ input[name='search']::placeholder{
 .social-style{
     margin: 0 0.9rem;
     font-size: 1.2rem;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 .copyright-text{
     font-size: 0.8rem;
