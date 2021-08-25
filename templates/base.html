@@ -7,7 +7,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <meta name="Description" content="Enter your description here"/>
+            <meta name="Description" content="Join the fitness revolution today and come shop with us at Fit as a Fiddle."/>
         {% endblock %}
 
         {% block extra_meta %}
@@ -57,14 +57,16 @@
 
                 <!-- search bar -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                    <form method="GET" action="{% url 'products' %}">
+                    <form method="GET" action="{% url 'products' %}" class="form">
                         <div class="input-group w-100">
-                            <button class="btn btn-black" type="submit">
-                                <span class="input-group-text" id="basic-addon1">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                            </button>
-                            <input type="text" name="search" class="form-control" placeholder="Search our site" aria-label="Search our site" aria-describedby="basic-addon1">
+                            <div class="input-group-append">
+                                <button class="form-control form-control btn btn-dark-background bright-border border-black rounded-2" type="submit">
+                                    <span class="icon" id="searchbar">
+                                        <i class="fas fa-search logo-color"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <input type="text" name="search" class="form-control" placeholder="Search our site" aria-label="Search our site" aria-describedby="searchbar">
                         </div>
                     </form>
                 </div>
