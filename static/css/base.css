@@ -182,10 +182,11 @@ a>p{
 ul{
     margin: 0;
 }
+
 .nav-link:hover{
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
     border-bottom: 1px solid #61988E;
 }
 .nav-link:hover,
@@ -560,6 +561,9 @@ input[name='search']::placeholder{
     body{
         height: calc(100vh - 150px);
     }
+    .nav-link{
+        font-size: 0.8rem;
+    }
     a.nav-link{
         padding: 0.1rem;
     }
@@ -574,12 +578,6 @@ input[name='search']::placeholder{
     #delivery-information h4{
         font-size: 1rem;
     }
-    /* .btn.btn-lg.text-uppercase.btn-.bg-col,
-    .btn.btn-outline-dark,
-    .btn.text-uppercase.btn-bg-col{
-        padding: .3rem .3rem;
-        font-size: .7rem;
-    } */
     .decrement-qty .increment-qty{
         padding: 0.25rem 0.5rem !important;
     }
