@@ -157,7 +157,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 * Users who are logged in will see a text area which will allow them to leave a comment on a blog  post. if a user is not logged in then a message will be displayed unter the add a comment heading asking the user to register or login to leave a comment.
 
-![login-comment]()
+![login-comment](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/login-comment.JPG)
 
 ##### Add BlogPost page
 
