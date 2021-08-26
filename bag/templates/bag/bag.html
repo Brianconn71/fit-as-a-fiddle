@@ -151,11 +151,12 @@
 {% include 'products/includes/quantity_input.html' %}
 
 <script>
+    // jshint esversion: 6
     // Update quantity in bag on click
     $('.update-link').click(function(e){
         var form = $(this).prev('.update-form');
         form.submit();
-    })
+    });
 
     // Remove item on click and reload
     $('.remove-item').click(function(e){
@@ -169,6 +170,6 @@
         $.post(url, data).done(function() {
             location.reload();
         });
-    })
+    });
 </script>
 {% endblock %}

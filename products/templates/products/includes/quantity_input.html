@@ -1,11 +1,12 @@
 <script>
+    // jshint esversion: 6
     // disable plus and minus buttons outside 1-99
     function handleEnableDisable(itemId){
         var currentValue = parseInt($(`#id_qty_${itemId}`).val());
         var minusDisabled = currentValue < 2;
         var plusDisabled = currentValue > 98;
-        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled)
-        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled)
+        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
 
     // Ensure proper enabling and disabling of all inputs on page load
@@ -19,7 +20,7 @@
     $('.qty_input').change(function() {
         var itemId = $(this).data('item_id');
         handleEnableDisable(itemId);
-    })
+    });
 
 // Increment the qty selectore
     $('.increment-qty').click(function(e) {

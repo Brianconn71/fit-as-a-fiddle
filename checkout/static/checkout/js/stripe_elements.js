@@ -1,3 +1,4 @@
+// jshint esversion: 6
 /* Logic and payment flow from https://stripe.com/docs/payments/accept-a-payment
 
   css comes from https://stripe.com/docs/stripe-js
@@ -36,7 +37,7 @@ card.addEventListener('change', function (event) {
                 <i class="fas fa-times"></i>
             </span>
             <span>${event.error.message}</span>
-        `
+        `;
         $(errorDiv).html(html);
     } else {
         errorDiv.textContent = '';
@@ -60,7 +61,7 @@ form.addEventListener('submit', function(ev) {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
         'save-info': saveInfo,
-    }
+    };
     var url = '/checkout/cache_checkout_data/';
 
     $.post(url, postData).done(function() {
@@ -114,5 +115,5 @@ form.addEventListener('submit', function(ev) {
     }).fail(function(){
         // Reloads the page, error in django messages
         location.reload();
-    })
+    });
 });
