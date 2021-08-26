@@ -9,7 +9,7 @@ class Test_urls(SimpleTestCase):
         url = reverse('home')
         print(resolve(url))
         self.assertEquals(resolve(url).func, home)
-    
+
     def test_contact_resolves(self):
         url = reverse('contact')
         print(resolve(url))
