@@ -250,3 +250,21 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * I filled in the contact form and clicked the submit button to send the form.
 
 ![contact-us-confirmation]()
+
+![contact-us-admin]()
+
+#### Profiles Functionality
+
+* To test profiles I needed to be logged in.
+
+* to test profiles functionality, I clicked on my account and clicked my profile.
+
+* I made sure any previous orders were displayed on the right and default customer information was displayed in the form oif the user chose to save their information.
+
+![profile-page]()
+
+#### Form Functionality
+
+* All forms have been checked to ensure incorrect or blank inputs give errors to the user if aa blank field is empty.
+
+![invalid-forms]()
