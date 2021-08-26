@@ -70,10 +70,10 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * Initially, there were some issues regarding alt text of images but I made the changes necessary and please see below for the lightouse reports for both desktop and mobile.
 
 * Desktop
-    * ![lighthouse-desktop]()
+    * ![lighthouse-desktop](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/lighthouse-desktop.JPG)
 
 * Mobile
-    * ![lighthouse-mobile]()
+    * ![lighthouse-mobile](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/lighthouse-mobile.JPG)
 
 ### Code validation
 
@@ -87,16 +87,40 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 * I used W3C Markup validation for my CSS validation and my code passed this test.
 
-![css validation]()
+![css validation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/css%20validation.JPG)
 
 #### JavaScript
 
 * I used jshint validation for my JavaScript validation and my code passed this test.
 
-![JavaScript validation]()
+![JavaScript validation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/javascript%20validation.JPG)
 
 #### Python
 
 * I used pep8 validation for my Python validation and my code passed this test.
 
-![python validation]()
+![python validation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/python%20validation.JPG)
+
+### Manual Testing of site
+
+* The functionality of the site was manually tested to ensure that all worked as expected.
+
+#### Bag App Functionality
+
+* to test the bag, I navigated to the products page, clicked on a product and chose "add to bag"
+
+![add-to-bag]()
+
+* This worked, so I then went to the bag page and tried to edit the qty of the product in my bag.
+
+![update-bag-page]()
+
+* I also then tried to remove the item from my bag to test delete functionality.
+
+![delete-bag-page]()
+
+#### Checkout App Functionality
+
+* In order to test checkout functionality of the site, I first added an item to my bag and proceeded to secure checkout.
+
+![secure-checkout]()
