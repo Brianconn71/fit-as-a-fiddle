@@ -84,7 +84,7 @@
                     {% if request.user.is_authenticated %}
                         {% if request.user == comment.user or request.user.is_superuser %}
                             <a role="button" class="text-danger text-decoration-none" id="delete-review" data-toggle="modal"
-                                data-target="#modal-overlay{{ forloop.counter0 }}">Delete</a>
+                                data-target="#modal-overlay{{ forloop.counter0 }}">Delete Comment</a>
                         {% endif %}
                     {% endif %}
                     <!-- Modal -->
