@@ -61,3 +61,42 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * surface duo
 
 ![surface duo](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/surface%20duo.JPG)
+
+
+### Lighthouse
+
+* I ran my site throught Lighthouse which generated reports for mobile and desktop views.
+
+* Initially, there were some issues regarding alt text of images but I made the changes necessary and please see below for the lightouse reports for both desktop and mobile.
+
+* Desktop
+    * ![lighthouse-desktop]()
+
+* Mobile
+    * ![lighthouse-mobile]()
+
+### Code validation
+
+#### HTML
+
+* I used W3C Markup validation for my HTML validation and my code passed this test.
+
+![html validation]()
+
+#### CSS
+
+* I used W3C Markup validation for my CSS validation and my code passed this test.
+
+![css validation]()
+
+#### JavaScript
+
+* I used jshint validation for my JavaScript validation and my code passed this test.
+
+![JavaScript validation]()
+
+#### Python
+
+* I used pep8 validation for my Python validation and my code passed this test.
+
+![python validation]()
