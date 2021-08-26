@@ -109,75 +109,75 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 * to test the bag, I navigated to the products page, clicked on a product and chose "add to bag"
 
-![add-to-bag]()
+![add-to-bag](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add-to-bag.JPG)
 
 * This worked, so I then went to the bag page and tried to edit the qty of the product in my bag.
 
-![update-bag-page]()
+![update-bag-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/update-bag-page.JPG)
 
 * I also then tried to remove the item from my bag to test delete functionality.
 
-![delete-bag-page]()
+![delete-bag-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-bag-page.JPG)
 
 #### Checkout App Functionality
 
 * In order to test checkout functionality of the site, I first added an item to my bag and proceeded to secure checkout.
 
-![secure-checkout]()
+![secure-checkout](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/secure-checkout.JPG)
 
 * Then proceeded to the checkout page and fill in the orderform using stripe.
 
-![orderform]()
+![orderform](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/orderform.JPG)
 
 * When the order was successful I was redirected to the checkout success page with a summary of my order information
 
-![order success]()
+![order success](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/order-success.JPG)
 
 * I then checked my email to ensure I received a confirmation email.
 
-![order-confirmation-email]()
+![order-confirmation-email](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/order-confirmation-email.JPG)
 
 * Then i logged into stripe to ensure payment was successful, which it was as seen below.
 
-![stripe confirmation]()
+![stripe confirmation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/stripe-confirmation.JPG)
 
 * I also checked in the admin section of the website to ensure the orderform was created. as seen below it was successful.
 
-![admin-order-confirmation]()
+![admin-order-confirmation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/admin-order-confirmation.JPG)
 
 #### Products App Functionality
 
 * To test product app functionality, I first had to login as an admin user. To add a product, I clicked on my account at the top of the page and clicked on the product management dropdown.
 
-![product-mgmt]()
+![product-mgmt](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/product-mgmt.JPG)
 
 * I arrived on the add product page to an empty product item form which I filled in to add a new item to the database.
 
-![add-product-form]()
+![add-product-form](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add-product-form.JPG)
 
 * Product got added successfully
 
-![successfully-aded-product]()
+![successfully-aded-product](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/successfully-aded-product.JPG)
 
 * Only admin users will be able to edit and delete products, which can be seen below.
 
-![add-edit-btns]()
+![add-edit-btns](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add-edit-btns.JPG)
 
 * Then I tried to edit the item by clicking edit, This brought me to the edit product page which allowed me to edit the product
 
-![edit-product-page]()
+![edit-product-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/edit-product-page.JPG)
 
-![edit-confirmation]()
+![edit-confirmation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/edit-post-successful.JPG)
 
 * Finally, I attempted to delete my product from the site, delete confirmation should appear before product gets deleted
 
-![delete-product-modal]()
+![delete-product-modal](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-product-modal.JPG)
 
-![delete-confirmation]()
+![delete-confirmation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-product-confirmation.JPG)
 
 #### Reviews Functionality
 
-* I looged into my account.
+* I logged into my account.
 
 * I navigated to the products page and clicked on any product, Then scroll to the bottom of the details page, to find the revies section.
 
@@ -191,19 +191,19 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 * I then was redirected back to the product detail page, to confirm the review was submitted I clicked on the reviews heading and could see my review.
 
-![review-for-product]()
+![review-for-product](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/review%20for%20product.JPG)
 
 * Then I edited the review by clicking on edit. Then went and clicked on reviews again to ensure the review was successfully edited which it was
 
-![edit-review-page]()
+![edit-review-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/edit-review-page.JPG)
 
-![edited-review]()
+![edited-review](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/edited-review.JPG)
 
 * Then I tested the delete functionality by deleting my review. Delete modal confirmation also popped up for defensive programming reasons
 
-![delete-review-modal]()
+![delete-review-modal](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-review-modal.JPG)
 
-![delete-review-confirmation]()
+![delete-review-confirmation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-review-confirmation.JPG)
 
 #### Blog Functionality
 
@@ -211,47 +211,47 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 * I navigated to the blog page and clicked on the add blog post button only visible to admin users.
 
-![add-blog-post-btn]()
+![add-blog-post-btn](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add-blog-post-btn.JPG)
 
 * I was then taken to the add blog post page where i added a new blog post in the form provided.
 
-![add-blog-post-page]()
+![add-blog-post-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add-blog-post-page.JPG)
 
-![add-post-confirmation]()
+![add-post-confirmation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add-post-confirmation.JPG)
 
 * I then clicked on the edit button to edit the blog post and was taken to the edit blog post page.
 
-![edit-blog-post-page]
+![edit-blog-post-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/edit-blog-post-page.JPG)
 
-![edit-post-successful]()
+![edit-post-successful](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/edit-post-successful.JPG)
 
 * Then I tried to delete the blog post, delete confirmation appearing first however. and confirmation of deletion
 
 ![delete blog modal](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-blog-modal.JPG)
 
-![blog-post-deleted]()
+![blog-post-deleted](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/blog-post-deleted.JPG)
 
 * I then tried to leave a comment on a blog post, all users have this functionality by clicking on the blog post and scrolling to the comments section at the bottom of the page.
 
-![add-comment]()
+![add-comment](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/add-comment.JPG)
 
 * I then deleted the comment so to test the delete comment is working sufficiently.
 
-![delete-comment-modal]()
+![delete-comment-modal](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-comment-modal.JPG)
 
-![delete-comment]()
+![delete-comment](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-comment.JPG)
 
 #### contact us Functionality
 
 * To test thye contact form I navigated to the contact us page in the nav bar 
 
-![contact-us-page]()
+![contact-us-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/contact-us-page.JPG)
 
 * I filled in the contact form and clicked the submit button to send the form.
 
-![contact-us-confirmation]()
+![contact-us-confirmation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/contact-us-confirmation.JPG)
 
-![contact-us-admin]()
+![contact-us-admin](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/contact-form-admin.JPG)
 
 #### Profiles Functionality
 
@@ -261,10 +261,10 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 * I made sure any previous orders were displayed on the right and default customer information was displayed in the form oif the user chose to save their information.
 
-![profile-page]()
+![profile-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/profile-page.JPG)
 
 #### Form Functionality
 
 * All forms have been checked to ensure incorrect or blank inputs give errors to the user if aa blank field is empty.
 
-![invalid-forms]()
+![invalid-forms](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/invalid-forms.JPG)
