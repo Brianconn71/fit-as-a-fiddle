@@ -164,6 +164,15 @@ a>p{
             box-shadow: none !important;
 }
 
+/* overriding whitespace oof dropdown items in bootstrap */
+.dropdown-item{
+    white-space: normal;
+}
+
+.account-menu-width{
+    min-width: 9rem;
+}
+
 /* content block */
 .content-block{
     height: 100%;

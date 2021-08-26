@@ -35,7 +35,7 @@
             </div>
         </a>
         <!-- account dropdown -->
-        <div class="dropdown-menu border-0 w-100 menu-position-mobile" aria-labelledby="account-options">
+        <div class="dropdown-menu account-menu-width border-0 w-100 rounded-2 my-0 menu-position-mobile" aria-labelledby="account-options">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>

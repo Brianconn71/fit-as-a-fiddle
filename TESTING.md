@@ -124,3 +124,47 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * In order to test checkout functionality of the site, I first added an item to my bag and proceeded to secure checkout.
 
 ![secure-checkout]()
+
+* Then proceeded to the checkout page and fill in the orderform using stripe.
+
+![orderform]()
+
+* When the order was successful I was redirected to the checkout success page with a summary of my order information
+
+![order success]()
+
+* I then checked my email to ensure I received a confirmation email.
+
+![order-confirmation-email]()
+
+* Then i logged into stripe to ensure payment was successful, which it was as seen below.
+
+![stripe confirmation]()
+
+* I also checked in the admin section of the website to ensure the orderform was created. as seen below it was successful.
+
+![admin-order-confirmation]()
+
+#### Products App Functionality
+
+* To test product app functionality, I first had to login as an admin user. To add a product, I clicked on my account at the top of the page and clicked on the product management dropdown.
+
+![product-mgmt]()
+
+* I arrived on the add product page to an empty product item form which I filled in to add a new item to the database.
+
+![add-product-form]()
+
+* Product got added successfully
+
+![successfully-aded-product]()
+
+* Only admin users will be able to edit and delete products, which can be seen below.
+
+![add-edit-btns]()
+
+* Then I tried to edit the item by clicking edit, This brought me to the edit product page which allowed me to edit the product
+
+![edit-product-page]()
+
+![edit-confirmation]()
