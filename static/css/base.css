@@ -160,7 +160,8 @@ a>p{
 /* overriding navbar toggler default setting */
 .navbar-toggler{
     padding: 0 !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
 }
 
 /* content block */
@@ -501,7 +502,7 @@ input[name='search']::placeholder{
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
-    border-radius: o.2rem;
+    border-radius: 0.2rem;
     background-color: #dc3545;
     border-color: #dc3545;
 }
