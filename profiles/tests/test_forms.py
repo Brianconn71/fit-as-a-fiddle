@@ -20,8 +20,8 @@ class TestForms(TestCase):
             "default_phone_number": "Contact Number",
             "default_postcode": "1234",
             "default_town_or_city": "Test or test",
-            "default_street_address1": "Test",
-            "default_street_address2": "Test",
+            "default_street_1": "Test",
+            "default_street_2": "Test",
             "default_county": "County",
         })
         self.assertTrue(form.is_valid())
