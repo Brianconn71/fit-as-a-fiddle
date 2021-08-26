@@ -135,6 +135,6 @@ def delete_comment(request, comment_id):
 
     comment = get_object_or_404(Comment, pk=comment_id)
     comment.delete()
-    messages.success(request, 'Comment deleted!')
+    messages.success(request, 'Comment successfully deleted!')
 
     return redirect(reverse('blog'))

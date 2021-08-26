@@ -168,3 +168,85 @@ Please see below for a list of all screen sizes that my site was found to be mob
 ![edit-product-page]()
 
 ![edit-confirmation]()
+
+* Finally, I attempted to delete my product from the site, delete confirmation should appear before product gets deleted
+
+![delete-product-modal]()
+
+![delete-confirmation]()
+
+#### Reviews Functionality
+
+* I looged into my account.
+
+* I navigated to the products page and clicked on any product, Then scroll to the bottom of the details page, to find the revies section.
+
+![reviews section](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/reviews_section.JPG)
+
+* I clicked on the add a review header, a review form drop down will then appear.
+
+![leave a review](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/leave-a-review.JPG)
+
+* I filled in the review for the product in question and then clicked add review.
+
+* I then was redirected back to the product detail page, to confirm the review was submitted I clicked on the reviews heading and could see my review.
+
+![review-for-product]()
+
+* Then I edited the review by clicking on edit. Then went and clicked on reviews again to ensure the review was successfully edited which it was
+
+![edit-review-page]()
+
+![edited-review]()
+
+* Then I tested the delete functionality by deleting my review. Delete modal confirmation also popped up for defensive programming reasons
+
+![delete-review-modal]()
+
+![delete-review-confirmation]()
+
+#### Blog Functionality
+
+* I needed to login as an admin user to test the blog functionality.
+
+* I navigated to the blog page and clicked on the add blog post button only visible to admin users.
+
+![add-blog-post-btn]()
+
+* I was then taken to the add blog post page where i added a new blog post in the form provided.
+
+![add-blog-post-page]()
+
+![add-post-confirmation]()
+
+* I then clicked on the edit button to edit the blog post and was taken to the edit blog post page.
+
+![edit-blog-post-page]
+
+![edit-post-successful]()
+
+* Then I tried to delete the blog post, delete confirmation appearing first however. and confirmation of deletion
+
+![delete blog modal](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/delete-blog-modal.JPG)
+
+![blog-post-deleted]()
+
+* I then tried to leave a comment on a blog post, all users have this functionality by clicking on the blog post and scrolling to the comments section at the bottom of the page.
+
+![add-comment]()
+
+* I then deleted the comment so to test the delete comment is working sufficiently.
+
+![delete-comment-modal]()
+
+![delete-comment]()
+
+#### contact us Functionality
+
+* To test thye contact form I navigated to the contact us page in the nav bar 
+
+![contact-us-page]()
+
+* I filled in the contact form and clicked the submit button to send the form.
+
+![contact-us-confirmation]()

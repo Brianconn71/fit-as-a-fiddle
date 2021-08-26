@@ -29,6 +29,8 @@ def add_review(request, product_id):
                 review.rating = int(request.POST['rating'])
                 review.product = product
                 review.save()
+                messages.success(request,
+                                 'You have successfully added a review')
                 return redirect('product_details', product.id)
         else:
             form = ReviewForm()
@@ -55,6 +57,9 @@ def edit_review(request, product_id, review_id):
                 if form.is_valid():
                     data = form.save(commit=False)
                     data.save()
+                    messages.success(request,
+                                     'You have successfully \
+                                     edited this review')
                     return redirect('product_details', product_id)
             else:
                 form = ReviewForm(instance=review)
@@ -81,6 +86,8 @@ def delete_review(request, product_id, review_id):
         if request.user == review.user:
             # permission to delete
             review.delete()
+            messages.success(request,
+                             'You have successfully deleted this review')
         return redirect('product_details', product_id)
     else:
         return redirect('account_login')
