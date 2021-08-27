@@ -737,6 +737,87 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 ##### Action
 
+* User goes through the checkout process to the checkout page, they fill out the order form and, if they are signed in they can check the save info button below the form or, if they are not signed in then the option to create an account or login to save info will appear.
+
 ##### Expectation
+
+* When the user completes the checkout process, submits the order form and they then navigate to their profile page they will see the form prefilled with their saved orderform information.
+
+##### Result
+
+* User successfully saves their information to their account which will automatically be prefilled in future order forms for that user.
+
+* Save info button
+    ![save-info-btn]()
+
+* not logged in user
+    ![user-not-logged-in]()
+
+* Profile with default saved information
+    ![default-info]()
+
+* Prefilled future order forms
+    ![prefilled-info]()
+
+
+## Site Goal Testing
+
+#### Site Goal 1
+
+* I want to be able to add, edit and delete products, blog posts and the ability to delete comments from blog posts easily.
+
+##### Action
+
+
+##### Expectation
+
+
+##### Result
+
+#### Site Goal 2
+
+* I want to be able to increase organic visitors to the site using SEO friendly blog posts.
+
+##### Action
+
+
+##### Expectation
+
+
+##### Result
+
+#### Site Goal 3
+
+* I want an admin section of the site and to have access to such.
+
+##### Action
+
+
+##### Expectation
+
+
+##### Result
+
+#### Site Goal 4
+
+* I want customers to have a relaxed and trouble free time on the site.
+
+##### Action
+
+
+##### Expectation
+
+
+##### Result
+
+#### Site Goal 5
+
+* I want the site to be fully mobile responsive.
+
+##### Action
+
+
+##### Expectation
+
 
 ##### Result
