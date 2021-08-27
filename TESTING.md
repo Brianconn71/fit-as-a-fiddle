@@ -268,3 +268,206 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * All forms have been checked to ensure incorrect or blank inputs give errors to the user if aa blank field is empty.
 
 ![invalid-forms](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/invalid-forms.JPG)
+
+
+### Unit Testing
+
+* I did unit tests for each app in my project using Django Unit testing.
+
+* I wrote tests to test for Urls, Models, Apps, Forms and Views.
+
+* All Unit tests were achieved for Models, Forms, Urls and Apps.
+
+* I ran out of time and I had lots of confusion over testing Views so Unfortunately I didn't get the chance to fully test for views but I did tast the Get functionality with unit tests.
+
+* You can see the tests I wrote in the apps tests folder.
+
+* To run the tests from the terminal use the command below with the name of any app in the project e.g. Blog, Bag etc.
+
+    ```python3 manage.py test <appname>```
+
+
+### Bugs during development
+
+* Navbar placement
+
+    * In testing my site using Google Chrome tools I saw that when the search bar icon was clicked the search bar drop down veered offscreen.
+
+    * I spent a large amount of time trying to understand why this was happening, I tried everything that I could think of and use a vast array of channels e.g Slack, stack overflow etc.
+
+    * I eventually, figured out the issue was that the dropdown menu was using position: absolute which I eventually saw using Google Chrome dev tools, to fix the issue and make the navbar responsive I added the below css class to the dropdown menu.
+        ```
+            .menu-position-mobile{
+                left: 0;
+            }
+        ```
+
+* Quantity of products in bag app
+
+    * I noticed in the bag app that the user could enter a quantity of the product for under 1 and click update, the website would crash to a 500 error.
+
+    * To fix this I spent a large amount of time trying to understand why this was happening in the first place. I spent time on stack overflow and googling up possible solutions but nothing seemed to work, I went on the slack channels and eventually I found an adequate solution.
+
+    * The solution is below. I didn't want the site to crash for the user if they put in a number below one, If they have the product in the bag then the minimun quantity therefoire has to be one so I added "or 1" to where the function looks for the quantity of items so that the site won't crash and they will have at least one quantity of the item in the bag in case of mistakes, accidents etc.
+        ``` quantity = int(request.POST.get('quantity') or 1) ```
+
+* Test Error
+
+    * When I first started to create and run the unit tests for my project I ran into an error regarding the tests module.
+
+    * I spent a lot of time researching this error and It was eventually found that I had not deleted the tests.py file before I ran the tests, My tests are stored in the tests folder for each app and django was trying to run tests from the empty tests.py file.
+
+    * [here](https://stackoverflow.com/questions/37525075/what-does-tests-module-incorrectly-imported-mean) is where I found my solution to the problem.
+
+* Styling issues
+
+    * There were a lot of styling issues I found whilst attempting to change the styling of some of my elements in chrome dev tools.
+
+    * Buttons were turning white on click, when image files were added the site was turning unresponsive on mobile devices etc.
+
+    * To fix the styling and coloring issues I had to use !important to override the bootstrap elements in certain places. To stop the filename from veering offscreen and turning my site unresponsive on mobile I added the text-break class to the paragraph element that held the filename.
+
+
+## User Story Testing
+
+#### User Story 1
+
+* I want to be able to quickly view the products that the site is selling.
+
+##### Action
+
+* The user will see and be made aware what the site is about and selling via homepage imagery, header cta and navigation links. Navigate to the homepage or by using the navbar to move across the site.
+
+##### Expectation
+
+* The site makes it very clear straight away to the user what the site sells and also clear navigation to understand the categories of products for sale on the site
+
+##### Result
+
+#### User Story 2
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 3
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 4
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 5
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 6
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 7
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 8
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 9
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 10
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 11
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 12
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 13
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 14
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 15
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 16
+
+##### Action
+
+##### Expectation
+
+##### Result
+
+#### User Story 17
+
+##### Action
+
+##### Expectation
+
+##### Result
