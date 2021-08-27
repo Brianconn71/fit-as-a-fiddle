@@ -540,9 +540,24 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 ##### Action
 
+* User navigates to the product details page of their choosing. There the user is able to see the products price and if it has sizes a sizes select input will be visible.
+
 ##### Expectation
 
+* The user can see the price of the item on the product details page and the select input for items which have sizes.
+
 ##### Result
+
+* The user can view the products prices on all products page and if the user clicks on an item and is taken to product details page the price remains visible. The size select input will only be visible on product details page if an item has different sizes.
+
+* prices all products
+    ![prices-all-products]()
+
+* prices product details
+    ![prices-product-details]()
+
+* size selector
+    ![size-selector]()
 
 #### User Story 10
 
@@ -550,9 +565,21 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 ##### Action
 
+* User navigates to the product details page and clicks add to bag, product gets added to shopping bag
+
 ##### Expectation
 
+* When the add to bag button is selected the product gets added to the users shopping bag
+
 ##### Result
+
+* The user successfully adds items to their shopping bag and total cost gets displayed in the navbar underneath the bag icon.
+
+* add to bag button
+    ![add-to-bag-button]()
+
+* bag in navbar with total cost displayed
+    ![bag in navbar]()
 
 #### User Story 11
 
@@ -560,9 +587,21 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 ##### Action
 
+* User interacts with the site in some respect and they get notified of the interaction. e.g adding a product to the bag
+
 ##### Expectation
 
+* User interacts with the site and they receive a notification from the site of the interaction.
+
 ##### Result
+
+* User successfully is notified of an interaction with the site. These interactions also come in form of alerts and warnings like invalid forms too
+
+* notification of interaction
+    ![notification-of-interaction]()
+
+* warning message
+    ![searchbar-invalid]()
 
 #### User Story 12
 
@@ -570,9 +609,24 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 ##### Action
 
+* User moves along the checkout process and goes to the bag page where they can update the quantity of each individual item and remove an item entirely from their bag.
+
 ##### Expectation
 
+* The user can easily update the quantity of items in their bag and remoive items entirely from their bag.
+
 ##### Result
+
+* The user changes the quantity number in the input, clicks update and the bag gets updated with the new information. If the user clicks on remove then that item will be removed from their bag entirely and they will be informed.
+
+* edit shopping bag
+    ![bag page]()
+
+* update quantity
+    ![update-quantity]()
+
+* remove item from bag
+    ![remove-from-bag]()
 
 #### User Story 13
 
@@ -580,9 +634,30 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 ##### Action
 
+* User clicks on secure checkout on bag page, they then land on the checkout page where they fill out the form and submit their order.
+
 ##### Expectation
 
+* The user follows the instructions, fills out the form, enters their correct order details, completes their order. Then they get redirected to checkout success page with details of their order and they receive a confiormation email.
+
 ##### Result
+
+* The user fills in the order form correctly and is valid, completes their order, redirects to checkout success page with order details and then the user receives a confirmation email.
+
+* secure checkout button - bag page
+    ![secure-checkout-button]()
+
+* secure checkout button - toast-success
+    ![secure-checkout-button-toast]()
+
+* Order form
+    ![orderform]()
+
+* checkout success page
+    ![checkout-success-page]()
+
+* Order confirmation email
+    ![order-confirmation-email]()
 
 #### User Story 14
 
@@ -590,9 +665,33 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 ##### Action
 
+* User navigates to the product page of the product they wish to leave a review for. scroll down to review section and clicks ad review, fill out the form submit the form and the review is then visible under the reviews heading.
+
 ##### Expectation
 
+* user navigates to product page clicks on add a review, if the user is not logged in then they are asked to log in or register to leave a review, they do this and then fill out the review form, submit the form
+
 ##### Result
+
+* when the user clicks add review and they are logged in, then they fill out the form and submit it, the review is then available under the reviews heading for that particular product for everyone who views the site to see. User successfully leaves a review.
+
+* reviews section
+    ![reviews section](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/reviews_section.JPG)
+
+* any user can view reviews for the product
+    ![reviews](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/reviews.JPG)
+
+* if no reviews user sees this 
+    ![no reviews](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/no-reviews.JPG)
+
+* User must log in to leave a review
+    ![not logged in user](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/not-logged-in-user.JPG)
+
+* Review Form
+    ![leave a review](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/leave-a-review.JPG)
+
+* Review Confirmation
+    ![review-confirmation]()
 
 #### User Story 15
 
@@ -600,9 +699,18 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 ##### Action
 
+* Once a user completes an order and payment a confirmation email will be sent to them
+
 ##### Expectation
 
+* A user completes the checkout process for their order, they complete the payment, the order is accepted and a confirmation email will automatically be sent to them with their order details.
+
 ##### Result
+
+* Once a user completes the checkout process, and they check their email account they will see a confirmation email that was sent automatically to them upon order completion and this email contains all relevant information related to their order.
+
+* Order confirmation email
+    ![order-confirmation-email]()
 
 #### User Story 16
 
@@ -610,13 +718,22 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 ##### Action
 
+* User navigates to their profile page where they see previous orders and click on the information to see the details from their previous orders.
+
 ##### Expectation
+
+* once the user clicks on the order number from a previous order they are taken to a page which displays all the relevant information from their previous order.
 
 ##### Result
 
+* User successfully finds previous orders and can find all relevant information from those orders.
+
+* Previous order
+    ![previous-order]()
+
 #### User Story 17
 
-* I want my details tto be saved to my account for faster purchases in future.
+* I want my details to be saved to my account for faster purchases in future.
 
 ##### Action
 
