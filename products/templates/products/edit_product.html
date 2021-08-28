@@ -13,7 +13,7 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mt-5 mb-5 container-pad h-100">
+    <div class="container mt-5 mb-5 container-pad">
         <div class="row">
             <div class="col-12 col-md-6">
                 <!-- edit a product header and message -->
@@ -36,7 +36,7 @@
                         {% endif %}
                     {% endfor %}
                     <!-- edit a product buttons and cancel btns -->
-                    <div class="align-right">
+                    <div class="inline-flex-pos float-end">
                         <a class="btn rounded-2 btn-outline-dark py-2" href="{% url 'products' %}">Cancel</a>
                         <button class="btn text-capitalize py-2 btn-text btn-bg-col" type="submit">Update Product</button>
                     </div>
@@ -50,8 +50,8 @@
     {{ block.super }}
     <script>
         // jshint esversion: 6
-        $('.new-image').change(function(){
-            var file = $('.new-image')[0].files[0];
+        $('#id_image').change(function(){
+            var file = $('#id_image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
     </script>

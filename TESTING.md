@@ -334,6 +334,12 @@ Please see below for a list of all screen sizes that my site was found to be mob
     
     * Issues were found regarding line length of python code in the migrations folder, I was unsure about whether or not this code should be validated and fixed. I asked in the #full-stack-frameworks-channel on Slack about what the best course of action would be. I was informed by Gaff the Channel Lead that as I did not write this code myself that I should not make any changes to the migrations files in question. So I heeded his advice and did not make the changes.
 
+* Add/edit Blog posts
+
+    * In testing, I realised at the very last second that the filename was not being displayed underneath the input area.
+
+    * I ran into this bug very very late and unfortunately I could not offer a solution or find an answer as to why, The images can be uploaded and changed but The filename is not displaying where I wanted it to display.
+
 
 ## User Story Testing
 
