@@ -340,6 +340,11 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
     * I ran into this bug very very late and unfortunately I could not offer a solution or find an answer as to why, The images can be uploaded and changed but The filename is not displaying where I wanted it to display.
 
+* Shopping Bag Page
+
+    * Shopping bag page is not mobile responsive, I tried many different ways to make it validate in accordance to the boutique ado shopping bag page but the reality is I could not do it in such a way that validated the html code and made it mobile responsive, which is a shame. I didn't spot the error with validation until very late in the game and unfortunately I did not get sufficient time to fix the error. Its not mobile responsive which is horrible considering everything else is.
+
+
 
 ## User Story Testing
 
