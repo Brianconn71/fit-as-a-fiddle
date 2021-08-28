@@ -74,7 +74,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 * I want to be able to increase organic visitors to the site using SEO friendly blog posts.
 
-* I want an admin section of the site and to have access to such.
+* I want an admin section of the site and to make administration tasks simpler.
 
 * I want customers to have a relaxed and trouble free time on the site.
 
