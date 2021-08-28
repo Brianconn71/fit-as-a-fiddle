@@ -81,7 +81,7 @@ Please see below for a list of all screen sizes that my site was found to be mob
 
 * I used W3C Markup validation for my HTML validation and my code passed this test.
 
-![html validation]()
+![html validation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/html-validation.JPG)
 
 #### CSS
 
