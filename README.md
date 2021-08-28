@@ -24,15 +24,40 @@
 
 # Table of contents
 
-# UX
+1. [UX](#ux)
 
-## Strategy
+    * [strategy](#strategy)
+        * [user stories](#user-stories)
+        * [site goals](#site-goals)
+    
+    * [scope](#scope)
+        * [features](#features)
+    
+    * [structure](#structure)
+
+    * [skeleton](#skeleton)
+        * [wireframes](#wireframes)
+        * [Database](#database)
+    
+    * [surface](#surface)
+
+2. [Technologies Used](#technologies-used)
+
+3. [Testing](#testing)
+
+4. [Deployment](#deployment)
+
+5. [Credits](#credits)
+
+# UX <a name="ux"></a>
+
+## Strategy <a name="strategy"></a>
 
 * I created this site as a way for people who have an interest in all things fitness related to go and for fit as a fiddle to be a one stop shop for all things fitness related, from workout clothes, to weights to cardio equipment and workout plans, I also wanted to implelement a social aspect to the site which I believe was achieved through the use of comments being available on posts for logged in users and through the use of reviews on each of the individual product pages which shows an element of trust in the users and allows them to voice there opinion.
 I set up a blog page for the site so that selected admin users can contribute articles to the site that are SEO friendly and lead to more organic traffic to the site and lead to increased revenue.
 Admin users get the power to create update and delete everything on the site while users of the site get the power to add edit and delete the reviews they have left for various products and to delete their own comments on blog posts.
 
-### User Stories
+### User Stories <a name="user-stories"></a>
 
 * I want to be able to quickly view the products that the site is selling.
 
@@ -68,7 +93,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 * I want my details tto be saved to my account for faster purchases in future.
 
-### Site Goals
+### Site Goals <a name="site-goals"></a>
 
 * I want to be able to add, edit and delete products, blog posts and the ability to delete comments from blog posts easily.
 
@@ -81,9 +106,9 @@ Admin users get the power to create update and delete everything on the site whi
 * I want the site to be fully mobile responsive.
 
 
-## Scope
+## Scope <a name="scope"></a>
 
-### Features
+### Features <a name="features"></a>
 
 ##### Navbar
 
@@ -321,7 +346,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 ![checkout success page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/checkout%20success.JPG)
 
-## Structure
+## Structure <a name="structure"></a>
 
 * The overall structure of the site will remain consistent throughout the project. A backgroung image with CTA will appear on the homepage which will provide the user with a clear intent on what it is That I want them to do on the site. This background image will then be covered with an overlay for the remainder of the site and content and data will be displayed on the overlay.
 
@@ -331,15 +356,15 @@ Admin users get the power to create update and delete everything on the site whi
 
 * Links and buttons will be used throughout the site to allow for easier navigation between pages and the functionality of the site.
 
-## Skeleton
+## Skeleton <a name="skeleton"></a>
 
-#### Wireframes
+#### Wireframes <a name="wireframes"></a>
 
 [Click here](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/wireframes.pdf) to see the Wireframes I used for this project.
 
 ![wireframes](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/wireframes.png)
 
-#### Database Schema
+#### Database Schema <a name="database"></a>
 
 ![db schema](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/database%20schema.JPG)
 
@@ -379,7 +404,7 @@ Admin users get the power to create update and delete everything on the site whi
         * This model contains information relating to reviews that users have left for certain products.
 
 
-## Surface
+## Surface <a name="surface"></a>
 
 * Ultimately, There are differences in my wireframes look to the overall project. I created the homepage wireframes and I just lacked inspiration to create the other wireframes. I wanted the site to look similar to the Boutique Ado walkthrough project and I just lacked inspiratioon to create the Wireframes for the other pages. Initially, I had planned a different background image and a different style of button on the homepage header but once it was set up I didn't like it so I changed it to the way that it is currently set up.
 
@@ -418,7 +443,7 @@ Admin users get the power to create update and delete everything on the site whi
 
 * I chose these fonts together as it was recommended by google to use these two together and from what I saw they looked very visually appealing together so I chose to uise them together on my site.
 
-# Technologies Used
+# Technologies Used <a name="technologies-used"></a>
 
 * [HTML](https://html.com/)
 
@@ -536,11 +561,11 @@ Admin users get the power to create update and delete everything on the site whi
 
     * Box shadow generator was used to apply a box shadow to blog posts in the blog page.
 
-# Testing
+# Testing <a name="testing"></a>
 
 * The testing section can be found [here](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/TESTING.md)
 
-# Deployment
+# Deployment <a name="deployment"></a>
 
 * This project was setup on GitHub using the Code Institute Gitpod Template.
 
@@ -799,7 +824,7 @@ Once app was setup and ready to go I deployed to Heroku by following the steps b
             * ` python3 manage.py runserver`
 
 
-# Credits
+# Credits <a name="credits"></a>
 
 ### Content
 
