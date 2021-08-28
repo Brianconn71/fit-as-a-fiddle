@@ -354,13 +354,13 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The homepage background image makes it clear what the store is about and what we sell. The navigation is clear and intuitive with the categories of products shown and dropdown menus ti show the various categories of items on the site. The Header Cts stands out and is easy to read so makes it clear to the user whjat they need to do.
 
 * homepage background image
-    ![home-back-image]()
+    ![home-back-image](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/home-back-image.JPG)
 
 * Navigation
-    ![navbar]()
+    ![navbar](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/navbar.JPG)
 
 * homepage CTA
-    ![home-cta]()
+    ![home-cta](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/home-cta.JPG)
 
 #### User Story 2
 
@@ -379,16 +379,16 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user is able to navigate through the site using the navbar, the user can also move to their bag page and complete their purchase by choosing the bag icon in the navbar once an item has been added. The user is also able and understanding of using the searchbar to search for products that they wish to know more about on the site. Overall, the user has a good understanding of where they are and where they want to go.
 
 * Navbar
-    ![navbar]()
+    ![navbar](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/navbar.JPG)
 
 * searchbar + bag
-    ![searchbar-and-bag]()
+    ![searchbar-and-bag](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/searchbar-and-bag.JPG)
 
 * bag with items
-    ![bag-with-items]()
+    ![bag-with-items](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/bag-with-items.JPG)
 
 * my account options
-    ![my-account-options]()
+    ![my-account-options](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/my-account-options.JPG)
 
 #### User Story 3
 
@@ -407,13 +407,13 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user sees and navigates to the social media sites of the company and finds out the information they need about the company. The user successfully manages to send their message to the site using the contact us page and gets confirmation of successful delivery of message.
 
 * Footer with socials
-    ![footer]()
+    ![footer](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/footer%20with%20socials.JPG)
 
 * contact us page
-    ![contact-us]()
+    ![contact-us](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/contact-us-page.JPG)
 
 * contact us successful
-    ![contact-us-successful]()
+    ![contact-us-successful](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/contact-us-successful.JPG)
 
 #### User Story 4
 
@@ -432,10 +432,10 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user successfully fills in all relevant information in the form and successfully sends the message to the site.
 
 * message successful
-    ![contact-us-successful]()
+    ![contact-us-successful](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/contact-us-successful.JPG)
 
 * ensure form is valid
-    ![form-validation-error]()
+    ![form-validation-error](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/form-validation-error.JPG)
 
 #### User Story 5
 
@@ -454,16 +454,16 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user enters a search term related to an item/s on the site and the search returns items for the user. If an item is not entyered before submitting an error appears on screen to the user asking them to enter a search and if the user enters a search term not related to an item on site then a message appears informing them that no such product is in the database.
 
 * searchbar
-    ![searchbar]()
+    ![searchbar](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/searchbar.JPG)
 
 * searchbar invalid
-    ![searchbar-invalid]()
+    ![searchbar-invalid](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/searchbar-invalid.JPG)
 
 * search results
-    ![search-results]()
+    ![search-results](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/search-results.JPG)
 
 * no results
-    ![no-results]()
+    ![no-results](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/no-results.JPG)
 
 #### User Story 6
 
@@ -482,10 +482,10 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user successfully manages to search for products on the site using the list of subcategories in the navbar dropdown menus.
 
 * category dropdowns
-    ![category]()
+    ![category](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/category.JPG)
 
 * products related to category search
-    ![category-search]()
+    ![category-search](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/category-search.JPG)
 
 #### User Story 7
 
@@ -504,13 +504,13 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user successfully manages to navigate to the product details page and can see all the relevant product information displayed before the user decides whether or not to buy the product. They can then choose to add product to their bag or they can return to shopping by clicking on the buttons on the product details page. if they choose to add to their bad a notification message appears to inform them the product has been added to their bag.
 
 * product details page
-    ![product-details-page]()
+    ![product-details-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/product-details-page.JPG)
 
 * product details CTAs
-    ![product details ctas]()
+    ![product details ctas](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/product-details-ctas.JPG)
 
 * add product to bag notification
-    ![add-product-notification]()
+    ![add-product-notification](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/add-product-notification.JPG)
 
 #### User Story 8
 
@@ -529,10 +529,10 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user successfully manages to filter the products on the site based on their price.
 
 * select input
-    ![select-input]()
+    ![select-input](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/select-input.JPG)
 
 * filtered results
-    ![filtered-results]()
+    ![filtered-results](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/filtered-results.JPG)
 
 #### User Story 9
 
@@ -551,13 +551,13 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user can view the products prices on all products page and if the user clicks on an item and is taken to product details page the price remains visible. The size select input will only be visible on product details page if an item has different sizes.
 
 * prices all products
-    ![prices-all-products]()
+    ![prices-all-products](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/prices-all-products.JPG)
 
 * prices product details
-    ![prices-product-details]()
+    ![prices-product-details](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/prices-product-details.JPG)
 
 * size selector
-    ![size-selector]()
+    ![size-selector](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/size-selector.JPG)
 
 #### User Story 10
 
@@ -576,10 +576,10 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user successfully adds items to their shopping bag and total cost gets displayed in the navbar underneath the bag icon.
 
 * add to bag button
-    ![add-to-bag-button]()
+    ![add-to-bag-button](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/add-to-bag-button.JPG)
 
 * bag in navbar with total cost displayed
-    ![bag in navbar]()
+    ![bag in navbar](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/bag-in-navbar.JPG)
 
 #### User Story 11
 
@@ -598,10 +598,10 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * User successfully is notified of an interaction with the site. These interactions also come in form of alerts and warnings like invalid forms too
 
 * notification of interaction
-    ![notification-of-interaction]()
+    ![notification-of-interaction](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/notification%20of%20interaction.JPG)
 
 * warning message
-    ![searchbar-invalid]()
+    ![searchbar-invalid](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/searchbar-invalid.JPG)
 
 #### User Story 12
 
@@ -620,13 +620,13 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user changes the quantity number in the input, clicks update and the bag gets updated with the new information. If the user clicks on remove then that item will be removed from their bag entirely and they will be informed.
 
 * edit shopping bag
-    ![bag page]()
+    ![bag page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/bag-page.JPG)
 
 * update quantity
-    ![update-quantity]()
+    ![update-quantity](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/update-quantity.JPG)
 
 * remove item from bag
-    ![remove-from-bag]()
+    ![remove-from-bag](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/remove-from-bag.JPG)
 
 #### User Story 13
 
@@ -645,19 +645,19 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * The user fills in the order form correctly and is valid, completes their order, redirects to checkout success page with order details and then the user receives a confirmation email.
 
 * secure checkout button - bag page
-    ![secure-checkout-button]()
+    ![secure-checkout-button](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/secure-checkout-button.JPG)
 
 * secure checkout button - toast-success
-    ![secure-checkout-button-toast]()
+    ![secure-checkout-button-toast](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/secure-checkout-button-toast.JPG)
 
 * Order form
-    ![orderform]()
+    ![orderform](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/orderform.JPG)
 
 * checkout success page
-    ![checkout-success-page]()
+    ![checkout-success-page](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/checkout-success-page.JPG)
 
 * Order confirmation email
-    ![order-confirmation-email]()
+    ![order-confirmation-email](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/order-confirmation-email.JPG)
 
 #### User Story 14
 
@@ -691,7 +691,7 @@ Please see below for a list of all screen sizes that my site was found to be mob
     ![leave a review](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/leave-a-review.JPG)
 
 * Review Confirmation
-    ![review-confirmation]()
+    ![review-confirmation](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/review-confirmation.JPG)
 
 #### User Story 15
 
@@ -710,7 +710,7 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * Once a user completes the checkout process, and they check their email account they will see a confirmation email that was sent automatically to them upon order completion and this email contains all relevant information related to their order.
 
 * Order confirmation email
-    ![order-confirmation-email]()
+    ![order-confirmation-email](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/order-confirmation-email.JPG)
 
 #### User Story 16
 
@@ -729,7 +729,7 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * User successfully finds previous orders and can find all relevant information from those orders.
 
 * Previous order
-    ![previous-order]()
+    ![previous-order](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/previous-order.JPG)
 
 #### User Story 17
 
@@ -748,16 +748,16 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * User successfully saves their information to their account which will automatically be prefilled in future order forms for that user.
 
 * Save info button
-    ![save-info-btn]()
+    ![save-info-btn](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/save-info-button.JPG)
 
 * not logged in user
-    ![user-not-logged-in]()
+    ![user-not-logged-in](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/user-not-logged-in.JPG)
 
 * Profile with default saved information
-    ![default-info]()
+    ![default-info](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/default-info.JPG)
 
 * Prefilled future order forms
-    ![prefilled-info]()
+    ![prefilled-info](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/prefilled-info.JPG)
 
 
 ## Site Goal Testing
@@ -779,19 +779,19 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * Site Admin/Superusers have full CRUD functionality on the site and the ability and awareness to make use of the fuctionality on the site frontend and backend.
 
 * edit and delete buttons on site for admin users
-    ![edit-delete-btns]()
+    ![edit-delete-btns](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/edit-delete-btns.JPG)
 
 * delete comment button
-    ![delete-comment-button]()
+    ![delete-comment-button](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/delete-comment-btn.JPG)
 
 * Admin Backend
-    ![admin-backend]()
+    ![admin-backend](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/admin-backend.JPG)
 
 * add blog post button
-    ![add-blog-btn]()
+    ![add-blog-btn](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/add-blog-btn.JPG)
 
 * Delete Product Modal
-    ![add-blog-btn]()
+    ![delete-product-modal](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/delete-product-modal.JPG)
 
 #### Site Goal 2
 
@@ -810,10 +810,10 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * Admin users add blog posts to the site which sees interactivity in the comments section by users and an increase in organic traffic to the site which leads to an increase in sales.
 
 * add blog post
-    ![add-blog-post]()
+    ![add-blog-post](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/add-blog-post.JPG)
 
 * comments section
-    ![comments section]()
+    ![comments section](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/comments-section.JPG)
 
 #### Site Goal 3
 
@@ -832,13 +832,13 @@ Please see below for a list of all screen sizes that my site was found to be mob
 * Admin users have a much simpler task of doing administration duties than by doing it on the front end
 
 * Admin Backend
-    ![admin-backend]()
+    ![admin-backend](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/admin-backend.JPG)
 
 * contacts table under home heading
-    ![contact-us]()
+    ![contact-us](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/contact-us.JPG)
 
 * customer messages
-    ![customer-messages]()
+    ![customer-messages](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/user-testing/customer-messages.JPG)
 
 #### Site Goal 4
 
