@@ -82,7 +82,7 @@
                         <small class="text-muted">by - {{ comment.user }}</small><br />
                         <small class="text-muted">{{ comment.date_added }}</small>
                     {% if request.user.is_authenticated %}
-                        {% if request.user == comment.user or request.user.is_superuser %}
+                        {% if request.user.is_superuser %}
                             <a role="button" class="text-danger text-decoration-none" data-toggle="modal"
                                 data-target="#modal-overlay{{ forloop.counter0 }}">Delete Comment</a>
                         {% endif %}
